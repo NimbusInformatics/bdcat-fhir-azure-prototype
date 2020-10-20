@@ -1,0 +1,1057 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "code": "REDACTED",
+        "display": "redacted"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "code": "CRYTOHASH",
+        "display": "cryptographic hash function"
+      }
+    ]
+  },
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:8d782c6e-9fe8-397c-8c90-3a0b673ea432",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "b8936934b44fcbd4b20f919e018c1ea881c3e32831de2f0f22528e96c331a569",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Fisher429",
+            "given": [
+              "Janette321"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Janette321.Fisher429@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "330 MOUNT AUBURN STREET"
+            ],
+            "city": "CAMBRIDGE",
+            "state": "MA",
+            "postalCode": "02138",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "62d3dbfe49e3633a9dabc99990ca58bf9fd683a0eb841edac9eda2cf265781ff",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Steuber698",
+            "given": [
+              "Ludivina884"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Ludivina884.Steuber698@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "211 PARK STREET"
+            ],
+            "city": "ATTLEBORO",
+            "state": "MA",
+            "postalCode": "02703",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a3e93c18-61fa-3ee6-b6bb-a941a762c5e6",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "21f3b49678fcb42fb7eeb490264d888b19f2a83a143db36be32d6a6d44bd0a8f",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Fadel536",
+            "given": [
+              "Terrell212"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Terrell212.Fadel536@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "88 LEWIS BAY ROAD"
+            ],
+            "city": "HYANNIS",
+            "state": "MA",
+            "postalCode": "02601",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1a554426-36bd-303a-b95b-1044a50cb562",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "e13d1832e0c7f354e987f2182db05609a349d4c0f67d8a3854e8a6adecf51552",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Jacobi462",
+            "given": [
+              "Ellan282"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Ellan282.Jacobi462@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "81 HIGHLAND AVENUE"
+            ],
+            "city": "SALEM",
+            "state": "MA",
+            "postalCode": "01970",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b6a233a7-54df-357f-9863-7f7ae7197c09",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "675d01243492c844f993b7e1f03cbf2bce7f6e7e9b321a42804d430ad3308ea1",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Glover433",
+            "given": [
+              "Marvin195"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Marvin195.Glover433@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "157 UNION STREET"
+            ],
+            "city": "MARLBOROUGH",
+            "state": "MA",
+            "postalCode": "01752",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:862082b0-9897-3cd8-921d-b94ba069d91c",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "5cb6876f2de0971c6976d5ac405d02c3d686c1d04d8a6110a15034074f711396",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Hirthe744",
+            "given": [
+              "Andrea7"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Andrea7.Hirthe744@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "41 HIGHLAND AVENUE"
+            ],
+            "city": "WINCHESTER",
+            "state": "MA",
+            "postalCode": "01890",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a039d139-ad74-3b8f-9925-eaa29a2d4383",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "f004237e483fcc3e9a4c602ab711c31af0c84bac0508b26f57c382fd92b384a1",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Rutherford999",
+            "given": [
+              "Patria17"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Patria17.Rutherford999@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "199 REEDSDALE ROAD"
+            ],
+            "city": "MILTON",
+            "state": "MA",
+            "postalCode": "02186",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b671b0e7-fc85-3266-972f-eeb4c7e94815",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "bb6bee5a453111216bcc50cd4906072d3c504b707785d77972ddac44399958a4",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Jiménez568",
+            "given": [
+              "Santiago500"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Santiago500.Jiménez568@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "30 MANMAR DR"
+            ],
+            "city": "PLAINVILLE",
+            "state": "MA",
+            "postalCode": "02762",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d1542b82-6ed5-31cb-87d9-86033081726e",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "3e5d61075744ddd865ea2673857fef179ece6c4a7982196f6b5ac0dde7d26967",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Ullrich385",
+            "given": [
+              "Earlene410"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Earlene410.Ullrich385@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "361 MASSACHUSETTS AVE"
+            ],
+            "city": "ARLINGTON",
+            "state": "MA",
+            "postalCode": "02474-6719",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2add1d28-5ee2-3a4c-a6da-f976b9b28081",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "b3882e9aaae081073df1f770e0c4e1b18b6f12dc72342f8f57676c286725141b",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Ferry570",
+            "given": [
+              "Cordell41"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Cordell41.Ferry570@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "57 E MAIN ST"
+            ],
+            "city": "WESTBOROUGH",
+            "state": "MA",
+            "postalCode": "01581-1445",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "c0fb98860d739eeca36a6b9a6d022f1bf1a1ba0a338648f64f2414c8293c42cb",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Conn188",
+            "given": [
+              "Arlena205"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Arlena205.Conn188@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "570 BALDWINVILLE RD"
+            ],
+            "city": "BALDWINVILLE",
+            "state": "MA",
+            "postalCode": "01436-1351",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:87416e57-79f3-3b42-a8d3-c3aaa33bce75",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "827403cbd245ef5bca5fcb2c305edd07ceb85fb610d2de698a3c65a7f0e43ef6",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Stanton715",
+            "given": [
+              "Bo157"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Bo157.Stanton715@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "4 CYPRESS ST"
+            ],
+            "city": "BROOKLINE",
+            "state": "MA",
+            "postalCode": "02445-6871",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "42ca8cb43d936a9d82d408f1bf22681c4b0454e8f2314c2b76e8172c1a458971",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Batz141",
+            "given": [
+              "Leida589"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Leida589.Batz141@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "30 MAN MAR DR"
+            ],
+            "city": "PLAINVILLE",
+            "state": "MA",
+            "postalCode": "02762-2271",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:de132375-74b1-32f0-9da9-b1563d6916ca",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "5be440c2c088af8133621b1c978f8e4d05326f0402eef4a1662305d1e64da93e",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Schmidt332",
+            "given": [
+              "Assunta351"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Assunta351.Schmidt332@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "29 N MAIN ST"
+            ],
+            "city": "ATTLEBORO",
+            "state": "MA",
+            "postalCode": "02703-2217",
+            "country": "US"
+          }
+        ],
+        "gender": "female"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c86c2330-64e0-3ab5-b9c9-42fcc5a63883",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "e0dafe287b0b60ce02e7bc751ae257c13840bcd7891b43f3de5b541074f7672e",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Kozey370",
+            "given": [
+              "Cedric746"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Cedric746.Kozey370@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "2360 CRANBERRY HWY"
+            ],
+            "city": "WEST WAREHAM",
+            "state": "MA",
+            "postalCode": "02576-1208",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7003f1cc-8f5a-352e-8e7b-6b6c7c20df10",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fcfb40bf857582af7c00acac8b8a403467dfc10a814243f56a3d4151e419192e",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Cormier289",
+            "given": [
+              "Gerry91"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Gerry91.Cormier289@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "92 HIGHLAND ST"
+            ],
+            "city": "MILTON",
+            "state": "MA",
+            "postalCode": "02186-3800",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3d3a9cec-272a-3573-9dd0-a8ee8ff61816",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "0e4d773d8d87e9c55a621bddbdf5e5196c69dc9127760df83282fdd7ed28933d",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "CRYTOHASH",
+              "display": "cryptographic hash function"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.org/fhir/sid/us-npi"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Kling921",
+            "given": [
+              "Gaylord332"
+            ],
+            "prefix": [
+              "Dr."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "Gaylord332.Kling921@example.com",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "250 PARADISE RD"
+            ],
+            "city": "SWAMPSCOTT",
+            "state": "MA",
+            "postalCode": "01907-2948",
+            "country": "US"
+          }
+        ],
+        "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    }
+  ]
+}
