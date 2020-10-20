@@ -1,4 +1,4 @@
-These are synthetic juvenile (age 0-17) COVID patients, created using [synthea](https://github.com/synthetichealth/synthea), using the command
+These are synthetic juvenile (age 0-18) COVID patients, created using [synthea](https://github.com/synthetichealth/synthea), using the command
 
 `java -jar synthea-with-dependencies.jar -c synthea.conf -m covid19 -a 0-18 -p 10`
 
