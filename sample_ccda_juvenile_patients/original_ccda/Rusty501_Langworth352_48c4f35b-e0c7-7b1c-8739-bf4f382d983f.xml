@@ -1,0 +1,2162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+  <id root="2.16.840.1.113883.19.5" extension="48c4f35b-e0c7-7b1c-8739-bf4f382d983f" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>C-CDA R2.1 Patient Record: Rusty501 Langworth352</title>
+  <effectiveTime value="20201024115547"/>
+  <confidentialityCode code="N"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="48c4f35b-e0c7-7b1c-8739-bf4f382d983f" assigningAuthorityName="https://github.com/synthetichealth/synthea"/>
+      <addr use="HP">
+        <streetAddressLine>453 Torp Hollow</streetAddressLine>
+        <city>Bourne</city>
+        <state>Massachusetts</state>
+        <postalCode nullFlavor="NI"/>
+      </addr>
+      <telecom nullFlavor="NI"/>
+      <patient>
+        <name>
+          <given>Rusty501</given>
+          <family>Langworth352</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender"/>
+        <birthTime value="20170121105547"/>
+        <raceCode code="2106-3" displayName="white" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <ethnicGroupCode code="2186-5" displayName="non-hispanic" codeSystemName="CDC Race and Ethnicity" codeSystem="2.16.840.1.113883.6.238"/>
+        <languageCommunication>
+          <languageCode code="en-US"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20201024115547"/>
+    <assignedAuthor>
+      <id nullFlavor="NA"/>
+      <addr nullFlavor="NA" />
+      <telecom nullFlavor="NA" />
+      <assignedAuthoringDevice>
+        <manufacturerModelName>https://github.com/synthetichealth/synthea</manufacturerModelName>
+        <softwareName>https://github.com/synthetichealth/synthea</softwareName>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <id nullFlavor="NA"/>
+        <name>BERNARD J DURANTE MD PC</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>1 COUNTY RD</streetAddressLine>
+          <city>BOURNE</city>
+          <state>MA</state>
+          <postalCode>02532-3756</postalCode>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="NA"/>
+        <name>BERNARD J DURANTE MD PC</name>
+        <telecom nullFlavor="NA"/>
+        <addr>
+          <streetAddressLine>1 COUNTY RD</streetAddressLine>
+          <city>BOURNE</city>
+          <state>MA</state>
+          <postalCode>02532-3756</postalCode>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="20170121105547"/>
+        <high value="20201024115547"/>
+      </effectiveTime>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody>
+<component>
+  <!-- Allergies: patient has no allergies -->
+  <section nullFlavor="NI">
+    <templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+    <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergy List"/>
+    <title>Allergies</title>                
+    <text>There are no current allergies at the time of this document's creation.</text>
+  </section>
+</component><component>
+  <!-- Medications: patient has no medications -->
+  <section nullFlavor="NI">
+		<templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+    <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+    <title>Medications</title>
+    <text>There are no current medications at the time of this document's creation.</text>
+  </section>
+</component><component>
+  <!--Diagnostic Results-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+    <!--Diagnostic Results section template-->
+    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Results"/>
+    <title>Diagnostic Results</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="reports-desc-1">Respiratory pathogens DNA and RNA panel - Respiratory specimen by NAA with probe detection</td>
+          <td ID="reports-code-1">http://loinc.org 92143-7</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td></td>
+          <td ID="reports-desc-2">SARS-CoV-2 RNA Pnl Resp NAA+probe</td>
+          <td ID="reports-code-2">http://loinc.org 94531-1</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+        <!--Result organizer template -->
+        <id root="ed634bbc-5f1a-85dc-91b7-5d2c13712a64"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20200306110847"/>
+          <high value="20200306110847"/>
+        </effectiveTime>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3c0c42a5-5532-f120-e83d-a439079c6096"/>
+        <code  code="92142-9" codeSystem="2.16.840.1.113883.6.1" displayName="Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="6c9ad865-e8da-cd48-a44d-78c7376d6572"/>
+        <code  code="92141-1" codeSystem="2.16.840.1.113883.6.1" displayName="Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="6dc73f90-0d04-6a12-59e4-c3206745d4dc"/>
+        <code  code="92131-2" codeSystem="2.16.840.1.113883.6.1" displayName="Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="f1cc1a30-c84d-170e-c5d4-0a6c47408343"/>
+        <code  code="92140-3" codeSystem="2.16.840.1.113883.6.1" displayName="Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="3033ec69-46d7-e4a9-58fc-3b6682f4d04e"/>
+        <code  code="92139-5" codeSystem="2.16.840.1.113883.6.1" displayName="Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="7f72a43d-4024-f167-3715-a653b949ffb4"/>
+        <code  code="92138-7" codeSystem="2.16.840.1.113883.6.1" displayName="Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="65ef4aaa-83b9-c76f-0c14-6830a2acbc6b"/>
+        <code  code="92130-4" codeSystem="2.16.840.1.113883.6.1" displayName="Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="0fcf31fd-39b3-8e4c-bbcd-b32abc772a04"/>
+        <code  code="92134-6" codeSystem="2.16.840.1.113883.6.1" displayName="Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="8a153562-16a4-14f1-c1c4-aa52c27e2855"/>
+        <code  code="94040-3" codeSystem="2.16.840.1.113883.6.1" displayName="Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#reports-desc-1"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+    <entry typeCode="DRIV">
+      <organizer classCode="BATTERY" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+        <!--Result organizer template -->
+        <id root="01bcddb9-68a6-f7fe-023c-c49209bcad58"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20200306121647"/>
+          <high value="20200306121647"/>
+        </effectiveTime>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+            <id root="e7a27faf-feac-6841-ed1a-ead98b405952"/>
+        <code  code="94531-1" codeSystem="2.16.840.1.113883.6.1" displayName="SARS-CoV-2 RNA Pnl Resp NAA+probe">
+          <originalText><reference value="#reports-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#reports-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306121647"/>
+            <value xsi:type="ST">{entry.value}</value>
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Problems-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+    <!--Problems section template-->
+    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/>
+    <title>Problems</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td>2020-04-03T13:16:47-07:00</td>
+          <td ID="conditions-desc-1">Cough (finding)</td>
+          <td ID="conditions-code-1">http://snomed.info/sct 49727002</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td ID="conditions-desc-2">Suspected COVID-19</td>
+          <td ID="conditions-code-2">http://snomed.info/sct 840544004</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td>2020-04-03T13:16:47-07:00</td>
+          <td ID="conditions-desc-3">COVID-19</td>
+          <td ID="conditions-code-3">http://snomed.info/sct 840539006</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="ed86a70c-becb-557e-b5fd-c59d9b08a937"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20200306105547"/>
+          <high value="20200403131647"/>
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="968c634a-9545-0172-4e88-ed8305bc6b4c"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20200306105547"/>
+              <high value="20200403131647"/>
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="49727002" codeSystem="2.16.840.1.113883.6.96" displayName="Cough (finding)">
+          <originalText><reference value="#conditions-desc-1"/></originalText>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="a3774967-c800-3f15-f765-f356a82f5a0e"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20200306105547"/>
+          <high value="20200306121647"/>
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="21e73efc-b9e2-e220-0d39-7341aeec0152"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20200306105547"/>
+              <high value="20200306121647"/>
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="840544004" codeSystem="2.16.840.1.113883.6.96" displayName="Suspected COVID-19">
+          <originalText><reference value="#conditions-desc-2"/></originalText>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+    <entry typeCode="DRIV">
+      <act classCode="ACT" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+        <!-- Problem act template -->
+        <id root="d31d628d-9ad4-22ce-0ff9-a73a189451ad"/>
+        <code nullFlavor="NA"/>
+        <statusCode code="completed"/>
+        <effectiveTime>
+          <low value="20200306121647"/>
+          <high value="20200403131647"/>
+        </effectiveTime>
+        <entryRelationship typeCode="SUBJ" inversionInd="false">
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+            <!--Problem observation template - NOT episode template-->
+            <id root="0bb6a523-3c9a-f9e5-57f7-2cbc062d8615"/>
+            <code code="64572001" displayName="Condition" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+              <translation code="75323-6" displayName="Condition" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+            </code>
+            <text>
+              <reference value="#conditions-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime>
+              <low value="20200306121647"/>
+              <high value="20200403131647"/>
+            </effectiveTime>
+            <priorityCode code="8319008" codeSystem="2.16.840.1.113883.6.96" displayName="Principal diagnosis" />
+        <value xsi:type="CD" code="840539006" codeSystem="2.16.840.1.113883.6.96" displayName="COVID-19">
+          <originalText><reference value="#conditions-desc-3"/></originalText>
+        </value>
+          </observation>
+        </entryRelationship>
+      </act>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Surgeries-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+    <!--Surgeries section template-->
+    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="List of surgeries"/>
+    <title>Surgeries</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td ID="procedures-desc-1">Face mask (physical object)</td>
+          <td ID="procedures-code-1">http://snomed.info/sct 261352009</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <procedure classCode="PROC" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+        <!-- Procedure activity template -->
+        <id root="ff7de917-6677-b8f7-03bf-f1b7ee923fc7"/>
+        <code  code="261352009" codeSystem="2.16.840.1.113883.6.96" displayName="Face mask (physical object)">
+          <originalText><reference value="#procedures-desc-1"/></originalText>
+        </code>
+        <text>
+          <reference value="#procedures-desc-1"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20200306105547"/>
+      </procedure>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Encounters-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/> <!-- CCDA Template id -->
+    <!--Encounters section template-->
+    <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+    <title>Encounters</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-01-21T10:55:47-08:00</td>
+          <td>2017-01-21T11:10:47-08:00</td>
+          <td ID="encounters-desc-1">Well child visit (procedure)</td>
+          <td ID="encounters-code-1">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2017-02-25T10:55:47-08:00</td>
+          <td>2017-02-25T11:10:47-08:00</td>
+          <td ID="encounters-desc-2">Well child visit (procedure)</td>
+          <td ID="encounters-code-2">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2017-04-29T11:55:47-07:00</td>
+          <td>2017-04-29T12:10:47-07:00</td>
+          <td ID="encounters-desc-3">Well child visit (procedure)</td>
+          <td ID="encounters-code-3">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2017-07-01T11:55:47-07:00</td>
+          <td>2017-07-01T12:10:47-07:00</td>
+          <td ID="encounters-desc-4">Well child visit (procedure)</td>
+          <td ID="encounters-code-4">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2017-09-30T11:55:47-07:00</td>
+          <td>2017-09-30T12:10:47-07:00</td>
+          <td ID="encounters-desc-5">Well child visit (procedure)</td>
+          <td ID="encounters-code-5">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2017-12-30T10:55:47-08:00</td>
+          <td>2017-12-30T11:10:47-08:00</td>
+          <td ID="encounters-desc-6">Well child visit (procedure)</td>
+          <td ID="encounters-code-6">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2018-03-31T11:55:47-07:00</td>
+          <td>2018-03-31T12:10:47-07:00</td>
+          <td ID="encounters-desc-7">Well child visit (procedure)</td>
+          <td ID="encounters-code-7">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2018-06-30T11:55:47-07:00</td>
+          <td>2018-06-30T12:10:47-07:00</td>
+          <td ID="encounters-desc-8">Well child visit (procedure)</td>
+          <td ID="encounters-code-8">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2018-12-29T10:55:47-08:00</td>
+          <td>2018-12-29T11:10:47-08:00</td>
+          <td ID="encounters-desc-9">Well child visit (procedure)</td>
+          <td ID="encounters-code-9">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2019-06-29T11:55:47-07:00</td>
+          <td>2019-06-29T12:10:47-07:00</td>
+          <td ID="encounters-desc-10">Well child visit (procedure)</td>
+          <td ID="encounters-code-10">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2019-12-28T10:55:47-08:00</td>
+          <td>2019-12-28T11:10:47-08:00</td>
+          <td ID="encounters-desc-11">Well child visit (procedure)</td>
+          <td ID="encounters-code-11">http://snomed.info/sct 410620009</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td ID="encounters-desc-12">Encounter for symptom (procedure)</td>
+          <td ID="encounters-code-12">http://snomed.info/sct 185345009</td>
+        </tr>
+        <tr>
+          <td>2020-06-27T11:55:47-07:00</td>
+          <td>2020-06-27T12:10:47-07:00</td>
+          <td ID="encounters-desc-13">Well child visit (procedure)</td>
+          <td ID="encounters-code-13">http://snomed.info/sct 410620009</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="9c40ba2f-2988-62e5-200f-7ccc288ffc6b"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-1"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-1"/>
+        </text>
+        <effectiveTime>
+          <low value="20170121105547"/>
+          <high value="20170121111047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="f1aef2ee-4afb-88a4-0e7f-04b50fe34a76"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-2"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-2"/>
+        </text>
+        <effectiveTime>
+          <low value="20170225105547"/>
+          <high value="20170225111047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="8bfee326-3f0d-ae43-a3db-0b018e985fd0"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-3"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-3"/>
+        </text>
+        <effectiveTime>
+          <low value="20170429115547"/>
+          <high value="20170429121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="d094cbd2-1509-7c2c-332b-6e09348bf6b6"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-4"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-4"/>
+        </text>
+        <effectiveTime>
+          <low value="20170701115547"/>
+          <high value="20170701121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="2085c423-4943-40a9-c9d6-261e8c2294e0"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-5"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-5"/>
+        </text>
+        <effectiveTime>
+          <low value="20170930115547"/>
+          <high value="20170930121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="61bb5bd7-aa8c-85aa-c314-2201b40aa0e6"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-6"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-6"/>
+        </text>
+        <effectiveTime>
+          <low value="20171230105547"/>
+          <high value="20171230111047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="45fe8ed2-5524-bec5-c072-f699c43fe9de"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-7"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-7"/>
+        </text>
+        <effectiveTime>
+          <low value="20180331115547"/>
+          <high value="20180331121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="bc85dde7-71f8-537d-2995-55e15ecd854a"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-8"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-8"/>
+        </text>
+        <effectiveTime>
+          <low value="20180630115547"/>
+          <high value="20180630121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="080ba0f5-ae4f-89c6-f20f-811e5d352731"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-9"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-9"/>
+        </text>
+        <effectiveTime>
+          <low value="20181229105547"/>
+          <high value="20181229111047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="e62ee639-c223-14c8-585c-2a579031588b"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-10"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-10"/>
+        </text>
+        <effectiveTime>
+          <low value="20190629115547"/>
+          <high value="20190629121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="8e3272e3-6264-4be3-1fb9-790962fa2fe1"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-11"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-11"/>
+        </text>
+        <effectiveTime>
+          <low value="20191228105547"/>
+          <high value="20191228111047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="6252b8e2-74e3-4df3-e785-26122b8a7035"/>
+        <code  code="185345009" codeSystem="2.16.840.1.113883.6.96" displayName="Encounter for symptom (procedure)">
+          <originalText><reference value="#encounters-desc-12"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-12"/>
+        </text>
+        <effectiveTime>
+          <low value="20200306105547"/>
+          <high value="20200306121647"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+    <entry typeCode="DRIV">
+      <encounter classCode="ENC" moodCode="EVN">
+		    <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+        <!-- Encounter activity template -->
+        <id root="6924d603-955d-94d4-60a9-e2ef70dd321e"/>
+        <code  code="410620009" codeSystem="2.16.840.1.113883.6.96" displayName="Well child visit (procedure)">
+          <originalText><reference value="#encounters-desc-13"/></originalText>
+        </code>
+        <text>
+          <reference value="#encounters-desc-13"/>
+        </text>
+        <effectiveTime>
+          <low value="20200627115547"/>
+          <high value="20200627121047"/>
+        </effectiveTime>
+      </encounter>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Vital Signs-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+    <!--Vital Signs section template-->
+    <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+    <title>Vital Signs</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-1">Body temperature</td>
+          <td ID="observations-code-1">http://loinc.org 8310-5</td>
+          <td>38.257708082566054 Cel</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-2">Respiratory rate</td>
+          <td ID="observations-code-2">http://loinc.org 9279-1</td>
+          <td>39.58908537510975 /min</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-3">Heart rate</td>
+          <td ID="observations-code-3">http://loinc.org 8867-4</td>
+          <td>119.70539654470326 /min</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-4">Oxygen saturation in Arterial blood</td>
+          <td ID="observations-code-4">http://loinc.org 2708-6</td>
+          <td>82.84 %</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-5">Blood Pressure</td>
+          <td ID="observations-code-5">http://loinc.org 85354-9</td>
+          <td>
+          Diastolic Blood Pressure 79 mm[Hg]
+          Systolic Blood Pressure 116 mm[Hg]
+          </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T10:55:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-6">Body Weight</td>
+          <td ID="observations-code-6">http://loinc.org 29463-7</td>
+          <td>16.5 kg</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-7">Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-7">http://loinc.org 92142-9</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-8">Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-8">http://loinc.org 92141-1</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-9">Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-9">http://loinc.org 92131-2</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-10">Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-10">http://loinc.org 92140-3</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-11">Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-11">http://loinc.org 92139-5</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-12">Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-12">http://loinc.org 92138-7</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-13">Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-13">http://loinc.org 92130-4</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-14">Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-14">http://loinc.org 92134-6</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-15">Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection</td>
+          <td ID="observations-code-15">http://loinc.org 94040-3</td>
+          <td>system=http://snomed.info/sct, code=260385009, display=Negative (qualifier value), valueSet=null </td>
+        </tr>
+        <tr>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td></td>
+          <td ID="observations-desc-16">SARS-CoV-2 RNA Pnl Resp NAA+probe</td>
+          <td ID="observations-code-16">http://loinc.org 94531-1</td>
+          <td>system=http://snomed.info/sct, code=260373001, display=Detected (qualifier value), valueSet=null </td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <organizer classCode="CLUSTER" moodCode="EVN">
+        <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+        <!-- Vital signs organizer template -->
+        <id root="c0fdf042-0ae3-bd28-5c1f-802b44fa7b37"/>
+        <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs" codeSystemName="SNOMED CT">
+          <translation code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+        </code>
+        <statusCode code="completed"/>
+        <effectiveTime value="20201024115547"/>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="8f838356-4a6d-8657-d7a2-87166d2b67ba"/>
+        <code  code="8310-5" codeSystem="2.16.840.1.113883.6.1" displayName="Body temperature">
+          <originalText><reference value="#observations-desc-1"/></originalText>
+              <translation code="8331-1" codeSystem="2.16.840.1.113883.6.1" displayName="Oral temperature"/>
+        </code>
+            <text>
+              <reference value="#observations-desc-1"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="38.257708082566054" unit="Cel"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="987a7391-6b5f-4ed7-0edf-3ab3cd14ca67"/>
+        <code  code="9279-1" codeSystem="2.16.840.1.113883.6.1" displayName="Respiratory rate">
+          <originalText><reference value="#observations-desc-2"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-2"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="39.58908537510975" unit="/min"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="e1f3f9eb-6534-90ac-2a97-33f6dc0166aa"/>
+        <code  code="8867-4" codeSystem="2.16.840.1.113883.6.1" displayName="Heart rate">
+          <originalText><reference value="#observations-desc-3"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-3"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="119.70539654470326" unit="/min"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="2654bd5b-2eb7-2232-dc08-0d30b49328fc"/>
+        <code  code="2708-6" codeSystem="2.16.840.1.113883.6.1" displayName="Oxygen saturation in Arterial blood">
+          <originalText><reference value="#observations-desc-4"/></originalText>
+              <translation code="59408-5" codeSystem="2.16.840.1.113883.6.1" displayName="Oxygen saturation in Arterial blood by Pulse oximetry"/>
+        </code>
+            <text>
+              <reference value="#observations-desc-4"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="82.84" unit="%"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="6fa3ad68-8f63-3f1a-2c4c-d0c310a50188"/>
+        <code  code="8462-4" codeSystem="2.16.840.1.113883.6.1" displayName="Diastolic Blood Pressure">
+          <originalText><reference value="#observations-desc-5"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-5"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="79" unit="mm[Hg]"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="08537200-8f14-9db1-1cdb-1f19a39d4512"/>
+        <code  code="8480-6" codeSystem="2.16.840.1.113883.6.1" displayName="Systolic Blood Pressure">
+          <originalText><reference value="#observations-desc-5"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-5"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="116" unit="mm[Hg]"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="fd928488-5f19-1468-b2d8-3fdc4f0ab814"/>
+        <code  code="29463-7" codeSystem="2.16.840.1.113883.6.1" displayName="Body Weight">
+          <originalText><reference value="#observations-desc-6"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-6"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306105547"/>
+            <value xsi:type="PQ" value="16.5" unit="kg"/>
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="1b5b4633-8e89-9390-6a11-925c8e64a829"/>
+        <code  code="92142-9" codeSystem="2.16.840.1.113883.6.1" displayName="Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-7"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-7"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="843ea797-9292-7764-4927-1156c168b7af"/>
+        <code  code="92141-1" codeSystem="2.16.840.1.113883.6.1" displayName="Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-8"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-8"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="9379357d-9e60-764c-4e2d-ddda27173fa6"/>
+        <code  code="92131-2" codeSystem="2.16.840.1.113883.6.1" displayName="Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-9"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-9"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="708b9ef8-75f7-af60-44fc-0580fff96bde"/>
+        <code  code="92140-3" codeSystem="2.16.840.1.113883.6.1" displayName="Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-10"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-10"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="cd8d08b9-178e-9d2a-5dad-f7e66b6a7551"/>
+        <code  code="92139-5" codeSystem="2.16.840.1.113883.6.1" displayName="Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-11"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-11"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="75fec19f-905e-f0b0-ce09-5f56cb4f9ecd"/>
+        <code  code="92138-7" codeSystem="2.16.840.1.113883.6.1" displayName="Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-12"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-12"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="304e2c95-207a-98b0-2268-50c95240d7d6"/>
+        <code  code="92130-4" codeSystem="2.16.840.1.113883.6.1" displayName="Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-13"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-13"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="a9aaf397-8553-792d-8e13-070b83de29c9"/>
+        <code  code="92134-6" codeSystem="2.16.840.1.113883.6.1" displayName="Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-14"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-14"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="afa4d817-3088-972a-e69d-9d3fec2c5344"/>
+        <code  code="94040-3" codeSystem="2.16.840.1.113883.6.1" displayName="Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection">
+          <originalText><reference value="#observations-desc-15"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-15"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306110847"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260385009" displayName="Negative (qualifier value)" />
+          </observation>
+        </component>
+        <component>
+          <observation classCode="OBS" moodCode="EVN">
+            <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+            <!-- Result observation template -->
+            <id root="6e65b47e-b073-bcb5-1542-7c86db9535c5"/>
+        <code  code="94531-1" codeSystem="2.16.840.1.113883.6.1" displayName="SARS-CoV-2 RNA Pnl Resp NAA+probe">
+          <originalText><reference value="#observations-desc-16"/></originalText>
+        </code>
+            <text>
+              <reference value="#observations-desc-16"/>
+            </text>
+            <statusCode code="completed"/>
+            <effectiveTime value="20200306121647"/>
+            <value xsi:type="CD" codeSystem="2.16.840.1.113883.6.96" code="260373001" displayName="Detected (qualifier value)" />
+          </observation>
+        </component>
+      </organizer>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Immunizations-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.2" extension="2015-08-01"/>
+    <!--Immunizations section template-->
+    <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+    <title>Immunizations</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2017-01-21T10:55:47-08:00</td>
+          <td></td>
+          <td ID="immunizations-desc-1">Hep B, adolescent or pediatric</td>
+          <td ID="immunizations-code-1">http://hl7.org/fhir/sid/cvx 08</td>
+        </tr>
+        <tr>
+          <td>2017-02-25T10:55:47-08:00</td>
+          <td></td>
+          <td ID="immunizations-desc-2">Hep B, adolescent or pediatric</td>
+          <td ID="immunizations-code-2">http://hl7.org/fhir/sid/cvx 08</td>
+        </tr>
+        <tr>
+          <td>2017-04-29T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-3">Hib (PRP-OMP)</td>
+          <td ID="immunizations-code-3">http://hl7.org/fhir/sid/cvx 49</td>
+        </tr>
+        <tr>
+          <td>2017-04-29T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-4">rotavirus, monovalent</td>
+          <td ID="immunizations-code-4">http://hl7.org/fhir/sid/cvx 119</td>
+        </tr>
+        <tr>
+          <td>2017-04-29T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-5">IPV</td>
+          <td ID="immunizations-code-5">http://hl7.org/fhir/sid/cvx 10</td>
+        </tr>
+        <tr>
+          <td>2017-04-29T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-6">DTaP</td>
+          <td ID="immunizations-code-6">http://hl7.org/fhir/sid/cvx 20</td>
+        </tr>
+        <tr>
+          <td>2017-04-29T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-7">Pneumococcal conjugate PCV 13</td>
+          <td ID="immunizations-code-7">http://hl7.org/fhir/sid/cvx 133</td>
+        </tr>
+        <tr>
+          <td>2017-07-01T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-8">Hib (PRP-OMP)</td>
+          <td ID="immunizations-code-8">http://hl7.org/fhir/sid/cvx 49</td>
+        </tr>
+        <tr>
+          <td>2017-07-01T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-9">rotavirus, monovalent</td>
+          <td ID="immunizations-code-9">http://hl7.org/fhir/sid/cvx 119</td>
+        </tr>
+        <tr>
+          <td>2017-07-01T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-10">IPV</td>
+          <td ID="immunizations-code-10">http://hl7.org/fhir/sid/cvx 10</td>
+        </tr>
+        <tr>
+          <td>2017-07-01T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-11">DTaP</td>
+          <td ID="immunizations-code-11">http://hl7.org/fhir/sid/cvx 20</td>
+        </tr>
+        <tr>
+          <td>2017-07-01T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-12">Pneumococcal conjugate PCV 13</td>
+          <td ID="immunizations-code-12">http://hl7.org/fhir/sid/cvx 133</td>
+        </tr>
+        <tr>
+          <td>2017-09-30T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-13">IPV</td>
+          <td ID="immunizations-code-13">http://hl7.org/fhir/sid/cvx 10</td>
+        </tr>
+        <tr>
+          <td>2017-09-30T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-14">Influenza, seasonal, injectable, preservative free</td>
+          <td ID="immunizations-code-14">http://hl7.org/fhir/sid/cvx 140</td>
+        </tr>
+        <tr>
+          <td>2017-09-30T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-15">DTaP</td>
+          <td ID="immunizations-code-15">http://hl7.org/fhir/sid/cvx 20</td>
+        </tr>
+        <tr>
+          <td>2017-09-30T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-16">Pneumococcal conjugate PCV 13</td>
+          <td ID="immunizations-code-16">http://hl7.org/fhir/sid/cvx 133</td>
+        </tr>
+        <tr>
+          <td>2017-09-30T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-17">Hep B, adolescent or pediatric</td>
+          <td ID="immunizations-code-17">http://hl7.org/fhir/sid/cvx 08</td>
+        </tr>
+        <tr>
+          <td>2018-03-31T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-18">Hib (PRP-OMP)</td>
+          <td ID="immunizations-code-18">http://hl7.org/fhir/sid/cvx 49</td>
+        </tr>
+        <tr>
+          <td>2018-03-31T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-19">varicella</td>
+          <td ID="immunizations-code-19">http://hl7.org/fhir/sid/cvx 21</td>
+        </tr>
+        <tr>
+          <td>2018-03-31T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-20">MMR</td>
+          <td ID="immunizations-code-20">http://hl7.org/fhir/sid/cvx 03</td>
+        </tr>
+        <tr>
+          <td>2018-03-31T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-21">Pneumococcal conjugate PCV 13</td>
+          <td ID="immunizations-code-21">http://hl7.org/fhir/sid/cvx 133</td>
+        </tr>
+        <tr>
+          <td>2018-03-31T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-22">Hep A, ped/adol, 2 dose</td>
+          <td ID="immunizations-code-22">http://hl7.org/fhir/sid/cvx 83</td>
+        </tr>
+        <tr>
+          <td>2018-06-30T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-23">DTaP</td>
+          <td ID="immunizations-code-23">http://hl7.org/fhir/sid/cvx 20</td>
+        </tr>
+        <tr>
+          <td>2018-12-29T10:55:47-08:00</td>
+          <td></td>
+          <td ID="immunizations-desc-24">Influenza, seasonal, injectable, preservative free</td>
+          <td ID="immunizations-code-24">http://hl7.org/fhir/sid/cvx 140</td>
+        </tr>
+        <tr>
+          <td>2019-06-29T11:55:47-07:00</td>
+          <td></td>
+          <td ID="immunizations-desc-25">Hep A, ped/adol, 2 dose</td>
+          <td ID="immunizations-code-25">http://hl7.org/fhir/sid/cvx 83</td>
+        </tr>
+        <tr>
+          <td>2019-12-28T10:55:47-08:00</td>
+          <td></td>
+          <td ID="immunizations-desc-26">Influenza, seasonal, injectable, preservative free</td>
+          <td ID="immunizations-code-26">http://hl7.org/fhir/sid/cvx 140</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="2a918314-3e1e-d926-b389-70fb1fcef991"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-1"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170121105547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="08" codeSystem="2.16.840.1.113883.12.292" displayName="Hep B, adolescent or pediatric">
+          <originalText><reference value="#immunizations-desc-1"/></originalText>
+        </code>
+              <name>Hep B, adolescent or pediatric</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="741f7e05-60f8-a1a8-7916-99e238b70bd6"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-2"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170225105547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="08" codeSystem="2.16.840.1.113883.12.292" displayName="Hep B, adolescent or pediatric">
+          <originalText><reference value="#immunizations-desc-2"/></originalText>
+        </code>
+              <name>Hep B, adolescent or pediatric</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="e91cacb9-c814-35f8-c67b-a91f895c5b13"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-3"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170429115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="49" codeSystem="2.16.840.1.113883.12.292" displayName="Hib (PRP-OMP)">
+          <originalText><reference value="#immunizations-desc-3"/></originalText>
+        </code>
+              <name>Hib (PRP-OMP)</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="ad797270-c337-cd6d-5799-25ec434675b7"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-4"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170429115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="119" codeSystem="2.16.840.1.113883.12.292" displayName="rotavirus, monovalent">
+          <originalText><reference value="#immunizations-desc-4"/></originalText>
+        </code>
+              <name>rotavirus, monovalent</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="f508f208-57ba-b037-56c4-a6c5eabd6f08"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-5"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170429115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="10" codeSystem="2.16.840.1.113883.12.292" displayName="IPV">
+          <originalText><reference value="#immunizations-desc-5"/></originalText>
+        </code>
+              <name>IPV</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="a7f25b1b-7673-00eb-33c4-36a820b0ae46"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-6"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170429115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="20" codeSystem="2.16.840.1.113883.12.292" displayName="DTaP">
+          <originalText><reference value="#immunizations-desc-6"/></originalText>
+        </code>
+              <name>DTaP</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="e5417450-ccf8-1a3e-c5fe-597b08190c0f"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-7"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170429115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="133" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal conjugate PCV 13">
+          <originalText><reference value="#immunizations-desc-7"/></originalText>
+        </code>
+              <name>Pneumococcal conjugate PCV 13</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="2444f6f2-8586-8510-1341-63cbf394e205"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-8"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170701115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="49" codeSystem="2.16.840.1.113883.12.292" displayName="Hib (PRP-OMP)">
+          <originalText><reference value="#immunizations-desc-8"/></originalText>
+        </code>
+              <name>Hib (PRP-OMP)</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="f93e8fbd-c21e-caac-3b7c-19bec2c2f0ad"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-9"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170701115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="119" codeSystem="2.16.840.1.113883.12.292" displayName="rotavirus, monovalent">
+          <originalText><reference value="#immunizations-desc-9"/></originalText>
+        </code>
+              <name>rotavirus, monovalent</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="25d198f8-f948-a74e-60ec-c9434fcb3f9a"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-10"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170701115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="10" codeSystem="2.16.840.1.113883.12.292" displayName="IPV">
+          <originalText><reference value="#immunizations-desc-10"/></originalText>
+        </code>
+              <name>IPV</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="0edae1c7-9978-60e4-3aeb-5386c2d35bca"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-11"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170701115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="20" codeSystem="2.16.840.1.113883.12.292" displayName="DTaP">
+          <originalText><reference value="#immunizations-desc-11"/></originalText>
+        </code>
+              <name>DTaP</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="f12d16c1-83ac-4619-5ac5-d9ac750d984f"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-12"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170701115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="133" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal conjugate PCV 13">
+          <originalText><reference value="#immunizations-desc-12"/></originalText>
+        </code>
+              <name>Pneumococcal conjugate PCV 13</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="12529fc1-52b4-998e-fd6f-00bb05e93531"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-13"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170930115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="10" codeSystem="2.16.840.1.113883.12.292" displayName="IPV">
+          <originalText><reference value="#immunizations-desc-13"/></originalText>
+        </code>
+              <name>IPV</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="9b2f06f9-d2f8-6d6a-bd38-00d84ce39092"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-14"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170930115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+          <originalText><reference value="#immunizations-desc-14"/></originalText>
+        </code>
+              <name>Influenza, seasonal, injectable, preservative free</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="05673d4c-1aae-3314-33bf-f3b737d8c613"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-15"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170930115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="20" codeSystem="2.16.840.1.113883.12.292" displayName="DTaP">
+          <originalText><reference value="#immunizations-desc-15"/></originalText>
+        </code>
+              <name>DTaP</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="db194fdb-f4a7-033f-f0e5-164f5ab46076"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-16"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170930115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="133" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal conjugate PCV 13">
+          <originalText><reference value="#immunizations-desc-16"/></originalText>
+        </code>
+              <name>Pneumococcal conjugate PCV 13</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="9fe162e0-a437-e226-5f1b-f1cdd0490184"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-17"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20170930115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="08" codeSystem="2.16.840.1.113883.12.292" displayName="Hep B, adolescent or pediatric">
+          <originalText><reference value="#immunizations-desc-17"/></originalText>
+        </code>
+              <name>Hep B, adolescent or pediatric</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="cbb305bb-cfbc-8418-bb5b-9fcc07202431"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-18"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20180331115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="49" codeSystem="2.16.840.1.113883.12.292" displayName="Hib (PRP-OMP)">
+          <originalText><reference value="#immunizations-desc-18"/></originalText>
+        </code>
+              <name>Hib (PRP-OMP)</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="d8eb344a-bce3-5637-1e0d-9dc18e815cfd"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-19"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20180331115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="21" codeSystem="2.16.840.1.113883.12.292" displayName="varicella">
+          <originalText><reference value="#immunizations-desc-19"/></originalText>
+        </code>
+              <name>varicella</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="2870997e-26aa-cf7c-5662-e3bcf202bc9c"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-20"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20180331115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="03" codeSystem="2.16.840.1.113883.12.292" displayName="MMR">
+          <originalText><reference value="#immunizations-desc-20"/></originalText>
+        </code>
+              <name>MMR</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="5dfce729-3cf4-4dfd-a157-324e12ea38d9"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-21"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20180331115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="133" codeSystem="2.16.840.1.113883.12.292" displayName="Pneumococcal conjugate PCV 13">
+          <originalText><reference value="#immunizations-desc-21"/></originalText>
+        </code>
+              <name>Pneumococcal conjugate PCV 13</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="5d03571a-c111-0472-dcc6-cbc440c23fb6"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-22"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20180331115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="83" codeSystem="2.16.840.1.113883.12.292" displayName="Hep A, ped/adol, 2 dose">
+          <originalText><reference value="#immunizations-desc-22"/></originalText>
+        </code>
+              <name>Hep A, ped/adol, 2 dose</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="1955a970-65f1-bbf5-fc8a-0c9c0401d8d8"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-23"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20180630115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="20" codeSystem="2.16.840.1.113883.12.292" displayName="DTaP">
+          <originalText><reference value="#immunizations-desc-23"/></originalText>
+        </code>
+              <name>DTaP</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="6eea3423-55ea-6e08-2ecd-973830caf921"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-24"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20181229105547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+          <originalText><reference value="#immunizations-desc-24"/></originalText>
+        </code>
+              <name>Influenza, seasonal, injectable, preservative free</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="6f3ad7e6-ff86-fadc-2d15-06cf62c7ec9e"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-25"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20190629115547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="83" codeSystem="2.16.840.1.113883.12.292" displayName="Hep A, ped/adol, 2 dose">
+          <originalText><reference value="#immunizations-desc-25"/></originalText>
+        </code>
+              <name>Hep A, ped/adol, 2 dose</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+    <entry typeCode="DRIV">
+      <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+        <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+        <!-- Medication activity template -->
+        <id root="61ddee35-8efe-7fd0-cbc1-5da4905afaa4"/>
+        <code code='IMMUNIZ' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActCode'/>
+        <text>
+          <reference value="#immunizations-desc-26"/>
+        </text>
+        <statusCode code="completed"/>
+        <effectiveTime value="20191228105547"/>
+        <doseQuantity nullFlavor="UNK"/>
+        <consumable>
+          <manufacturedProduct classCode="MANU">
+            <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+            <!-- Product template -->
+            <manufacturedMaterial>
+        <code  code="140" codeSystem="2.16.840.1.113883.12.292" displayName="Influenza, seasonal, injectable, preservative free">
+          <originalText><reference value="#immunizations-desc-26"/></originalText>
+        </code>
+              <name>Influenza, seasonal, injectable, preservative free</name>
+            </manufacturedMaterial>
+          </manufacturedProduct>
+        </consumable>
+      </substanceAdministration>
+    </entry>
+  </section>
+</component>
+<component>
+  <!--Plan of Care-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+    <!--Plan of Care section template-->
+    <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+    <title>Plan of Care</title>
+<text>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Start</th>
+        <th>Stop</th>
+        <th>Description</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>2020-03-06T11:08:47-08:00</td>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td ID="careplans-desc-1">Infectious disease care plan (record artifact)</td>
+          <td ID="careplans-code-1">http://snomed.info/sct 736376001</td>
+        </tr>
+        <tr>
+          <td>2020-03-06T12:16:47-08:00</td>
+          <td>2020-04-03T13:16:47-07:00</td>
+          <td ID="careplans-desc-2">Infectious disease care plan (record artifact)</td>
+          <td ID="careplans-code-2">http://snomed.info/sct 736376001</td>
+        </tr>
+    </tbody>
+  </table>
+</text>
+  </section>
+</component>
+<component>
+  <!-- Imaging Studies: patient has no imaging studies -->
+  <section nullFlavor="NI">
+    <templateId root="2.16.840.1.113883.10.20.22.1.5"/>
+    <code code="18748-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnostic Imaging Report"/>
+    <title>Imaging Studies</title>
+    <text>There are no current imaging studies at the time of this document's creation.</text>
+  </section>
+</component>
+<component>
+  <!--Social History - CCDA-->
+  <section>
+    <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+    <!-- Social history section template -->
+    <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+    <title>Social History</title>
+    <text>There is no current social history at the time of this document's creation.</text>
+  </section>
+</component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
+

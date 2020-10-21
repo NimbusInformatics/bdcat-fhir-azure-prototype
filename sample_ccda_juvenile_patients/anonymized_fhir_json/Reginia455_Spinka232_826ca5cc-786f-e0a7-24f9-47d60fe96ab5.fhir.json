@@ -1,0 +1,2594 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "code": "REDACTED",
+        "display": "redacted"
+      }
+    ]
+  },
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:7997cd05-c7bf-3d97-ab44-cf8ca947106b",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "7997cd05-c7bf-3d97-ab44-cf8ca947106b",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": {
+          "use": "official"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9",
+              "display": "Summarization of episode note"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "date": "2020-10-24T00:23:37.000Z",
+        "author": [
+          {
+            "reference": "Device/a47f69ca-32ad-3c5c-b8a4-57c860275dea"
+          },
+          {
+            "reference": "Practitioner/2f6947fd-7d2c-34f8-992d-98274d4428d3"
+          }
+        ],
+        "confidentiality": "N",
+        "custodian": {
+          "reference": "Organization/e8beab68-d304-3aa5-937f-aa51bf8ac575"
+        },
+        "event": [
+          {
+            "period": {
+              "start": "2019-02-08T23:23:37.000Z"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Allergies",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergy List"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergies</div>"
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Medications",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "History of medication use"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Medications</div>"
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Diagnostic Results",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Results"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Diagnostic Results</div>"
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "DiagnosticReport/b86e60b9-6164-345d-b5ed-1edea84c3a60"
+              },
+              {
+                "reference": "DiagnosticReport/eb879938-2fc9-3e95-8e58-3632f0b1f7f5"
+              }
+            ]
+          },
+          {
+            "title": "Problems",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Problems</div>"
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Condition/6b8ba384-c720-3ae7-94f8-7336be2ef3e9"
+              },
+              {
+                "reference": "Condition/5bf76e33-5211-3ff2-bb46-3fe99456fa68"
+              },
+              {
+                "reference": "Condition/1e60003d-99b8-3178-b069-9baa948cf562"
+              },
+              {
+                "reference": "Condition/b9321c11-6df0-36e6-b17f-6539c7945e2c"
+              },
+              {
+                "reference": "Condition/1c58af96-0cf1-309f-a386-863b187e15ec"
+              },
+              {
+                "reference": "Condition/e75e0109-3a86-31fe-b1b5-ad1a7979b0a6"
+              },
+              {
+                "reference": "Condition/e4001546-33f3-3450-b2e6-a9d2454fbe86"
+              },
+              {
+                "reference": "Condition/92546ec4-54fd-3616-83d4-e531b23eee62"
+              }
+            ]
+          },
+          {
+            "title": "Surgeries",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "47519-4",
+                  "display": "List of surgeries"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Surgeries</div>"
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Procedure/724531cc-4893-3163-b500-c5e20b2cf3af"
+              }
+            ]
+          },
+          {
+            "title": "Encounters",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "46240-8",
+                  "display": "History of encounters"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounters</div>"
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Encounter/73395f28-0e0a-3342-9d86-4f08e33d2c84"
+              },
+              {
+                "reference": "Encounter/00dfe21a-3325-3869-9d55-76846ffe8cfd"
+              },
+              {
+                "reference": "Encounter/e55e2045-baf3-3120-8902-92e4ff2f6e97"
+              },
+              {
+                "reference": "Encounter/0b46bfcf-61e2-3065-988e-1926898ac419"
+              },
+              {
+                "reference": "Encounter/cfc397c0-a833-3805-b8f6-a6ecc2f89194"
+              },
+              {
+                "reference": "Encounter/46a90121-09ab-3333-bc48-d0dfa22b6110"
+              },
+              {
+                "reference": "Encounter/a1a809e6-de27-3a25-a38b-599953726172"
+              },
+              {
+                "reference": "Encounter/e4a971a4-56b3-3936-b203-9668ca80fd8f"
+              },
+              {
+                "reference": "Encounter/b7b4e371-4c46-3c44-a366-82f359425a53"
+              }
+            ]
+          },
+          {
+            "title": "Vital Signs",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8716-3",
+                  "display": "Vital signs"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital Signs</div>"
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Observation/2af588e3-e702-3674-a9c8-020fade75d45",
+                "display": "Oral temperature"
+              },
+              {
+                "reference": "Observation/a904687a-458d-3287-bd6d-08a708854e8c",
+                "display": "Respiratory rate"
+              },
+              {
+                "reference": "Observation/a4044af5-8b92-3f75-a52f-da37e774da83",
+                "display": "Heart rate"
+              },
+              {
+                "reference": "Observation/1639d85a-52ca-3aec-bc6c-b9eba4361aef",
+                "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+              },
+              {
+                "reference": "Observation/24cb49d7-60db-37cc-a44d-c12cb2379f96",
+                "display": "Diastolic Blood Pressure"
+              },
+              {
+                "reference": "Observation/45aebfd9-3c75-37ae-84db-da28a261344c",
+                "display": "Systolic Blood Pressure"
+              },
+              {
+                "reference": "Observation/7e670b91-ae42-3d4d-bcec-607e5eead347",
+                "display": "Body Weight"
+              },
+              {
+                "reference": "Observation/4ebc2e6d-7cd0-3fc4-a4fe-e6c2bf990303",
+                "display": "Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/c660ec01-5f37-35cf-af11-71660229c00a",
+                "display": "Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/a89a51f0-147e-3884-a674-6bd79b848453",
+                "display": "Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/baf0a22f-993e-3bee-aa21-5b85d3888275",
+                "display": "Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/a01c237d-854d-30b2-bd84-cd391d4a9707",
+                "display": "Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/e5221d86-ae31-33bf-9156-971912edd558",
+                "display": "Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/d0ed37ff-c79e-3908-9af9-aa9c37a30b60",
+                "display": "Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/b6128de2-031e-39c7-a911-f0031841a3a3",
+                "display": "Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/d9b44e9e-f893-3f4c-90dd-49a64da06b39",
+                "display": "Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection"
+              },
+              {
+                "reference": "Observation/b771d40c-3de7-3033-bcac-fffebac6b9bd",
+                "display": "SARS-CoV-2 RNA Pnl Resp NAA+probe"
+              }
+            ]
+          },
+          {
+            "title": "Immunizations",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "History of immunizations"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunizations</div>"
+            },
+            "mode": "snapshot",
+            "entry": [
+              {
+                "reference": "Immunization/91d6bffd-208d-347f-b312-5020eaf189f2"
+              },
+              {
+                "reference": "Immunization/63bccee8-6137-3f95-be0c-8f9522690273"
+              },
+              {
+                "reference": "Immunization/a078381a-ef71-39e4-b2a6-5a6ce7f9b43d"
+              },
+              {
+                "reference": "Immunization/44e0f61f-6f38-3f97-9863-c936b5a0ea5f"
+              },
+              {
+                "reference": "Immunization/b3f1258f-6a2d-304f-83b8-3d8a5bc51de5"
+              },
+              {
+                "reference": "Immunization/07c23704-e7b9-39bd-92e9-9af590fd11e4"
+              },
+              {
+                "reference": "Immunization/f6bb2cc1-52ff-3b13-991d-ff28d1a8d01b"
+              },
+              {
+                "reference": "Immunization/d19d8576-1dba-3244-8ba6-85c2848f3fc8"
+              },
+              {
+                "reference": "Immunization/9f7856d1-2f16-3743-ae4f-1f3f5cb59e4d"
+              },
+              {
+                "reference": "Immunization/86653a06-5731-3a74-91c1-16bdc7a3026f"
+              },
+              {
+                "reference": "Immunization/88d4a7f6-5b80-30e5-8c20-8485dc972563"
+              },
+              {
+                "reference": "Immunization/e490c49e-d5c6-387b-8f1f-083863affc1b"
+              },
+              {
+                "reference": "Immunization/a081bb7e-5886-3104-b1c5-52c0131fb900"
+              },
+              {
+                "reference": "Immunization/328e288d-f95f-37bc-83cb-ec2f29c7c76d"
+              },
+              {
+                "reference": "Immunization/088bcbda-5ec6-390b-b5d5-f42832d17700"
+              },
+              {
+                "reference": "Immunization/019b1a5b-8d19-3c91-8fb4-58476163ac2f"
+              },
+              {
+                "reference": "Immunization/33dc38a9-f341-3df9-8a1c-c39349682668"
+              },
+              {
+                "reference": "Immunization/b4894623-328b-3b49-910c-b651647223c1"
+              },
+              {
+                "reference": "Immunization/e7c5e5b2-45dc-3b00-a4df-e4619ea8fc51"
+              },
+              {
+                "reference": "Immunization/914ad390-e461-37d9-a453-efffdcd88f34"
+              },
+              {
+                "reference": "Immunization/e0cf45b7-56ed-385b-a10d-550fec09021c"
+              },
+              {
+                "reference": "Immunization/90269d4f-84ac-3b05-9008-0c40ed470960"
+              },
+              {
+                "reference": "Immunization/b9060043-ce0d-3a8d-b711-846cb036de57"
+              }
+            ]
+          },
+          {
+            "title": "Plan of Care",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "18776-5",
+                  "display": "Treatment plan"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Plan of Care</div>"
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Imaging Studies",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "18748-4",
+                  "display": "Diagnostic Imaging Report"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Imaging Studies</div>"
+            },
+            "mode": "snapshot"
+          },
+          {
+            "title": "Social History",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "29762-2"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Social History</div>"
+            },
+            "mode": "snapshot"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Composition/7997cd05-c7bf-3d97-ab44-cf8ca947106b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e8beab68-d304-3aa5-937f-aa51bf8ac575",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "e8beab68-d304-3aa5-937f-aa51bf8ac575",
+        "name": "PCP7519",
+        "address": [
+          {
+            "line": [
+              "888 MAIN ST"
+            ],
+            "city": "WINCHESTER",
+            "state": "MA",
+            "postalCode": "01890-1913"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization/e8beab68-d304-3aa5-937f-aa51bf8ac575"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a47f69ca-32ad-3c5c-b8a4-57c860275dea",
+      "resource": {
+        "resourceType": "Device",
+        "id": "a47f69ca-32ad-3c5c-b8a4-57c860275dea",
+        "manufacturer": "https://github.com/synthetichealth/synthea",
+        "type": {
+          "coding": [
+            {
+              "display": "https://github.com/synthetichealth/synthea"
+            }
+          ]
+        },
+        "version": [
+          {
+            "value": "https://github.com/synthetichealth/synthea"
+          }
+        ],
+        "owner": {
+          "reference": "Organization/e8beab68-d304-3aa5-937f-aa51bf8ac575"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Device/a47f69ca-32ad-3c5c-b8a4-57c860275dea"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2f6947fd-7d2c-34f8-992d-98274d4428d3",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "2f6947fd-7d2c-34f8-992d-98274d4428d3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Practitioner/2f6947fd-7d2c-34f8-992d-98274d4428d3"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4e4a66a0-24de-3bf1-96d0-de8076387ea8",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "4e4a66a0-24de-3bf1-96d0-de8076387ea8",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19.5",
+            "assigner": {
+              "display": "https://github.com/synthetichealth/synthea"
+            }
+          }
+        ],
+        "birthDate": "2019-02-08",
+        "address": [
+          {
+            "use": "home",
+            "state": "Massachusetts",
+            "postalCode": "01801"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "en-US",
+                  "display": "English (United States)"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b53ce64a-fb8f-3fcb-b746-568352705a61",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "b53ce64a-fb8f-3fcb-b746-568352705a61",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "49727002",
+              "display": "Cough (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/b53ce64a-fb8f-3fcb-b746-568352705a61"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9c84dd49-211d-3d2e-a2ff-f91ccf5817d7",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "9c84dd49-211d-3d2e-a2ff-f91ccf5817d7",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "267036007",
+              "display": "Dyspnea (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/9c84dd49-211d-3d2e-a2ff-f91ccf5817d7"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f6fe8500-8f5a-3322-ac17-f0647f3dbb4b",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f6fe8500-8f5a-3322-ac17-f0647f3dbb4b",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "56018004",
+              "display": "Wheezing (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/f6fe8500-8f5a-3322-ac17-f0647f3dbb4b"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1f8e1979-f59d-321e-ac24-9036f97e0674",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1f8e1979-f59d-321e-ac24-9036f97e0674",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "43724002",
+              "display": "Chill (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/1f8e1979-f59d-321e-ac24-9036f97e0674"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ded141af-5be0-3bf0-ab19-89c821150f08",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ded141af-5be0-3bf0-ab19-89c821150f08",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "386661006",
+              "display": "Fever (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/ded141af-5be0-3bf0-ab19-89c821150f08"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c9fd46fb-8d50-3732-827e-a49e7b8cbedc",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c9fd46fb-8d50-3732-827e-a49e7b8cbedc",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "36955009",
+              "display": "Loss of taste (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/c9fd46fb-8d50-3732-827e-a49e7b8cbedc"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a26ea680-954a-3a6d-84c6-50ed31f834a3",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "a26ea680-954a-3a6d-84c6-50ed31f834a3",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "840544004",
+              "display": "Suspected COVID-19"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/a26ea680-954a-3a6d-84c6-50ed31f834a3"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f97a8ef8-4c8f-3ee9-9b58-085830ddbd6f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "f97a8ef8-4c8f-3ee9-9b58-085830ddbd6f",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "840539006",
+              "display": "COVID-19"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "onsetDateTime": "2020-03-07T00:45:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition/f97a8ef8-4c8f-3ee9-9b58-085830ddbd6f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8566f64a-aa9a-3dfc-a2b8-15a08f3eac7a",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "8566f64a-aa9a-3dfc-a2b8-15a08f3eac7a",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectivePeriod": {
+          "start": "2020-03-06T23:37:37.000Z",
+          "end": "2020-03-06T23:37:37.000Z"
+        },
+        "result": [
+          {
+            "reference": "Observation/425cf143-e9e6-3d73-8bb0-9837d5a95d77"
+          },
+          {
+            "reference": "Observation/c94b4864-a742-32fd-85ed-d0489b67869d"
+          },
+          {
+            "reference": "Observation/609ca295-f108-3005-a700-8a3102661022"
+          },
+          {
+            "reference": "Observation/75a7e175-cfc4-377e-b0d0-685303a643bb"
+          },
+          {
+            "reference": "Observation/58d012e6-0118-3e28-935f-d5490efceea4"
+          },
+          {
+            "reference": "Observation/3d77c90e-1774-38a9-86a8-f0b05f16926d"
+          },
+          {
+            "reference": "Observation/ed832ab1-b002-3b3e-826f-3e528e790f2f"
+          },
+          {
+            "reference": "Observation/055a7e54-b985-34dc-b2a6-8a6d4a9eb4a9"
+          },
+          {
+            "reference": "Observation/28e04c67-5cc8-3c3c-85ee-1e796ae60721"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/8566f64a-aa9a-3dfc-a2b8-15a08f3eac7a"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:425cf143-e9e6-3d73-8bb0-9837d5a95d77",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "425cf143-e9e6-3d73-8bb0-9837d5a95d77",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92142-9",
+              "display": "Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/425cf143-e9e6-3d73-8bb0-9837d5a95d77"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c94b4864-a742-32fd-85ed-d0489b67869d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c94b4864-a742-32fd-85ed-d0489b67869d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92141-1",
+              "display": "Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c94b4864-a742-32fd-85ed-d0489b67869d"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:609ca295-f108-3005-a700-8a3102661022",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "609ca295-f108-3005-a700-8a3102661022",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92131-2",
+              "display": "Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/609ca295-f108-3005-a700-8a3102661022"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75a7e175-cfc4-377e-b0d0-685303a643bb",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "75a7e175-cfc4-377e-b0d0-685303a643bb",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92140-3",
+              "display": "Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/75a7e175-cfc4-377e-b0d0-685303a643bb"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:58d012e6-0118-3e28-935f-d5490efceea4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "58d012e6-0118-3e28-935f-d5490efceea4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92139-5",
+              "display": "Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/58d012e6-0118-3e28-935f-d5490efceea4"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3d77c90e-1774-38a9-86a8-f0b05f16926d",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3d77c90e-1774-38a9-86a8-f0b05f16926d",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92138-7",
+              "display": "Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/3d77c90e-1774-38a9-86a8-f0b05f16926d"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ed832ab1-b002-3b3e-826f-3e528e790f2f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ed832ab1-b002-3b3e-826f-3e528e790f2f",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92130-4",
+              "display": "Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/ed832ab1-b002-3b3e-826f-3e528e790f2f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:055a7e54-b985-34dc-b2a6-8a6d4a9eb4a9",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "055a7e54-b985-34dc-b2a6-8a6d4a9eb4a9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92134-6",
+              "display": "Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/055a7e54-b985-34dc-b2a6-8a6d4a9eb4a9"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:28e04c67-5cc8-3c3c-85ee-1e796ae60721",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "28e04c67-5cc8-3c3c-85ee-1e796ae60721",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "94040-3",
+              "display": "Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/28e04c67-5cc8-3c3c-85ee-1e796ae60721"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9dd5ffa0-1711-3a14-b49c-11846d9d8148",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "9dd5ffa0-1711-3a14-b49c-11846d9d8148",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectivePeriod": {
+          "start": "2020-03-07T00:45:37.000Z",
+          "end": "2020-03-07T00:45:37.000Z"
+        },
+        "result": [
+          {
+            "reference": "Observation/1ad607d0-cfe7-35d9-bd61-08c45e6817cc"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DiagnosticReport/9dd5ffa0-1711-3a14-b49c-11846d9d8148"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1ad607d0-cfe7-35d9-bd61-08c45e6817cc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1ad607d0-cfe7-35d9-bd61-08c45e6817cc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "94531-1",
+              "display": "SARS-CoV-2 RNA Pnl Resp NAA+probe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-07T00:45:37.000Z",
+        "valueString": "{entry.value}"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/1ad607d0-cfe7-35d9-bd61-08c45e6817cc"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f9e54ef4-6180-39ef-824f-76e2cfb6a8c6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f9e54ef4-6180-39ef-824f-76e2cfb6a8c6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8331-1",
+              "display": "Oral temperature"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 39.30210853919384,
+          "unit": "Cel"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f9e54ef4-6180-39ef-824f-76e2cfb6a8c6"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c5c18841-c18f-3c12-8f05-9315d1f21248",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c5c18841-c18f-3c12-8f05-9315d1f21248",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "9279-1",
+              "display": "Respiratory rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 39.01606117115801,
+          "unit": "/min"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/c5c18841-c18f-3c12-8f05-9315d1f21248"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f4e93457-e4aa-309f-87f7-d33ccb08bbee",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f4e93457-e4aa-309f-87f7-d33ccb08bbee",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 54.68038071007847,
+          "unit": "/min"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f4e93457-e4aa-309f-87f7-d33ccb08bbee"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:44bf78d6-180e-3437-b152-370cdbfbbbec",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "44bf78d6-180e-3437-b152-370cdbfbbbec",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "59408-5",
+              "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 87.37,
+          "unit": "%"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/44bf78d6-180e-3437-b152-370cdbfbbbec"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:56533745-d74f-3e30-8d74-48ba76c5e207",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "56533745-d74f-3e30-8d74-48ba76c5e207",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8462-4",
+              "display": "Diastolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 74,
+          "unit": "mm[Hg]"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/56533745-d74f-3e30-8d74-48ba76c5e207"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0ff49c18-3fb9-3564-93ba-84cee528a81c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "0ff49c18-3fb9-3564-93ba-84cee528a81c",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8480-6",
+              "display": "Systolic Blood Pressure"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 121,
+          "unit": "mm[Hg]"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/0ff49c18-3fb9-3564-93ba-84cee528a81c"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b33e3822-2743-3ced-84e0-ed2c3bc5b74a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b33e3822-2743-3ced-84e0-ed2c3bc5b74a",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body Weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:23:37.000Z",
+        "valueQuantity": {
+          "value": 9.3,
+          "unit": "kg"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/b33e3822-2743-3ced-84e0-ed2c3bc5b74a"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d2aa7504-6758-3993-ab7f-87dc00521f22",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d2aa7504-6758-3993-ab7f-87dc00521f22",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92142-9",
+              "display": "Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/d2aa7504-6758-3993-ab7f-87dc00521f22"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:211fdd24-4c21-3706-91f6-8c763d8d01fd",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "211fdd24-4c21-3706-91f6-8c763d8d01fd",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92141-1",
+              "display": "Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/211fdd24-4c21-3706-91f6-8c763d8d01fd"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f590867e-2f57-3a9b-8cdc-2c2def00de4f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "f590867e-2f57-3a9b-8cdc-2c2def00de4f",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92131-2",
+              "display": "Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/f590867e-2f57-3a9b-8cdc-2c2def00de4f"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e3c6eeef-1516-3c14-9154-b9890c23d53e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e3c6eeef-1516-3c14-9154-b9890c23d53e",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92140-3",
+              "display": "Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/e3c6eeef-1516-3c14-9154-b9890c23d53e"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d9c83cd0-9315-32a2-8ee3-1e1b7d9f0ef5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d9c83cd0-9315-32a2-8ee3-1e1b7d9f0ef5",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92139-5",
+              "display": "Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/d9c83cd0-9315-32a2-8ee3-1e1b7d9f0ef5"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b970863a-cae7-3e61-a9aa-69b5fad60586",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b970863a-cae7-3e61-a9aa-69b5fad60586",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92138-7",
+              "display": "Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/b970863a-cae7-3e61-a9aa-69b5fad60586"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e793078c-97f6-3945-b801-97b0ec1504fc",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e793078c-97f6-3945-b801-97b0ec1504fc",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92130-4",
+              "display": "Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/e793078c-97f6-3945-b801-97b0ec1504fc"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a8ca183e-2a67-3c7a-9093-b3b83c37b3d6",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a8ca183e-2a67-3c7a-9093-b3b83c37b3d6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "92134-6",
+              "display": "Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/a8ca183e-2a67-3c7a-9093-b3b83c37b3d6"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:773ca59c-a586-3b87-b258-710eaeb44d36",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "773ca59c-a586-3b87-b258-710eaeb44d36",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "94040-3",
+              "display": "Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-06T23:37:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/773ca59c-a586-3b87-b258-710eaeb44d36"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b55a98e8-949f-38ea-bc58-b5cdf7ecb7f2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b55a98e8-949f-38ea-bc58-b5cdf7ecb7f2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "94531-1",
+              "display": "SARS-CoV-2 RNA Pnl Resp NAA+probe"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "effectiveDateTime": "2020-03-07T00:45:37.000Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected (qualifier value)"
+            }
+          ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/b55a98e8-949f-38ea-bc58-b5cdf7ecb7f2"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f643a153-cfb7-3bd3-b2db-202400f9e9ae",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "f643a153-cfb7-3bd3-b2db-202400f9e9ae",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "261352009",
+              "display": "Face mask (physical object)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/4e4a66a0-24de-3bf1-96d0-de8076387ea8"
+        },
+        "performedDateTime": "2020-03-06T23:23:37.000Z"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/f643a153-cfb7-3bd3-b2db-202400f9e9ae"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:171601af-3844-3c32-a1aa-d5a3e21b6d3c",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "171601af-3844-3c32-a1aa-d5a3e21b6d3c",
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9",
+              "display": "Summarization of episode note"
+            }
+          ]
+        },
+        "date": "2020-10-21T03:10:11.957+00:00",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain",
+              "data": "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",
+              "hash": "C61R0L1Pqh28jAh31Yk77f+Q1zI="
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "DocumentReference/171601af-3844-3c32-a1aa-d5a3e21b6d3c"
+      }
+    }
+  ]
+}
