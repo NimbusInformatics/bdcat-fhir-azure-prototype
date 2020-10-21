@@ -10,8 +10,9 @@
     {"path": "Patient.address.line", "method": "redact"},
     {"path": "Patient.address.city", "method": "redact"},
     {"path": "Patient.telecom", "method": "redact"},
-    {"path": "Patient.name", "method": "redact", "replaceWith": "REDACTED"},
+    {"path": "Patient.name", "method": "redact"},
   	{"path": "nodesByType('birthdate')", "method": "dateshift"},
+    {"path": "Composition.title", "method": "redact"},
 
     {"path": "Organization.identifier", "method": "keep"},
     {"path": "Organization.telecom", "method": "keep"},
@@ -21,7 +22,7 @@
     {"path": "nodesByType('HumanName').use", "method": "keep"},
     {"path": "nodesByType('Address').country", "method": "keep"},
     {"path": "nodesByType('Address').state", "method": "keep"},
-    {"path": "Resource.id", "method": "cryptoHash"},
+    {"path": "Resource.id", "method": "keep"},
 
     {"path": "Endpoint.name", "method": "redact"},
     {"path": "Endpoint.address", "method": "redact"},
