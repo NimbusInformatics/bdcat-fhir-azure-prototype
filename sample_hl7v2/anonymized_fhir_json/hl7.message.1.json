@@ -1,0 +1,128 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "code": "REDACTED",
+        "display": "redacted"
+      }
+    ]
+  },
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:25614fd7-d6b4-309e-a772-8fa3047f35d2",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "25614fd7-d6b4-309e-a772-8fa3047f35d2",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "gender": "male",
+        "birthDate": "1985-09-16",
+        "address": [
+          {
+            "postalCode": "BM95 1CW",
+            "country": "GBR"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/25614fd7-d6b4-309e-a772-8fa3047f35d2"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:155bea59-80a1-3653-9525-4ab1bcb3efca",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "155bea59-80a1-3653-9525-4ab1bcb3efca",
+        "meta": {
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "REDACTED",
+              "display": "redacted"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ],
+              "text": "visit number"
+            }
+          }
+        ],
+        "status": "unknown",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IMP",
+          "display": "inpatient encounter"
+        },
+        "serviceType": {
+          "coding": [
+            {
+              "code": "SUR"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/25614fd7-d6b4-309e-a772-8fa3047f35d2"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "ATND",
+                    "display": "attender"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "period": {
+          "start": "2020-09-28T00:22:06.000Z"
+        },
+        "location": [
+          {
+            "status": "active"
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Encounter/155bea59-80a1-3653-9525-4ab1bcb3efca"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4cfe8d6d-3fc8-3e41-b921-f204be18db31",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "4cfe8d6d-3fc8-3e41-b921-f204be18db31",
+        "subject": {
+          "reference": "Patient/25614fd7-d6b4-309e-a772-8fa3047f35d2"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Procedure/4cfe8d6d-3fc8-3e41-b921-f204be18db31"
+      }
+    }
+  ]
+}

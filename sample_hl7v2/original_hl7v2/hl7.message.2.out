@@ -1,0 +1,13 @@
+MSH|^~\&|SIMHOSP|SFAC|RAPP|RFAC|20201021195126||ORU^R01|2|T|2.3|||AL||44|ASCII
+PID|1|3463070384^^^SIMULATOR MRN^MRN|3463070384^^^SIMULATOR MRN^MRN~0059631376^^^NHSNBR^NHSNMBR||Alexander^Valerie^Isabella^^Ms^M.Phil.^CURRENT||19580409000000|F|||97 White House^Fender Place^London^^IC70 7VT^GBR^HOME||071 1080 2278^HOME|||||||||S^Any other ethnic group^^^||||||||
+PV1|1|I|OtherWard^MainRoom^Bed 1^Simulated Hospital^^BED^Main Building^4|28b|||C002^Smith^Elizabeth^^^Dr^^^DRNBR^PRSNL^^^ORGDR|||SUR|||||||||5471594544858008246^^^^visitid||||||||||||||||||||||ARRIVED|||20201021195126||
+ORC|RE|1033017844|3652643406||CM||||20201021195126
+OBR|1|1033017844|3652643406|us-0001^LIPID^WinPath^^||20201021195126|20201021195126|||||||20201021195126||||||||20201021195126|||F||1
+OBX|1|NM|tt-0001-01^Cholesterol^WinPath^^||1.36|mmol/L|[ < 4.5]||||F|||20201021195126||
+NTE|0||Memory stair anguish|
+OBX|2|NM|tt-0001-02^Triglyceride^WinPath^^||0.67|mmol/L|[ < 2.0]||||F|||20201021195126||
+NTE|0||Decryption drill staff barium|
+OBX|3|NM|tt-0001-03^HDL Cholesterol^WinPath^^||6.37|mmol/L|[ > 1.5]||||F|||20201021195126||
+NTE|0||Joey|
+OBX|4|NM|tt-0001-04^LDL Chol. (calc)^WinPath^^||2.52|mmol/L|[ < 3.0]||||F|||20201021195126||
+NTE|0||Remote pavement comment ladder resolve|
