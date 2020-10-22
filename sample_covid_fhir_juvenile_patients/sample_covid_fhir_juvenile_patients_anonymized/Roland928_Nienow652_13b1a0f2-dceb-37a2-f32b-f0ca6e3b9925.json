@@ -6,11 +6,6 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
         "code": "REDACTED",
         "display": "redacted"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-        "code": "CRYTOHASH",
-        "display": "cryptographic hash function"
       }
     ]
   },
@@ -20,18 +15,13 @@
       "fullUrl": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925",
       "resource": {
         "resourceType": "Patient",
-        "id": "f8c766b06dc1f768197a10d3fd30d3b03491f9b312d43653f34626c003d5ee10",
+        "id": "13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -105,26 +95,21 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
       }
     },
     {
       "fullUrl": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
       "resource": {
         "resourceType": "Organization",
-        "id": "8c7bc4b5e40f757dcec7ae1eb5e7e5a0879d4ae17186ec8de282c878c854c2e9",
+        "id": "6a3e94e6-72c3-3cbc-b828-babcf6602165",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -166,26 +151,21 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165"
       }
     },
     {
       "fullUrl": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "c0fb98860d739eeca36a6b9a6d022f1bf1a1ba0a338648f64f2414c8293c42cb",
+        "id": "eff1c283-6a25-385f-91e3-c746662f7eb4",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -227,26 +207,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
       }
     },
     {
       "fullUrl": "urn:uuid:03c4f507-35a9-afc0-9264-190037287660",
       "resource": {
         "resourceType": "Encounter",
-        "id": "2aea32d68449f02d688b8cf62b0d5af97e08f1be20b3b74929871eadfbd89987",
+        "id": "03c4f507-35a9-afc0-9264-190037287660",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -268,7 +243,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -289,7 +264,7 @@
               "end": "2011-01-13T19:05:03-08:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -299,29 +274,20 @@
           "end": "2011-01-13T19:05:03-08:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/03c4f507-35a9-afc0-9264-190037287660"
       }
     },
     {
       "fullUrl": "urn:uuid:1a6f517b-7f34-e0ac-6825-025289465429",
       "resource": {
         "resourceType": "Immunization",
-        "id": "9737a4295c4df90d021ed02c41738cf3084b58e1040d502c4f209cde0cedef88",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "1a6f517b-7f34-e0ac-6825-025289465429",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -334,35 +300,30 @@
           "text": "DTaP"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:03c4f507-35a9-afc0-9264-190037287660"
+          "reference": "Encounter/03c4f507-35a9-afc0-9264-190037287660"
         },
         "occurrenceDateTime": "2011-01-13T18:50:03-08:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/1a6f517b-7f34-e0ac-6825-025289465429"
       }
     },
     {
       "fullUrl": "urn:uuid:1a95e48e-1418-00da-2416-cd5ae021b8f3",
       "resource": {
         "resourceType": "Claim",
-        "id": "29de6e1004abde5fafc2ec9dc4daacc20e0a2db8b8f1ef0fe955d294c95cad0e",
+        "id": "1a95e48e-1418-00da-2416-cd5ae021b8f3",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -377,7 +338,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2011-01-13T18:50:03-08:00",
@@ -385,7 +346,7 @@
         },
         "created": "2011-01-13T19:05:03-08:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -433,7 +394,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:03c4f507-35a9-afc0-9264-190037287660"
+                "reference": "Encounter/03c4f507-35a9-afc0-9264-190037287660"
               }
             ]
           },
@@ -464,56 +425,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/1a95e48e-1418-00da-2416-cd5ae021b8f3"
       }
     },
     {
       "fullUrl": "urn:uuid:1b5d1a49-c8d1-24e3-4aed-98e372a4a52d",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "900f60cee78b6eda61ee4fe2ae9774b4304c288e540ab409bf8173367eea1147",
+        "id": "1b5d1a49-c8d1-24e3-4aed-98e372a4a52d",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -541,7 +497,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2011-01-13T19:05:03-08:00",
@@ -552,20 +508,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:1a95e48e-1418-00da-2416-cd5ae021b8f3"
+          "reference": "Claim/1a95e48e-1418-00da-2416-cd5ae021b8f3"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -615,7 +571,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:03c4f507-35a9-afc0-9264-190037287660"
+                "reference": "Encounter/03c4f507-35a9-afc0-9264-190037287660"
               }
             ]
           },
@@ -767,26 +723,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/1b5d1a49-c8d1-24e3-4aed-98e372a4a52d"
       }
     },
     {
       "fullUrl": "urn:uuid:6a1102c1-5a00-55ae-9140-3cd4d209323d",
       "resource": {
         "resourceType": "Encounter",
-        "id": "8eb71643d67c0dd89455512804abd575ce97f0b371a9c2c5ec5d73a721b38b98",
+        "id": "6a1102c1-5a00-55ae-9140-3cd4d209323d",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -808,7 +759,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -829,7 +780,7 @@
               "end": "2011-07-14T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -839,29 +790,20 @@
           "end": "2011-07-14T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/6a1102c1-5a00-55ae-9140-3cd4d209323d"
       }
     },
     {
       "fullUrl": "urn:uuid:cf2ebf85-c8b1-62ce-262c-b6c8dbd8c57c",
       "resource": {
         "resourceType": "Immunization",
-        "id": "f7cecb26dd94ceee7e820ad84d589d2684eb4d37fa219b7d732bf8ee560bd30c",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "cf2ebf85-c8b1-62ce-262c-b6c8dbd8c57c",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -874,35 +816,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:6a1102c1-5a00-55ae-9140-3cd4d209323d"
+          "reference": "Encounter/6a1102c1-5a00-55ae-9140-3cd4d209323d"
         },
         "occurrenceDateTime": "2011-07-14T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/cf2ebf85-c8b1-62ce-262c-b6c8dbd8c57c"
       }
     },
     {
       "fullUrl": "urn:uuid:5f92d45e-8585-f728-21fe-4bde207cef85",
       "resource": {
         "resourceType": "Claim",
-        "id": "234cff8b17d9684ce85b5c8dd7e238d3f4707a14f88cfdd76effd625410871e4",
+        "id": "5f92d45e-8585-f728-21fe-4bde207cef85",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -917,7 +854,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2011-07-14T19:50:03-07:00",
@@ -925,7 +862,7 @@
         },
         "created": "2011-07-14T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -973,7 +910,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:6a1102c1-5a00-55ae-9140-3cd4d209323d"
+                "reference": "Encounter/6a1102c1-5a00-55ae-9140-3cd4d209323d"
               }
             ]
           },
@@ -1004,56 +941,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/5f92d45e-8585-f728-21fe-4bde207cef85"
       }
     },
     {
       "fullUrl": "urn:uuid:1b6f4f37-b459-d3d8-e233-73cd71687baf",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "74056499efc5d15dec06dcc67e6b40c13a27879502e0c3e3ec87bc2ae3b52910",
+        "id": "1b6f4f37-b459-d3d8-e233-73cd71687baf",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -1081,7 +1013,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2011-07-14T20:05:03-07:00",
@@ -1092,20 +1024,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:5f92d45e-8585-f728-21fe-4bde207cef85"
+          "reference": "Claim/5f92d45e-8585-f728-21fe-4bde207cef85"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -1155,7 +1087,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:6a1102c1-5a00-55ae-9140-3cd4d209323d"
+                "reference": "Encounter/6a1102c1-5a00-55ae-9140-3cd4d209323d"
               }
             ]
           },
@@ -1307,26 +1239,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/1b6f4f37-b459-d3d8-e233-73cd71687baf"
       }
     },
     {
       "fullUrl": "urn:uuid:1f67fb58-b735-5554-0b8e-e139954373d7",
       "resource": {
         "resourceType": "Encounter",
-        "id": "b18a113d79e7425dbf0ac8e9a07c6d3e735efc9c504af7d83226fb11517bd858",
+        "id": "1f67fb58-b735-5554-0b8e-e139954373d7",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1348,7 +1275,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -1369,7 +1296,7 @@
               "end": "2012-01-12T19:05:03-08:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -1379,29 +1306,20 @@
           "end": "2012-01-12T19:05:03-08:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/1f67fb58-b735-5554-0b8e-e139954373d7"
       }
     },
     {
       "fullUrl": "urn:uuid:576213db-0600-a6d2-79c0-3b4d55ed1c62",
       "resource": {
         "resourceType": "Immunization",
-        "id": "6b5b0da46aac45f5fb3e6839f4742d7adbaa4cd2155717acd584c69cf978e914",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "576213db-0600-a6d2-79c0-3b4d55ed1c62",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -1414,35 +1332,30 @@
           "text": "Hep A, ped/adol, 2 dose"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:1f67fb58-b735-5554-0b8e-e139954373d7"
+          "reference": "Encounter/1f67fb58-b735-5554-0b8e-e139954373d7"
         },
         "occurrenceDateTime": "2012-01-12T18:50:03-08:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/576213db-0600-a6d2-79c0-3b4d55ed1c62"
       }
     },
     {
       "fullUrl": "urn:uuid:09782958-52ac-47e7-77e6-5c8157d32c81",
       "resource": {
         "resourceType": "Claim",
-        "id": "fda28086f2b56a20d9dd4193a9770d6821ee6d9f97a7352255f0e2a8c300840f",
+        "id": "09782958-52ac-47e7-77e6-5c8157d32c81",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1457,7 +1370,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2012-01-12T18:50:03-08:00",
@@ -1465,7 +1378,7 @@
         },
         "created": "2012-01-12T19:05:03-08:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -1513,7 +1426,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:1f67fb58-b735-5554-0b8e-e139954373d7"
+                "reference": "Encounter/1f67fb58-b735-5554-0b8e-e139954373d7"
               }
             ]
           },
@@ -1544,56 +1457,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/09782958-52ac-47e7-77e6-5c8157d32c81"
       }
     },
     {
       "fullUrl": "urn:uuid:b95a2ee1-2da9-c870-2ef6-2abb0c4dc6b7",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "2cbbd5b18e63bbb3edfb025e7d8bb8aab23d5df337ffa14ce17a16a7c6cd7724",
+        "id": "b95a2ee1-2da9-c870-2ef6-2abb0c4dc6b7",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -1621,7 +1529,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2012-01-12T19:05:03-08:00",
@@ -1632,20 +1540,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:09782958-52ac-47e7-77e6-5c8157d32c81"
+          "reference": "Claim/09782958-52ac-47e7-77e6-5c8157d32c81"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -1695,7 +1603,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:1f67fb58-b735-5554-0b8e-e139954373d7"
+                "reference": "Encounter/1f67fb58-b735-5554-0b8e-e139954373d7"
               }
             ]
           },
@@ -1847,26 +1755,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/b95a2ee1-2da9-c870-2ef6-2abb0c4dc6b7"
       }
     },
     {
       "fullUrl": "urn:uuid:8c6ce234-06d9-deb5-942e-5c9dfda3f598",
       "resource": {
         "resourceType": "Encounter",
-        "id": "dfe2fc45a896152fcd05273f10636d332d509e0a89c0db7607207795d7add549",
+        "id": "8c6ce234-06d9-deb5-942e-5c9dfda3f598",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1888,7 +1791,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -1909,7 +1812,7 @@
               "end": "2012-07-12T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -1919,29 +1822,20 @@
           "end": "2012-07-12T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/8c6ce234-06d9-deb5-942e-5c9dfda3f598"
       }
     },
     {
       "fullUrl": "urn:uuid:ac7b032e-21c3-3bca-2b71-c01d1354b0d2",
       "resource": {
         "resourceType": "Immunization",
-        "id": "bcadbaeae36fddac317e9078f86d7c520d45cde0bd6ba3a105afbc6f17b893d8",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "ac7b032e-21c3-3bca-2b71-c01d1354b0d2",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -1954,35 +1848,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:8c6ce234-06d9-deb5-942e-5c9dfda3f598"
+          "reference": "Encounter/8c6ce234-06d9-deb5-942e-5c9dfda3f598"
         },
         "occurrenceDateTime": "2012-07-12T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/ac7b032e-21c3-3bca-2b71-c01d1354b0d2"
       }
     },
     {
       "fullUrl": "urn:uuid:0cfe0e7e-2337-c238-5ce6-d650ec7cae71",
       "resource": {
         "resourceType": "Claim",
-        "id": "6fa153caf5778aca82dc3108ce1fd405db0abfddba0ab0619b7b02370d274090",
+        "id": "0cfe0e7e-2337-c238-5ce6-d650ec7cae71",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1997,7 +1886,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2012-07-12T19:50:03-07:00",
@@ -2005,7 +1894,7 @@
         },
         "created": "2012-07-12T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -2053,7 +1942,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:8c6ce234-06d9-deb5-942e-5c9dfda3f598"
+                "reference": "Encounter/8c6ce234-06d9-deb5-942e-5c9dfda3f598"
               }
             ]
           },
@@ -2084,56 +1973,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/0cfe0e7e-2337-c238-5ce6-d650ec7cae71"
       }
     },
     {
       "fullUrl": "urn:uuid:452b6f9b-68c4-02dd-b3d4-d88c3cf1845e",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "4e146387afd8262f1540009f8e5e7b4fa407b0228ad3cce63d77bd7e89d217ac",
+        "id": "452b6f9b-68c4-02dd-b3d4-d88c3cf1845e",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -2161,7 +2045,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2012-07-12T20:05:03-07:00",
@@ -2172,20 +2056,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:0cfe0e7e-2337-c238-5ce6-d650ec7cae71"
+          "reference": "Claim/0cfe0e7e-2337-c238-5ce6-d650ec7cae71"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -2235,7 +2119,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:8c6ce234-06d9-deb5-942e-5c9dfda3f598"
+                "reference": "Encounter/8c6ce234-06d9-deb5-942e-5c9dfda3f598"
               }
             ]
           },
@@ -2387,26 +2271,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/452b6f9b-68c4-02dd-b3d4-d88c3cf1845e"
       }
     },
     {
       "fullUrl": "urn:uuid:f24e5df6-a99f-2410-3ba3-7aad2c2ede28",
       "resource": {
         "resourceType": "Encounter",
-        "id": "8a57f67dedc305a3acb1fe86e62dea41cc007ec5072c43e95f18c6df64a3f6a2",
+        "id": "f24e5df6-a99f-2410-3ba3-7aad2c2ede28",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2428,7 +2307,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -2449,7 +2328,7 @@
               "end": "2013-01-10T19:05:03-08:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -2459,31 +2338,26 @@
           "end": "2013-01-10T19:05:03-08:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/f24e5df6-a99f-2410-3ba3-7aad2c2ede28"
       }
     },
     {
       "fullUrl": "urn:uuid:c9c5d974-238f-9708-0863-feb503bacb06",
       "resource": {
         "resourceType": "Claim",
-        "id": "1e673b90777bbcef5686111a0b9f3857abbc9395356654fc4a519fb471881a59",
+        "id": "c9c5d974-238f-9708-0863-feb503bacb06",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2498,7 +2372,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2013-01-10T18:50:03-08:00",
@@ -2506,7 +2380,7 @@
         },
         "created": "2013-01-10T19:05:03-08:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -2541,7 +2415,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:f24e5df6-a99f-2410-3ba3-7aad2c2ede28"
+                "reference": "Encounter/f24e5df6-a99f-2410-3ba3-7aad2c2ede28"
               }
             ]
           }
@@ -2552,56 +2426,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/c9c5d974-238f-9708-0863-feb503bacb06"
       }
     },
     {
       "fullUrl": "urn:uuid:5b817a17-1e9b-3f7e-4f9f-6d9a4172681c",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "02ad6b305c0ef9d54852220f6ac13b688a4e7e986327c6d89e249dd8530d1e6b",
+        "id": "5b817a17-1e9b-3f7e-4f9f-6d9a4172681c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -2629,7 +2498,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2013-01-10T19:05:03-08:00",
@@ -2640,20 +2509,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:c9c5d974-238f-9708-0863-feb503bacb06"
+          "reference": "Claim/c9c5d974-238f-9708-0863-feb503bacb06"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -2703,7 +2572,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:f24e5df6-a99f-2410-3ba3-7aad2c2ede28"
+                "reference": "Encounter/f24e5df6-a99f-2410-3ba3-7aad2c2ede28"
               }
             ]
           }
@@ -2734,26 +2603,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/5b817a17-1e9b-3f7e-4f9f-6d9a4172681c"
       }
     },
     {
       "fullUrl": "urn:uuid:ac4f06fb-169f-f18f-e58f-095b21806afd",
       "resource": {
         "resourceType": "Encounter",
-        "id": "a00d9086330a515473083471409503422bb256a76b376aa1c378c2f1051ddd20",
+        "id": "ac4f06fb-169f-f18f-e58f-095b21806afd",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2775,7 +2639,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -2796,7 +2660,7 @@
               "end": "2013-07-11T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -2806,29 +2670,20 @@
           "end": "2013-07-11T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/ac4f06fb-169f-f18f-e58f-095b21806afd"
       }
     },
     {
       "fullUrl": "urn:uuid:9df60886-b45b-69e7-67a1-4c546fd35070",
       "resource": {
         "resourceType": "Immunization",
-        "id": "f447f2abc436cfdf751be83c0ea98b754ca6ab58298065f6809165874bbdad16",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "9df60886-b45b-69e7-67a1-4c546fd35070",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2841,35 +2696,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:ac4f06fb-169f-f18f-e58f-095b21806afd"
+          "reference": "Encounter/ac4f06fb-169f-f18f-e58f-095b21806afd"
         },
         "occurrenceDateTime": "2013-07-11T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/9df60886-b45b-69e7-67a1-4c546fd35070"
       }
     },
     {
       "fullUrl": "urn:uuid:613dc9e2-ae38-241c-587f-09d372013377",
       "resource": {
         "resourceType": "Claim",
-        "id": "967104cab6ce4b37b0c97952d9d049aefd2c502e586a4b4528783b21cb047846",
+        "id": "613dc9e2-ae38-241c-587f-09d372013377",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2884,7 +2734,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2013-07-11T19:50:03-07:00",
@@ -2892,7 +2742,7 @@
         },
         "created": "2013-07-11T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -2940,7 +2790,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:ac4f06fb-169f-f18f-e58f-095b21806afd"
+                "reference": "Encounter/ac4f06fb-169f-f18f-e58f-095b21806afd"
               }
             ]
           },
@@ -2971,56 +2821,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/613dc9e2-ae38-241c-587f-09d372013377"
       }
     },
     {
       "fullUrl": "urn:uuid:6ecd7da7-0ea6-b357-48e9-83e9cce3908c",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "d6438469285fba35549e331d6ed33a5e97aacff6d54ec34be72631ee5111dcc6",
+        "id": "6ecd7da7-0ea6-b357-48e9-83e9cce3908c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -3048,7 +2893,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2013-07-11T20:05:03-07:00",
@@ -3059,20 +2904,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:613dc9e2-ae38-241c-587f-09d372013377"
+          "reference": "Claim/613dc9e2-ae38-241c-587f-09d372013377"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -3122,7 +2967,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:ac4f06fb-169f-f18f-e58f-095b21806afd"
+                "reference": "Encounter/ac4f06fb-169f-f18f-e58f-095b21806afd"
               }
             ]
           },
@@ -3274,26 +3119,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/6ecd7da7-0ea6-b357-48e9-83e9cce3908c"
       }
     },
     {
       "fullUrl": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d",
       "resource": {
         "resourceType": "Encounter",
-        "id": "9dee7a56455002fa5e3a9591bfde51559e562598a144d619b5e1f92f35931fa1",
+        "id": "369d79d4-8021-8139-4503-8a85bd15792d",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -3315,7 +3155,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -3336,7 +3176,7 @@
               "end": "2014-07-17T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -3346,29 +3186,20 @@
           "end": "2014-07-17T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
       }
     },
     {
       "fullUrl": "urn:uuid:85abbf08-8873-16fb-dc24-f7bfe322fb9b",
       "resource": {
         "resourceType": "Immunization",
-        "id": "9b160a8252e0dfaa9b617e58e443fd052e1cb38fc37068e3447e18ad8006f808",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "85abbf08-8873-16fb-dc24-f7bfe322fb9b",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -3381,33 +3212,24 @@
           "text": "varicella"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+          "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
         },
         "occurrenceDateTime": "2014-07-17T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/85abbf08-8873-16fb-dc24-f7bfe322fb9b"
       }
     },
     {
       "fullUrl": "urn:uuid:ae153eed-dbb5-54d7-8b79-1d725be0c2dd",
       "resource": {
         "resourceType": "Immunization",
-        "id": "4dea06de78280086cbef71a097f1788c344c3292a11255431520db3572688397",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "ae153eed-dbb5-54d7-8b79-1d725be0c2dd",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -3420,33 +3242,24 @@
           "text": "IPV"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+          "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
         },
         "occurrenceDateTime": "2014-07-17T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/ae153eed-dbb5-54d7-8b79-1d725be0c2dd"
       }
     },
     {
       "fullUrl": "urn:uuid:99d895f3-9602-3ba6-3e9d-f80d3f4f330b",
       "resource": {
         "resourceType": "Immunization",
-        "id": "cb9422d4fcec7f3ab1b0e3aa903096afe56d522c2e6233e22ed45899df67c1e4",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "99d895f3-9602-3ba6-3e9d-f80d3f4f330b",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -3459,33 +3272,24 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+          "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
         },
         "occurrenceDateTime": "2014-07-17T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/99d895f3-9602-3ba6-3e9d-f80d3f4f330b"
       }
     },
     {
       "fullUrl": "urn:uuid:e39e2c3e-8f35-2cca-3683-3aa9ccdc85c8",
       "resource": {
         "resourceType": "Immunization",
-        "id": "8d23882c9b37bad39cd690d8a35dafed63ef9f6b2e0b94c25c24f45b0c478609",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "e39e2c3e-8f35-2cca-3683-3aa9ccdc85c8",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -3498,33 +3302,24 @@
           "text": "DTaP"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+          "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
         },
         "occurrenceDateTime": "2014-07-17T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/e39e2c3e-8f35-2cca-3683-3aa9ccdc85c8"
       }
     },
     {
       "fullUrl": "urn:uuid:d62cf1e1-98a5-c44d-8325-885e270dab0f",
       "resource": {
         "resourceType": "Immunization",
-        "id": "be00df5238de3f46c846318c036fe404b202f5b4ffea3bf61579f9c1525bb529",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "d62cf1e1-98a5-c44d-8325-885e270dab0f",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -3537,35 +3332,30 @@
           "text": "MMR"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+          "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
         },
         "occurrenceDateTime": "2014-07-17T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/d62cf1e1-98a5-c44d-8325-885e270dab0f"
       }
     },
     {
       "fullUrl": "urn:uuid:39f22a4c-27b3-b14a-79b3-6ed132cdf233",
       "resource": {
         "resourceType": "Claim",
-        "id": "20a70a5c4b5ff23c68666bd0737393f7c4ad802a334020e9738de5a6113f6079",
+        "id": "39f22a4c-27b3-b14a-79b3-6ed132cdf233",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -3580,7 +3370,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2014-07-17T19:50:03-07:00",
@@ -3588,7 +3378,7 @@
         },
         "created": "2014-07-17T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -3680,7 +3470,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+                "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
               }
             ]
           },
@@ -3791,56 +3581,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/39f22a4c-27b3-b14a-79b3-6ed132cdf233"
       }
     },
     {
       "fullUrl": "urn:uuid:4375fb02-3b8d-308b-236e-f610e421bf20",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "6650b90a701788eea187129b14aea559dbb65d5f08f400f04c65d55fbdce401a",
+        "id": "4375fb02-3b8d-308b-236e-f610e421bf20",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -3868,7 +3653,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2014-07-17T20:05:03-07:00",
@@ -3879,20 +3664,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:39f22a4c-27b3-b14a-79b3-6ed132cdf233"
+          "reference": "Claim/39f22a4c-27b3-b14a-79b3-6ed132cdf233"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -3942,7 +3727,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:369d79d4-8021-8139-4503-8a85bd15792d"
+                "reference": "Encounter/369d79d4-8021-8139-4503-8a85bd15792d"
               }
             ]
           },
@@ -4578,26 +4363,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/4375fb02-3b8d-308b-236e-f610e421bf20"
       }
     },
     {
       "fullUrl": "urn:uuid:dcfdb18d-9710-0d73-9377-d9a36af8cfe6",
       "resource": {
         "resourceType": "Encounter",
-        "id": "e5a7e6cb4c64f5bbcbe16acc589c3634def1244a6dec42a1f68a4a91dd239f1a",
+        "id": "dcfdb18d-9710-0d73-9377-d9a36af8cfe6",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -4619,7 +4399,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -4640,7 +4420,7 @@
               "end": "2015-07-23T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -4650,29 +4430,20 @@
           "end": "2015-07-23T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
       }
     },
     {
       "fullUrl": "urn:uuid:3437f4b6-3b3f-4d1e-bfd7-beda83a0d678",
       "resource": {
         "resourceType": "Immunization",
-        "id": "b374b1f10faf86c1c6290650f6629a7239f7f5630bb428c78df56b0640f52412",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "3437f4b6-3b3f-4d1e-bfd7-beda83a0d678",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -4685,35 +4456,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
+          "reference": "Encounter/dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
         },
         "occurrenceDateTime": "2015-07-23T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/3437f4b6-3b3f-4d1e-bfd7-beda83a0d678"
       }
     },
     {
       "fullUrl": "urn:uuid:a9de54f1-59c5-e7c6-d5ea-fc6cdf216ab0",
       "resource": {
         "resourceType": "Claim",
-        "id": "358463a318418f0bce4b15dcf4d62887eaedaecb274d9ee0c601308c990564fd",
+        "id": "a9de54f1-59c5-e7c6-d5ea-fc6cdf216ab0",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -4728,7 +4494,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2015-07-23T19:50:03-07:00",
@@ -4736,7 +4502,7 @@
         },
         "created": "2015-07-23T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -4784,7 +4550,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
+                "reference": "Encounter/dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
               }
             ]
           },
@@ -4815,56 +4581,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/a9de54f1-59c5-e7c6-d5ea-fc6cdf216ab0"
       }
     },
     {
       "fullUrl": "urn:uuid:6ffaf016-4ba1-3468-d0d5-c742a4d69895",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "b289aee67b5e449233b09895c7d5a4d42dbbe8f365da6e019f91551b44333019",
+        "id": "6ffaf016-4ba1-3468-d0d5-c742a4d69895",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -4892,7 +4653,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2015-07-23T20:05:03-07:00",
@@ -4903,20 +4664,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:a9de54f1-59c5-e7c6-d5ea-fc6cdf216ab0"
+          "reference": "Claim/a9de54f1-59c5-e7c6-d5ea-fc6cdf216ab0"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -4966,7 +4727,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
+                "reference": "Encounter/dcfdb18d-9710-0d73-9377-d9a36af8cfe6"
               }
             ]
           },
@@ -5118,26 +4879,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/6ffaf016-4ba1-3468-d0d5-c742a4d69895"
       }
     },
     {
       "fullUrl": "urn:uuid:b3381c55-ec93-eaa6-335e-d890782f8ee0",
       "resource": {
         "resourceType": "Encounter",
-        "id": "b74b1bcd77fc9b9e921477bc5743aa5738691351e2d2a99707c515b3350f407e",
+        "id": "b3381c55-ec93-eaa6-335e-d890782f8ee0",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5159,7 +4915,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -5180,7 +4936,7 @@
               "end": "2016-07-28T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -5190,29 +4946,20 @@
           "end": "2016-07-28T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/b3381c55-ec93-eaa6-335e-d890782f8ee0"
       }
     },
     {
       "fullUrl": "urn:uuid:b78b4e6b-aaac-deee-5a85-e123f7cb31bd",
       "resource": {
         "resourceType": "Immunization",
-        "id": "a409734ec0a5ab720fc620e104b1b0229c0f102fbd1187ecf630870cf7c63acb",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "b78b4e6b-aaac-deee-5a85-e123f7cb31bd",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -5225,35 +4972,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:b3381c55-ec93-eaa6-335e-d890782f8ee0"
+          "reference": "Encounter/b3381c55-ec93-eaa6-335e-d890782f8ee0"
         },
         "occurrenceDateTime": "2016-07-28T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/b78b4e6b-aaac-deee-5a85-e123f7cb31bd"
       }
     },
     {
       "fullUrl": "urn:uuid:e7ebaf11-a03a-dcdc-acbd-5e021e8495ce",
       "resource": {
         "resourceType": "Claim",
-        "id": "be2d04c4d25d604430e85f112f4c889594dae5f83d4b7fa0f3f04ce04a6330a7",
+        "id": "e7ebaf11-a03a-dcdc-acbd-5e021e8495ce",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5268,7 +5010,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2016-07-28T19:50:03-07:00",
@@ -5276,7 +5018,7 @@
         },
         "created": "2016-07-28T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -5324,7 +5066,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:b3381c55-ec93-eaa6-335e-d890782f8ee0"
+                "reference": "Encounter/b3381c55-ec93-eaa6-335e-d890782f8ee0"
               }
             ]
           },
@@ -5355,56 +5097,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/e7ebaf11-a03a-dcdc-acbd-5e021e8495ce"
       }
     },
     {
       "fullUrl": "urn:uuid:3ed813b5-d039-43dd-8814-a22f579da774",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "79e59707af97f8a87c38e740f4d21c1c255803eab412ab9eac65813423000942",
+        "id": "3ed813b5-d039-43dd-8814-a22f579da774",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "NO_INSURANCE"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -5432,7 +5169,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2016-07-28T20:05:03-07:00",
@@ -5443,20 +5180,20 @@
           "display": "NO_INSURANCE"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:e7ebaf11-a03a-dcdc-acbd-5e021e8495ce"
+          "reference": "Claim/e7ebaf11-a03a-dcdc-acbd-5e021e8495ce"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -5506,7 +5243,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:b3381c55-ec93-eaa6-335e-d890782f8ee0"
+                "reference": "Encounter/b3381c55-ec93-eaa6-335e-d890782f8ee0"
               }
             ]
           },
@@ -5658,26 +5395,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/3ed813b5-d039-43dd-8814-a22f579da774"
       }
     },
     {
       "fullUrl": "urn:uuid:59774e6c-9fd7-4a14-e918-29cc05568250",
       "resource": {
         "resourceType": "Encounter",
-        "id": "bd154c1452df061d6c316816e1720dd1d42ac3ccb698d65c2ee83fd86f6a637a",
+        "id": "59774e6c-9fd7-4a14-e918-29cc05568250",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5699,7 +5431,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -5720,7 +5452,7 @@
               "end": "2017-08-03T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -5730,29 +5462,20 @@
           "end": "2017-08-03T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/59774e6c-9fd7-4a14-e918-29cc05568250"
       }
     },
     {
       "fullUrl": "urn:uuid:e4590927-9576-0980-51fb-8a6701243d07",
       "resource": {
         "resourceType": "Immunization",
-        "id": "10d249437f291fdac9ad5b80c4b867b24b15fbd6516dc8e3dd2667ec5168251c",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "e4590927-9576-0980-51fb-8a6701243d07",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -5765,35 +5488,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:59774e6c-9fd7-4a14-e918-29cc05568250"
+          "reference": "Encounter/59774e6c-9fd7-4a14-e918-29cc05568250"
         },
         "occurrenceDateTime": "2017-08-03T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/e4590927-9576-0980-51fb-8a6701243d07"
       }
     },
     {
       "fullUrl": "urn:uuid:3e8ca025-4c97-bb5d-0f01-948c96a22d45",
       "resource": {
         "resourceType": "Claim",
-        "id": "2d25c06d0c8d9460d66739075ed3de485d574db49d419658f06856667d75f418",
+        "id": "3e8ca025-4c97-bb5d-0f01-948c96a22d45",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5808,7 +5526,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2017-08-03T19:50:03-07:00",
@@ -5816,7 +5534,7 @@
         },
         "created": "2017-08-03T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -5864,7 +5582,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:59774e6c-9fd7-4a14-e918-29cc05568250"
+                "reference": "Encounter/59774e6c-9fd7-4a14-e918-29cc05568250"
               }
             ]
           },
@@ -5895,56 +5613,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/3e8ca025-4c97-bb5d-0f01-948c96a22d45"
       }
     },
     {
       "fullUrl": "urn:uuid:4126afa7-20fc-c5cb-f74c-7aa34284e804",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "62f7232d065861f952f73149e0d1f3a6808b48146bf5f472fdb6fd7e8554e594",
+        "id": "4126afa7-20fc-c5cb-f74c-7aa34284e804",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "NO_INSURANCE"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -5972,7 +5685,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2017-08-03T20:05:03-07:00",
@@ -5983,20 +5696,20 @@
           "display": "NO_INSURANCE"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:3e8ca025-4c97-bb5d-0f01-948c96a22d45"
+          "reference": "Claim/3e8ca025-4c97-bb5d-0f01-948c96a22d45"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -6046,7 +5759,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:59774e6c-9fd7-4a14-e918-29cc05568250"
+                "reference": "Encounter/59774e6c-9fd7-4a14-e918-29cc05568250"
               }
             ]
           },
@@ -6198,26 +5911,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/4126afa7-20fc-c5cb-f74c-7aa34284e804"
       }
     },
     {
       "fullUrl": "urn:uuid:15a548e7-e7d1-7fad-b189-10f53586820e",
       "resource": {
         "resourceType": "Encounter",
-        "id": "4b10b49112ff409a7c33ba897d52796f2d6f6ab29e7c819578699df634e0320d",
+        "id": "15a548e7-e7d1-7fad-b189-10f53586820e",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6239,7 +5947,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -6260,7 +5968,7 @@
               "end": "2018-08-09T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -6270,29 +5978,20 @@
           "end": "2018-08-09T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/15a548e7-e7d1-7fad-b189-10f53586820e"
       }
     },
     {
       "fullUrl": "urn:uuid:282e024d-de99-ced3-1f85-7b0f24b7d4c0",
       "resource": {
         "resourceType": "Immunization",
-        "id": "781dd6e4bae65c3f0da0d4d00d4fa8227ce4318dd33c88f232d4e4f51fdd03b1",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "282e024d-de99-ced3-1f85-7b0f24b7d4c0",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -6305,35 +6004,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:15a548e7-e7d1-7fad-b189-10f53586820e"
+          "reference": "Encounter/15a548e7-e7d1-7fad-b189-10f53586820e"
         },
         "occurrenceDateTime": "2018-08-09T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/282e024d-de99-ced3-1f85-7b0f24b7d4c0"
       }
     },
     {
       "fullUrl": "urn:uuid:3aa056dc-e2b6-045b-43f4-da4b351acb10",
       "resource": {
         "resourceType": "Claim",
-        "id": "3bce424958bb38b674968833968ac176fd089437295e8b4ff55c58d52c9747e5",
+        "id": "3aa056dc-e2b6-045b-43f4-da4b351acb10",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6348,7 +6042,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2018-08-09T19:50:03-07:00",
@@ -6356,7 +6050,7 @@
         },
         "created": "2018-08-09T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -6404,7 +6098,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:15a548e7-e7d1-7fad-b189-10f53586820e"
+                "reference": "Encounter/15a548e7-e7d1-7fad-b189-10f53586820e"
               }
             ]
           },
@@ -6435,56 +6129,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/3aa056dc-e2b6-045b-43f4-da4b351acb10"
       }
     },
     {
       "fullUrl": "urn:uuid:ce2a08ec-cc2e-9b54-efa6-d1aafc25fad0",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "6824f8641e6f414df010a681edfe141c687a0319d8567de08c21d71f3dbd52ab",
+        "id": "ce2a08ec-cc2e-9b54-efa6-d1aafc25fad0",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -6512,7 +6201,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2018-08-09T20:05:03-07:00",
@@ -6523,20 +6212,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:3aa056dc-e2b6-045b-43f4-da4b351acb10"
+          "reference": "Claim/3aa056dc-e2b6-045b-43f4-da4b351acb10"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -6586,7 +6275,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:15a548e7-e7d1-7fad-b189-10f53586820e"
+                "reference": "Encounter/15a548e7-e7d1-7fad-b189-10f53586820e"
               }
             ]
           },
@@ -6738,26 +6427,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/ce2a08ec-cc2e-9b54-efa6-d1aafc25fad0"
       }
     },
     {
       "fullUrl": "urn:uuid:d9b27c1c-112a-bda3-1092-f2e852120e33",
       "resource": {
         "resourceType": "Encounter",
-        "id": "3605b5aa338617f506391963bf297b35de65dcfcea8b904fd2edfc0d61f356e0",
+        "id": "d9b27c1c-112a-bda3-1092-f2e852120e33",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6779,7 +6463,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -6800,7 +6484,7 @@
               "end": "2019-08-15T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -6810,29 +6494,20 @@
           "end": "2019-08-15T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/d9b27c1c-112a-bda3-1092-f2e852120e33"
       }
     },
     {
       "fullUrl": "urn:uuid:9f4d3a85-6f4f-b32a-3a85-68c981d5c190",
       "resource": {
         "resourceType": "Immunization",
-        "id": "87cf933a10d1da3fc6b994f3658851a8f66bdc6b8fcd18c8b6ae80dae23ce7c2",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "9f4d3a85-6f4f-b32a-3a85-68c981d5c190",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -6845,35 +6520,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:d9b27c1c-112a-bda3-1092-f2e852120e33"
+          "reference": "Encounter/d9b27c1c-112a-bda3-1092-f2e852120e33"
         },
         "occurrenceDateTime": "2019-08-15T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/9f4d3a85-6f4f-b32a-3a85-68c981d5c190"
       }
     },
     {
       "fullUrl": "urn:uuid:69331931-6b85-9f26-203b-72b9b5bd7966",
       "resource": {
         "resourceType": "Claim",
-        "id": "df5d8babb0585a2fbffd81943edb1a1855f34cad755d7417be9c98fc7ae70b69",
+        "id": "69331931-6b85-9f26-203b-72b9b5bd7966",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6888,7 +6558,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2019-08-15T19:50:03-07:00",
@@ -6896,7 +6566,7 @@
         },
         "created": "2019-08-15T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -6944,7 +6614,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:d9b27c1c-112a-bda3-1092-f2e852120e33"
+                "reference": "Encounter/d9b27c1c-112a-bda3-1092-f2e852120e33"
               }
             ]
           },
@@ -6975,56 +6645,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/69331931-6b85-9f26-203b-72b9b5bd7966"
       }
     },
     {
       "fullUrl": "urn:uuid:bac4afcc-d980-2fd8-3993-859512d7b49f",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "280eb8c4b364263a9fdc2b21e1f0101a82f418d6edcf11e285603aee33d6c523",
+        "id": "bac4afcc-d980-2fd8-3993-859512d7b49f",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -7052,7 +6717,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2019-08-15T20:05:03-07:00",
@@ -7063,20 +6728,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:69331931-6b85-9f26-203b-72b9b5bd7966"
+          "reference": "Claim/69331931-6b85-9f26-203b-72b9b5bd7966"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -7126,7 +6791,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:d9b27c1c-112a-bda3-1092-f2e852120e33"
+                "reference": "Encounter/d9b27c1c-112a-bda3-1092-f2e852120e33"
               }
             ]
           },
@@ -7278,26 +6943,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/bac4afcc-d980-2fd8-3993-859512d7b49f"
       }
     },
     {
       "fullUrl": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18",
       "resource": {
         "resourceType": "Encounter",
-        "id": "a14c1ac630ddf7def5b89c092916866cf1c80805a6386aa8b14ce8f081c23bbe",
+        "id": "bb10179d-0130-2467-d95e-25c2093fdf18",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -7319,7 +6979,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "participant": [
           {
@@ -7340,7 +7000,7 @@
               "end": "2020-08-20T20:05:03-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4",
               "display": "Dr. Arlena205 Conn188"
             }
           }
@@ -7350,29 +7010,20 @@
           "end": "2020-08-20T20:05:03-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
       }
     },
     {
       "fullUrl": "urn:uuid:277f25b0-3b2c-cd04-e899-ce85f7e54861",
       "resource": {
         "resourceType": "Immunization",
-        "id": "511439120a77876853dcbd6369ce967b498200491f4076808d44ba8f5580618b",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "277f25b0-3b2c-cd04-e899-ce85f7e54861",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -7385,33 +7036,24 @@
           "text": "Tdap"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18"
+          "reference": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
         },
         "occurrenceDateTime": "2020-08-20T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/277f25b0-3b2c-cd04-e899-ce85f7e54861"
       }
     },
     {
       "fullUrl": "urn:uuid:45f29455-3c72-e94f-5eb5-7a96680442c1",
       "resource": {
         "resourceType": "Immunization",
-        "id": "8f3d8aabaf750e49e1b39590a7e034e8f1b3d21eeb01c656acdad4930146dbd8",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "45f29455-3c72-e94f-5eb5-7a96680442c1",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -7424,33 +7066,24 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18"
+          "reference": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
         },
         "occurrenceDateTime": "2020-08-20T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/45f29455-3c72-e94f-5eb5-7a96680442c1"
       }
     },
     {
       "fullUrl": "urn:uuid:18e1cfcc-a7c8-88f8-341a-a1ed2363ae7c",
       "resource": {
         "resourceType": "Immunization",
-        "id": "1810faa115f129b014b02ccab214ce91cc7403c9e1401e09d702bc7354f8ffb4",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "18e1cfcc-a7c8-88f8-341a-a1ed2363ae7c",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -7463,33 +7096,24 @@
           "text": "HPV, quadrivalent"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18"
+          "reference": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
         },
         "occurrenceDateTime": "2020-08-20T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/18e1cfcc-a7c8-88f8-341a-a1ed2363ae7c"
       }
     },
     {
       "fullUrl": "urn:uuid:7d5e5a40-9deb-d2a9-def8-c0e010c97557",
       "resource": {
         "resourceType": "Immunization",
-        "id": "8e586d9396c7218a2184f38b3dac4007531f95d501b21567fa1de3f48f6bb69f",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "7d5e5a40-9deb-d2a9-def8-c0e010c97557",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -7502,35 +7126,30 @@
           "text": "meningococcal MCV4P"
         },
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "encounter": {
-          "reference": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18"
+          "reference": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
         },
         "occurrenceDateTime": "2020-08-20T19:50:03-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/7d5e5a40-9deb-d2a9-def8-c0e010c97557"
       }
     },
     {
       "fullUrl": "urn:uuid:0554faf5-d7ac-d523-a759-bc6da83cba5b",
       "resource": {
         "resourceType": "Claim",
-        "id": "f669f89eadb734fe2bb3a446af36319492e5f65b9e21e74efa02ea77be2e85a3",
+        "id": "0554faf5-d7ac-d523-a759-bc6da83cba5b",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -7545,7 +7164,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2020-08-20T19:50:03-07:00",
@@ -7553,7 +7172,7 @@
         },
         "created": "2020-08-20T20:05:03-07:00",
         "provider": {
-          "reference": "urn:uuid:6a3e94e6-72c3-3cbc-b828-babcf6602165",
+          "reference": "Organization/6a3e94e6-72c3-3cbc-b828-babcf6602165",
           "display": "MOUNTAIN VIEW FAMILY PRACTICE, PC"
         },
         "priority": {
@@ -7634,7 +7253,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18"
+                "reference": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
               }
             ]
           },
@@ -7725,56 +7344,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/0554faf5-d7ac-d523-a759-bc6da83cba5b"
       }
     },
     {
       "fullUrl": "urn:uuid:ef562cbd-a470-c6a7-1827-b7db8cd4c1d9",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "d742b6f138e4b1f8151c6570db21f0fbe1131aa145971b3d6d158525ea47b15d",
+        "id": "ef562cbd-a470-c6a7-1827-b7db8cd4c1d9",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "requester": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "performer": [
               {
-                "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+                "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Medicaid"
             },
             "beneficiary": {
-              "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+              "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
             },
             "payor": [
               {
@@ -7802,7 +7416,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
+          "reference": "Patient/13b1a0f2-dceb-37a2-f32b-f0ca6e3b9925"
         },
         "billablePeriod": {
           "start": "2020-08-20T20:05:03-07:00",
@@ -7813,20 +7427,20 @@
           "display": "Medicaid"
         },
         "provider": {
-          "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+          "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:0554faf5-d7ac-d523-a759-bc6da83cba5b"
+          "reference": "Claim/0554faf5-d7ac-d523-a759-bc6da83cba5b"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4"
+              "reference": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
             },
             "role": {
               "coding": [
@@ -7876,7 +7490,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:bb10179d-0130-2467-d95e-25c2093fdf18"
+                "reference": "Encounter/bb10179d-0130-2467-d95e-25c2093fdf18"
               }
             ]
           },
@@ -8391,8 +8005,8 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/ef562cbd-a470-c6a7-1827-b7db8cd4c1d9"
       }
     }
   ]

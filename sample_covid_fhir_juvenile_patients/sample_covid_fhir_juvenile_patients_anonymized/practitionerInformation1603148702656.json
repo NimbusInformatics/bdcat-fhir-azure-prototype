@@ -6,11 +6,6 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
         "code": "REDACTED",
         "display": "redacted"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-        "code": "CRYTOHASH",
-        "display": "cryptographic hash function"
       }
     ]
   },
@@ -20,18 +15,13 @@
       "fullUrl": "urn:uuid:8d782c6e-9fe8-397c-8c90-3a0b673ea432",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "b8936934b44fcbd4b20f919e018c1ea881c3e32831de2f0f22528e96c331a569",
+        "id": "8d782c6e-9fe8-397c-8c90-3a0b673ea432",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -73,26 +63,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/8d782c6e-9fe8-397c-8c90-3a0b673ea432"
       }
     },
     {
       "fullUrl": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "62d3dbfe49e3633a9dabc99990ca58bf9fd683a0eb841edac9eda2cf265781ff",
+        "id": "a06c857a-9b04-3cae-8bcb-507014632202",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -134,26 +119,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
       }
     },
     {
       "fullUrl": "urn:uuid:a3e93c18-61fa-3ee6-b6bb-a941a762c5e6",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "21f3b49678fcb42fb7eeb490264d888b19f2a83a143db36be32d6a6d44bd0a8f",
+        "id": "a3e93c18-61fa-3ee6-b6bb-a941a762c5e6",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -195,26 +175,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/a3e93c18-61fa-3ee6-b6bb-a941a762c5e6"
       }
     },
     {
       "fullUrl": "urn:uuid:1a554426-36bd-303a-b95b-1044a50cb562",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "e13d1832e0c7f354e987f2182db05609a349d4c0f67d8a3854e8a6adecf51552",
+        "id": "1a554426-36bd-303a-b95b-1044a50cb562",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -256,26 +231,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/1a554426-36bd-303a-b95b-1044a50cb562"
       }
     },
     {
       "fullUrl": "urn:uuid:b6a233a7-54df-357f-9863-7f7ae7197c09",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "675d01243492c844f993b7e1f03cbf2bce7f6e7e9b321a42804d430ad3308ea1",
+        "id": "b6a233a7-54df-357f-9863-7f7ae7197c09",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -317,26 +287,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/b6a233a7-54df-357f-9863-7f7ae7197c09"
       }
     },
     {
       "fullUrl": "urn:uuid:862082b0-9897-3cd8-921d-b94ba069d91c",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "5cb6876f2de0971c6976d5ac405d02c3d686c1d04d8a6110a15034074f711396",
+        "id": "862082b0-9897-3cd8-921d-b94ba069d91c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -378,26 +343,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/862082b0-9897-3cd8-921d-b94ba069d91c"
       }
     },
     {
       "fullUrl": "urn:uuid:a039d139-ad74-3b8f-9925-eaa29a2d4383",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "f004237e483fcc3e9a4c602ab711c31af0c84bac0508b26f57c382fd92b384a1",
+        "id": "a039d139-ad74-3b8f-9925-eaa29a2d4383",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -439,26 +399,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/a039d139-ad74-3b8f-9925-eaa29a2d4383"
       }
     },
     {
       "fullUrl": "urn:uuid:b671b0e7-fc85-3266-972f-eeb4c7e94815",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "bb6bee5a453111216bcc50cd4906072d3c504b707785d77972ddac44399958a4",
+        "id": "b671b0e7-fc85-3266-972f-eeb4c7e94815",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -500,26 +455,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/b671b0e7-fc85-3266-972f-eeb4c7e94815"
       }
     },
     {
       "fullUrl": "urn:uuid:d1542b82-6ed5-31cb-87d9-86033081726e",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "3e5d61075744ddd865ea2673857fef179ece6c4a7982196f6b5ac0dde7d26967",
+        "id": "d1542b82-6ed5-31cb-87d9-86033081726e",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -561,26 +511,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/d1542b82-6ed5-31cb-87d9-86033081726e"
       }
     },
     {
       "fullUrl": "urn:uuid:2add1d28-5ee2-3a4c-a6da-f976b9b28081",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "b3882e9aaae081073df1f770e0c4e1b18b6f12dc72342f8f57676c286725141b",
+        "id": "2add1d28-5ee2-3a4c-a6da-f976b9b28081",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -622,26 +567,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/2add1d28-5ee2-3a4c-a6da-f976b9b28081"
       }
     },
     {
       "fullUrl": "urn:uuid:eff1c283-6a25-385f-91e3-c746662f7eb4",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "c0fb98860d739eeca36a6b9a6d022f1bf1a1ba0a338648f64f2414c8293c42cb",
+        "id": "eff1c283-6a25-385f-91e3-c746662f7eb4",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -683,26 +623,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/eff1c283-6a25-385f-91e3-c746662f7eb4"
       }
     },
     {
       "fullUrl": "urn:uuid:87416e57-79f3-3b42-a8d3-c3aaa33bce75",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "827403cbd245ef5bca5fcb2c305edd07ceb85fb610d2de698a3c65a7f0e43ef6",
+        "id": "87416e57-79f3-3b42-a8d3-c3aaa33bce75",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -744,26 +679,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/87416e57-79f3-3b42-a8d3-c3aaa33bce75"
       }
     },
     {
       "fullUrl": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "42ca8cb43d936a9d82d408f1bf22681c4b0454e8f2314c2b76e8172c1a458971",
+        "id": "942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -805,26 +735,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
       }
     },
     {
       "fullUrl": "urn:uuid:de132375-74b1-32f0-9da9-b1563d6916ca",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "5be440c2c088af8133621b1c978f8e4d05326f0402eef4a1662305d1e64da93e",
+        "id": "de132375-74b1-32f0-9da9-b1563d6916ca",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -866,26 +791,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/de132375-74b1-32f0-9da9-b1563d6916ca"
       }
     },
     {
       "fullUrl": "urn:uuid:c86c2330-64e0-3ab5-b9c9-42fcc5a63883",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "e0dafe287b0b60ce02e7bc751ae257c13840bcd7891b43f3de5b541074f7672e",
+        "id": "c86c2330-64e0-3ab5-b9c9-42fcc5a63883",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -927,26 +847,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/c86c2330-64e0-3ab5-b9c9-42fcc5a63883"
       }
     },
     {
       "fullUrl": "urn:uuid:7003f1cc-8f5a-352e-8e7b-6b6c7c20df10",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "fcfb40bf857582af7c00acac8b8a403467dfc10a814243f56a3d4151e419192e",
+        "id": "7003f1cc-8f5a-352e-8e7b-6b6c7c20df10",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -988,26 +903,21 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/7003f1cc-8f5a-352e-8e7b-6b6c7c20df10"
       }
     },
     {
       "fullUrl": "urn:uuid:3d3a9cec-272a-3573-9dd0-a8ee8ff61816",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "0e4d773d8d87e9c55a621bddbdf5e5196c69dc9127760df83282fdd7ed28933d",
+        "id": "3d3a9cec-272a-3573-9dd0-a8ee8ff61816",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1049,8 +959,8 @@
         "gender": "male"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/3d3a9cec-272a-3573-9dd0-a8ee8ff61816"
       }
     }
   ]

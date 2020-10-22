@@ -6,11 +6,6 @@
         "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
         "code": "REDACTED",
         "display": "redacted"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-        "code": "CRYTOHASH",
-        "display": "cryptographic hash function"
       }
     ]
   },
@@ -20,18 +15,13 @@
       "fullUrl": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab",
       "resource": {
         "resourceType": "Patient",
-        "id": "249a56177c82f9809fea491a274d98b0fc868845663559d9afc4d92fb742d2cc",
+        "id": "6b9c211c-2c38-3955-43a0-4d285c714fab",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -105,26 +95,21 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Patient"
+        "method": "PUT",
+        "url": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
       }
     },
     {
       "fullUrl": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
       "resource": {
         "resourceType": "Organization",
-        "id": "6e1b6e9a5c9cd7d502cb7d27025b9b355027c3020b53d65a96ccb3e7a657dc22",
+        "id": "d141d0e1-558a-317e-9bae-6c1f1122f9d5",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -166,26 +151,21 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5"
       }
     },
     {
       "fullUrl": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "42ca8cb43d936a9d82d408f1bf22681c4b0454e8f2314c2b76e8172c1a458971",
+        "id": "942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -227,26 +207,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
       }
     },
     {
       "fullUrl": "urn:uuid:d0f1fd6f-218d-ee2d-1491-2fa77a3a305a",
       "resource": {
         "resourceType": "Encounter",
-        "id": "b1f3296ab400e65e92b659921e0b3c0e0fcef8f5bf986e0e35eaa2da1a4625ce",
+        "id": "d0f1fd6f-218d-ee2d-1491-2fa77a3a305a",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -268,7 +243,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -289,7 +264,7 @@
               "end": "2011-04-10T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -299,29 +274,20 @@
           "end": "2011-04-10T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
       }
     },
     {
       "fullUrl": "urn:uuid:3f56ac54-8b55-db6e-4a20-9469aa4cc61b",
       "resource": {
         "resourceType": "Immunization",
-        "id": "10cfa91d81a2d8e2a29aa144dba6f4dce98eaa1ef49d173cf43b6f9ecc5cb698",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "3f56ac54-8b55-db6e-4a20-9469aa4cc61b",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -334,35 +300,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
+          "reference": "Encounter/d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
         },
         "occurrenceDateTime": "2011-04-09T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/3f56ac54-8b55-db6e-4a20-9469aa4cc61b"
       }
     },
     {
       "fullUrl": "urn:uuid:b85791f0-af6e-e51d-a7f1-026d0772660f",
       "resource": {
         "resourceType": "Claim",
-        "id": "3ccc99032d73f9d6b16b1fa08f5d38851300a211e38d9ca8431a5fbb6e48c591",
+        "id": "b85791f0-af6e-e51d-a7f1-026d0772660f",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -377,7 +338,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2011-04-09T23:58:04-07:00",
@@ -385,7 +346,7 @@
         },
         "created": "2011-04-10T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -433,7 +394,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
+                "reference": "Encounter/d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
               }
             ]
           },
@@ -464,56 +425,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/b85791f0-af6e-e51d-a7f1-026d0772660f"
       }
     },
     {
       "fullUrl": "urn:uuid:89c604b0-d2b8-f475-687e-b70532a78a2c",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "5790512ead462e819483d08cb29f28eb7093b3aad2b99ce881473392b777078d",
+        "id": "89c604b0-d2b8-f475-687e-b70532a78a2c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -541,7 +497,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2011-04-10T00:13:04-07:00",
@@ -552,20 +508,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:b85791f0-af6e-e51d-a7f1-026d0772660f"
+          "reference": "Claim/b85791f0-af6e-e51d-a7f1-026d0772660f"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -615,7 +571,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
+                "reference": "Encounter/d0f1fd6f-218d-ee2d-1491-2fa77a3a305a"
               }
             ]
           },
@@ -767,26 +723,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/89c604b0-d2b8-f475-687e-b70532a78a2c"
       }
     },
     {
       "fullUrl": "urn:uuid:1207f38c-ae6b-34a1-15a5-dc50945e1a75",
       "resource": {
         "resourceType": "Encounter",
-        "id": "6441f7d1108e743505fc263101411cdd95cbe336e106ffb5ab95566fbc57d3b0",
+        "id": "1207f38c-ae6b-34a1-15a5-dc50945e1a75",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -808,7 +759,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -829,7 +780,7 @@
               "end": "2011-10-09T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -839,29 +790,20 @@
           "end": "2011-10-09T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/1207f38c-ae6b-34a1-15a5-dc50945e1a75"
       }
     },
     {
       "fullUrl": "urn:uuid:b2535d57-da0b-5982-052f-c2afd52d1b59",
       "resource": {
         "resourceType": "Immunization",
-        "id": "daec812541a6666e7d0aa029c9032751d6b4a195384e32da99d615775d0dbf05",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "b2535d57-da0b-5982-052f-c2afd52d1b59",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -874,35 +816,30 @@
           "text": "Hep A, ped/adol, 2 dose"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:1207f38c-ae6b-34a1-15a5-dc50945e1a75"
+          "reference": "Encounter/1207f38c-ae6b-34a1-15a5-dc50945e1a75"
         },
         "occurrenceDateTime": "2011-10-08T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/b2535d57-da0b-5982-052f-c2afd52d1b59"
       }
     },
     {
       "fullUrl": "urn:uuid:84596958-ddcc-0eaf-d275-bd7288625e58",
       "resource": {
         "resourceType": "Claim",
-        "id": "a875666c8af020f199682a6c2aec7848c388cc4f8e29832f4ba49395a4dc1ac7",
+        "id": "84596958-ddcc-0eaf-d275-bd7288625e58",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -917,7 +854,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2011-10-08T23:58:04-07:00",
@@ -925,7 +862,7 @@
         },
         "created": "2011-10-09T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -973,7 +910,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:1207f38c-ae6b-34a1-15a5-dc50945e1a75"
+                "reference": "Encounter/1207f38c-ae6b-34a1-15a5-dc50945e1a75"
               }
             ]
           },
@@ -1004,56 +941,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/84596958-ddcc-0eaf-d275-bd7288625e58"
       }
     },
     {
       "fullUrl": "urn:uuid:ee31f51a-66b4-d2bd-7d08-96d3286c18ec",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "f0bc0b9d15b71ac12afc7cf85a1eab255ef50f4f0b706aa6b7312cf6f943235c",
+        "id": "ee31f51a-66b4-d2bd-7d08-96d3286c18ec",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -1081,7 +1013,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2011-10-09T00:13:04-07:00",
@@ -1092,20 +1024,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:84596958-ddcc-0eaf-d275-bd7288625e58"
+          "reference": "Claim/84596958-ddcc-0eaf-d275-bd7288625e58"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -1155,7 +1087,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:1207f38c-ae6b-34a1-15a5-dc50945e1a75"
+                "reference": "Encounter/1207f38c-ae6b-34a1-15a5-dc50945e1a75"
               }
             ]
           },
@@ -1307,26 +1239,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/ee31f51a-66b4-d2bd-7d08-96d3286c18ec"
       }
     },
     {
       "fullUrl": "urn:uuid:cb11ab7e-d355-c2bf-efc6-cf24f40a85a6",
       "resource": {
         "resourceType": "Encounter",
-        "id": "abedcfdb5d54ba0f41204638735f24c17a2766b6b433637bd6dd058aed6f9e59",
+        "id": "cb11ab7e-d355-c2bf-efc6-cf24f40a85a6",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1348,7 +1275,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -1369,7 +1296,7 @@
               "end": "2012-04-08T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -1379,29 +1306,20 @@
           "end": "2012-04-08T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
       }
     },
     {
       "fullUrl": "urn:uuid:f561f918-9aee-1a10-43bb-1b4b7797f396",
       "resource": {
         "resourceType": "Immunization",
-        "id": "695c01acc33dbaad11708920aaac9c8123eb7880200bfee1b6a55bf6ae1e6315",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "f561f918-9aee-1a10-43bb-1b4b7797f396",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -1414,35 +1332,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
+          "reference": "Encounter/cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
         },
         "occurrenceDateTime": "2012-04-07T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/f561f918-9aee-1a10-43bb-1b4b7797f396"
       }
     },
     {
       "fullUrl": "urn:uuid:607371bb-8214-6a4f-69bf-d66c89b7e7f0",
       "resource": {
         "resourceType": "Claim",
-        "id": "87c872b7901ccf918a1cb7fbc3a616341c2886d0574c863b4e206cc40143af91",
+        "id": "607371bb-8214-6a4f-69bf-d66c89b7e7f0",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1457,7 +1370,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2012-04-07T23:58:04-07:00",
@@ -1465,7 +1378,7 @@
         },
         "created": "2012-04-08T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -1513,7 +1426,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
+                "reference": "Encounter/cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
               }
             ]
           },
@@ -1544,56 +1457,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/607371bb-8214-6a4f-69bf-d66c89b7e7f0"
       }
     },
     {
       "fullUrl": "urn:uuid:42787b4e-035b-cfaa-4c7b-5ae914a435eb",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "bcb45c32f96ca365ee7f692401f7c100fc1c713e045fc2962dbb514d7e56f7fa",
+        "id": "42787b4e-035b-cfaa-4c7b-5ae914a435eb",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -1621,7 +1529,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2012-04-08T00:13:04-07:00",
@@ -1632,20 +1540,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:607371bb-8214-6a4f-69bf-d66c89b7e7f0"
+          "reference": "Claim/607371bb-8214-6a4f-69bf-d66c89b7e7f0"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -1695,7 +1603,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
+                "reference": "Encounter/cb11ab7e-d355-c2bf-efc6-cf24f40a85a6"
               }
             ]
           },
@@ -1847,26 +1755,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/42787b4e-035b-cfaa-4c7b-5ae914a435eb"
       }
     },
     {
       "fullUrl": "urn:uuid:cbff51e2-2861-a55f-6d14-7687275930ec",
       "resource": {
         "resourceType": "Encounter",
-        "id": "a45f017571277e93911283f55464ce7289a321983e1a248ea25024cac39c2185",
+        "id": "cbff51e2-2861-a55f-6d14-7687275930ec",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1888,7 +1791,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -1909,7 +1812,7 @@
               "end": "2012-10-07T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -1919,31 +1822,26 @@
           "end": "2012-10-07T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/cbff51e2-2861-a55f-6d14-7687275930ec"
       }
     },
     {
       "fullUrl": "urn:uuid:9dffb904-6c63-7e80-673d-6df0da505ce3",
       "resource": {
         "resourceType": "Claim",
-        "id": "c0724b690e324919dece092f454999f19c91afbda326a41ccf735548fa57facd",
+        "id": "9dffb904-6c63-7e80-673d-6df0da505ce3",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -1958,7 +1856,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2012-10-06T23:58:04-07:00",
@@ -1966,7 +1864,7 @@
         },
         "created": "2012-10-07T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -2001,7 +1899,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:cbff51e2-2861-a55f-6d14-7687275930ec"
+                "reference": "Encounter/cbff51e2-2861-a55f-6d14-7687275930ec"
               }
             ]
           }
@@ -2012,56 +1910,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/9dffb904-6c63-7e80-673d-6df0da505ce3"
       }
     },
     {
       "fullUrl": "urn:uuid:3c01ee56-4d35-66f6-5027-4360948b40f5",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "b884a2a0323d83d5c6168ce946505ccd17f0bcf4bfb7f2833aff5f9bcfea2d41",
+        "id": "3c01ee56-4d35-66f6-5027-4360948b40f5",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -2089,7 +1982,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2012-10-07T00:13:04-07:00",
@@ -2100,20 +1993,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:9dffb904-6c63-7e80-673d-6df0da505ce3"
+          "reference": "Claim/9dffb904-6c63-7e80-673d-6df0da505ce3"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -2163,7 +2056,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:cbff51e2-2861-a55f-6d14-7687275930ec"
+                "reference": "Encounter/cbff51e2-2861-a55f-6d14-7687275930ec"
               }
             ]
           }
@@ -2194,26 +2087,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/3c01ee56-4d35-66f6-5027-4360948b40f5"
       }
     },
     {
       "fullUrl": "urn:uuid:9229b15b-566c-b0c7-1ed6-349c15a6405b",
       "resource": {
         "resourceType": "Encounter",
-        "id": "13a06c62cf2213e24aba4785bb178ab2ee2677a28ab2b9789a7ee82cc324b5fe",
+        "id": "9229b15b-566c-b0c7-1ed6-349c15a6405b",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2235,7 +2123,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -2256,7 +2144,7 @@
               "end": "2013-04-07T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -2266,29 +2154,20 @@
           "end": "2013-04-07T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/9229b15b-566c-b0c7-1ed6-349c15a6405b"
       }
     },
     {
       "fullUrl": "urn:uuid:d8497491-a513-d19b-066b-a41e62c59d89",
       "resource": {
         "resourceType": "Immunization",
-        "id": "68b0e9dfc66b53b2617b1ee51bc0b131e20a669f1ef9af493e82367cf49a00f0",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "d8497491-a513-d19b-066b-a41e62c59d89",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2301,35 +2180,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:9229b15b-566c-b0c7-1ed6-349c15a6405b"
+          "reference": "Encounter/9229b15b-566c-b0c7-1ed6-349c15a6405b"
         },
         "occurrenceDateTime": "2013-04-06T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/d8497491-a513-d19b-066b-a41e62c59d89"
       }
     },
     {
       "fullUrl": "urn:uuid:80cf0bc5-d480-147b-2388-e195bcad0b92",
       "resource": {
         "resourceType": "Claim",
-        "id": "a597acad215ae0653707b893f50f10cf6d149157c92d4ac144e37253a79b0ed1",
+        "id": "80cf0bc5-d480-147b-2388-e195bcad0b92",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2344,7 +2218,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2013-04-06T23:58:04-07:00",
@@ -2352,7 +2226,7 @@
         },
         "created": "2013-04-07T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -2400,7 +2274,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:9229b15b-566c-b0c7-1ed6-349c15a6405b"
+                "reference": "Encounter/9229b15b-566c-b0c7-1ed6-349c15a6405b"
               }
             ]
           },
@@ -2431,56 +2305,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/80cf0bc5-d480-147b-2388-e195bcad0b92"
       }
     },
     {
       "fullUrl": "urn:uuid:ed9c6ba3-af2a-23dc-0831-85942f7471ca",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "1d484299ccf803800210bbdc8353c4d8fb9d5700353dda039a9ac2a6ffb6b4ca",
+        "id": "ed9c6ba3-af2a-23dc-0831-85942f7471ca",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -2508,7 +2377,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2013-04-07T00:13:04-07:00",
@@ -2519,20 +2388,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:80cf0bc5-d480-147b-2388-e195bcad0b92"
+          "reference": "Claim/80cf0bc5-d480-147b-2388-e195bcad0b92"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -2582,7 +2451,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:9229b15b-566c-b0c7-1ed6-349c15a6405b"
+                "reference": "Encounter/9229b15b-566c-b0c7-1ed6-349c15a6405b"
               }
             ]
           },
@@ -2734,26 +2603,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/ed9c6ba3-af2a-23dc-0831-85942f7471ca"
       }
     },
     {
       "fullUrl": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac",
       "resource": {
         "resourceType": "Encounter",
-        "id": "a6cf9f9696cb3eab44c63f0a9d16bac61a6afb08352b205bd7500d79c62be39c",
+        "id": "9af44e8c-dcf6-afdc-74cb-54800e52c5ac",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -2775,7 +2639,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -2796,7 +2660,7 @@
               "end": "2014-04-13T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -2806,29 +2670,20 @@
           "end": "2014-04-13T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
       }
     },
     {
       "fullUrl": "urn:uuid:aacbd2ac-9b6c-b4ca-0444-dccde2221efe",
       "resource": {
         "resourceType": "Immunization",
-        "id": "c672cf853834197c0e3720666c88bd243e66fda04f804d2da51153d5e755765d",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "aacbd2ac-9b6c-b4ca-0444-dccde2221efe",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2841,33 +2696,24 @@
           "text": "varicella"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+          "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
         },
         "occurrenceDateTime": "2014-04-12T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/aacbd2ac-9b6c-b4ca-0444-dccde2221efe"
       }
     },
     {
       "fullUrl": "urn:uuid:e64f654b-982b-25ec-4c4b-446f75ce6a33",
       "resource": {
         "resourceType": "Immunization",
-        "id": "b87ed644bc1c14f0183c26d360901aa09e4c70b88962f6cba7638ef438e64885",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "e64f654b-982b-25ec-4c4b-446f75ce6a33",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2880,33 +2726,24 @@
           "text": "IPV"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+          "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
         },
         "occurrenceDateTime": "2014-04-12T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/e64f654b-982b-25ec-4c4b-446f75ce6a33"
       }
     },
     {
       "fullUrl": "urn:uuid:a97a8f63-92c8-007b-340a-f989e3125d0f",
       "resource": {
         "resourceType": "Immunization",
-        "id": "a47fef7657b445e132e4d6b7ae8432bb3b9824f83cf52dc17ef98f69fcf0ab2b",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "a97a8f63-92c8-007b-340a-f989e3125d0f",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2919,33 +2756,24 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+          "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
         },
         "occurrenceDateTime": "2014-04-12T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/a97a8f63-92c8-007b-340a-f989e3125d0f"
       }
     },
     {
       "fullUrl": "urn:uuid:d2877772-055f-0af2-437e-3a6ad1fc9191",
       "resource": {
         "resourceType": "Immunization",
-        "id": "ff5cfa8c3e3fc114af2a58ffa464ea575b44b2cec91117494a7b883f6d9c45c4",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "d2877772-055f-0af2-437e-3a6ad1fc9191",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2958,33 +2786,24 @@
           "text": "DTaP"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+          "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
         },
         "occurrenceDateTime": "2014-04-12T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/d2877772-055f-0af2-437e-3a6ad1fc9191"
       }
     },
     {
       "fullUrl": "urn:uuid:e5f42c90-cab6-c487-d607-a8bab0f0eb0c",
       "resource": {
         "resourceType": "Immunization",
-        "id": "b869944e8493a8da4f5d5bdf9d68f2c6c7554ddbcf70a8f7e8e1d3a543dd04df",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "e5f42c90-cab6-c487-d607-a8bab0f0eb0c",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -2997,35 +2816,30 @@
           "text": "MMR"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+          "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
         },
         "occurrenceDateTime": "2014-04-12T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/e5f42c90-cab6-c487-d607-a8bab0f0eb0c"
       }
     },
     {
       "fullUrl": "urn:uuid:9d290ec3-6246-48f9-4c46-5bf10f78a996",
       "resource": {
         "resourceType": "Claim",
-        "id": "126459e6ce1650603b10a4c631781083983176c2a55d2c79557322050a0ed262",
+        "id": "9d290ec3-6246-48f9-4c46-5bf10f78a996",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -3040,7 +2854,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2014-04-12T23:58:04-07:00",
@@ -3048,7 +2862,7 @@
         },
         "created": "2014-04-13T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -3140,7 +2954,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+                "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
               }
             ]
           },
@@ -3251,56 +3065,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/9d290ec3-6246-48f9-4c46-5bf10f78a996"
       }
     },
     {
       "fullUrl": "urn:uuid:1aace891-e5cf-2c8c-25f4-2707ae75cfa6",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "1eace1240749bb009cc3482c8720005b4ce1f74b9afbabf4dd1dc63327604353",
+        "id": "1aace891-e5cf-2c8c-25f4-2707ae75cfa6",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -3328,7 +3137,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2014-04-13T00:13:04-07:00",
@@ -3339,20 +3148,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:9d290ec3-6246-48f9-4c46-5bf10f78a996"
+          "reference": "Claim/9d290ec3-6246-48f9-4c46-5bf10f78a996"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -3402,7 +3211,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
+                "reference": "Encounter/9af44e8c-dcf6-afdc-74cb-54800e52c5ac"
               }
             ]
           },
@@ -4038,26 +3847,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/1aace891-e5cf-2c8c-25f4-2707ae75cfa6"
       }
     },
     {
       "fullUrl": "urn:uuid:e8888dd7-1dea-9451-dc76-05725a74bdf8",
       "resource": {
         "resourceType": "Encounter",
-        "id": "799117bd7bfc659eabca0df3fd17280e7a077719db14d0ccdb6b0f22325a00c0",
+        "id": "e8888dd7-1dea-9451-dc76-05725a74bdf8",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -4079,7 +3883,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -4100,7 +3904,7 @@
               "end": "2015-04-19T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -4110,29 +3914,20 @@
           "end": "2015-04-19T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/e8888dd7-1dea-9451-dc76-05725a74bdf8"
       }
     },
     {
       "fullUrl": "urn:uuid:ad4513d9-0319-0eab-24d1-e34b7b2129b4",
       "resource": {
         "resourceType": "Immunization",
-        "id": "7439a750fad8f78e2c35ed66c90facbd18bdd5cc4978bf2a8205721f76474b21",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "ad4513d9-0319-0eab-24d1-e34b7b2129b4",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -4145,35 +3940,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:e8888dd7-1dea-9451-dc76-05725a74bdf8"
+          "reference": "Encounter/e8888dd7-1dea-9451-dc76-05725a74bdf8"
         },
         "occurrenceDateTime": "2015-04-18T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/ad4513d9-0319-0eab-24d1-e34b7b2129b4"
       }
     },
     {
       "fullUrl": "urn:uuid:770cf698-c3d8-f00d-1b3c-34d20b91d0ce",
       "resource": {
         "resourceType": "Claim",
-        "id": "96f16ffc24d7a9644b4ef4f467eea5ca554627ad0d455200dc1e9b05bb020fb5",
+        "id": "770cf698-c3d8-f00d-1b3c-34d20b91d0ce",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -4188,7 +3978,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2015-04-18T23:58:04-07:00",
@@ -4196,7 +3986,7 @@
         },
         "created": "2015-04-19T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -4244,7 +4034,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:e8888dd7-1dea-9451-dc76-05725a74bdf8"
+                "reference": "Encounter/e8888dd7-1dea-9451-dc76-05725a74bdf8"
               }
             ]
           },
@@ -4275,56 +4065,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/770cf698-c3d8-f00d-1b3c-34d20b91d0ce"
       }
     },
     {
       "fullUrl": "urn:uuid:7c29bf6a-863f-3808-a6a3-1113ac7090af",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "a36e8840d5fa7d841121d135977d9f71ed5e6e508d7cb617389ae13124de1869",
+        "id": "7c29bf6a-863f-3808-a6a3-1113ac7090af",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -4352,7 +4137,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2015-04-19T00:13:04-07:00",
@@ -4363,20 +4148,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:770cf698-c3d8-f00d-1b3c-34d20b91d0ce"
+          "reference": "Claim/770cf698-c3d8-f00d-1b3c-34d20b91d0ce"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -4426,7 +4211,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:e8888dd7-1dea-9451-dc76-05725a74bdf8"
+                "reference": "Encounter/e8888dd7-1dea-9451-dc76-05725a74bdf8"
               }
             ]
           },
@@ -4578,26 +4363,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/7c29bf6a-863f-3808-a6a3-1113ac7090af"
       }
     },
     {
       "fullUrl": "urn:uuid:f19d00c8-38cb-4284-f6c3-c3e8d93ac315",
       "resource": {
         "resourceType": "Encounter",
-        "id": "90c2f08781a152c3b1c924c23754a06b23fc44023eba3d81428cd40f6501f9c9",
+        "id": "f19d00c8-38cb-4284-f6c3-c3e8d93ac315",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -4619,7 +4399,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -4640,7 +4420,7 @@
               "end": "2016-04-24T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -4650,29 +4430,20 @@
           "end": "2016-04-24T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
       }
     },
     {
       "fullUrl": "urn:uuid:e52cbb62-12ed-c94d-66b3-0b2447300537",
       "resource": {
         "resourceType": "Immunization",
-        "id": "d489262cc87e74843c44217ef638bc853ef4a0f7bf4cb207ad61f975774bbb79",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "e52cbb62-12ed-c94d-66b3-0b2447300537",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -4685,35 +4456,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
+          "reference": "Encounter/f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
         },
         "occurrenceDateTime": "2016-04-23T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/e52cbb62-12ed-c94d-66b3-0b2447300537"
       }
     },
     {
       "fullUrl": "urn:uuid:fd288078-d63f-f9d1-c78f-7304c543cd2c",
       "resource": {
         "resourceType": "Claim",
-        "id": "c70131322e22bba5a939a5c657b8c7e22107b9f34252f4ccebb2c2ac3e2e3c1e",
+        "id": "fd288078-d63f-f9d1-c78f-7304c543cd2c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -4728,7 +4494,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2016-04-23T23:58:04-07:00",
@@ -4736,7 +4502,7 @@
         },
         "created": "2016-04-24T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -4784,7 +4550,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
+                "reference": "Encounter/f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
               }
             ]
           },
@@ -4815,56 +4581,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/fd288078-d63f-f9d1-c78f-7304c543cd2c"
       }
     },
     {
       "fullUrl": "urn:uuid:4eade56d-6def-a327-5698-85f1eac8718c",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "eca0998e0ff4853d36da9e23736c92834f736baf37e025556f2f5b46f420d67d",
+        "id": "4eade56d-6def-a327-5698-85f1eac8718c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -4892,7 +4653,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2016-04-24T00:13:04-07:00",
@@ -4903,20 +4664,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:fd288078-d63f-f9d1-c78f-7304c543cd2c"
+          "reference": "Claim/fd288078-d63f-f9d1-c78f-7304c543cd2c"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -4966,7 +4727,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
+                "reference": "Encounter/f19d00c8-38cb-4284-f6c3-c3e8d93ac315"
               }
             ]
           },
@@ -5118,26 +4879,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/4eade56d-6def-a327-5698-85f1eac8718c"
       }
     },
     {
       "fullUrl": "urn:uuid:a8881c93-6eb1-c053-8e5c-c365b4d08757",
       "resource": {
         "resourceType": "Encounter",
-        "id": "41b4350229eeb62a529640429d765f17728d11b5b377df2a1eebd2302c389ce1",
+        "id": "a8881c93-6eb1-c053-8e5c-c365b4d08757",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5159,7 +4915,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -5180,7 +4936,7 @@
               "end": "2017-04-30T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -5190,29 +4946,20 @@
           "end": "2017-04-30T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/a8881c93-6eb1-c053-8e5c-c365b4d08757"
       }
     },
     {
       "fullUrl": "urn:uuid:562fc74a-f6dc-e2c8-f75b-92293aadba15",
       "resource": {
         "resourceType": "Immunization",
-        "id": "0c4401c10b7b7e3c31fd3435ddd5dc2cb6e60868371a97796b800b73b168733e",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "562fc74a-f6dc-e2c8-f75b-92293aadba15",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -5225,35 +4972,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:a8881c93-6eb1-c053-8e5c-c365b4d08757"
+          "reference": "Encounter/a8881c93-6eb1-c053-8e5c-c365b4d08757"
         },
         "occurrenceDateTime": "2017-04-29T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/562fc74a-f6dc-e2c8-f75b-92293aadba15"
       }
     },
     {
       "fullUrl": "urn:uuid:692d5551-0861-412d-e897-a1c09ec2823f",
       "resource": {
         "resourceType": "Claim",
-        "id": "e1b3b6a6bacea5379764e2d3e0ef1337c54dfe4af9888b3d4492f3a85d472766",
+        "id": "692d5551-0861-412d-e897-a1c09ec2823f",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5268,7 +5010,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2017-04-29T23:58:04-07:00",
@@ -5276,7 +5018,7 @@
         },
         "created": "2017-04-30T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -5324,7 +5066,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:a8881c93-6eb1-c053-8e5c-c365b4d08757"
+                "reference": "Encounter/a8881c93-6eb1-c053-8e5c-c365b4d08757"
               }
             ]
           },
@@ -5355,56 +5097,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/692d5551-0861-412d-e897-a1c09ec2823f"
       }
     },
     {
       "fullUrl": "urn:uuid:88718554-356c-6e64-4f69-6f27b44e5ddd",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "9b752850ce5a1f3778d08e73572f686ad9ae969f00d9c4e8255dfbaab8185624",
+        "id": "88718554-356c-6e64-4f69-6f27b44e5ddd",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -5432,7 +5169,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2017-04-30T00:13:04-07:00",
@@ -5443,20 +5180,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:692d5551-0861-412d-e897-a1c09ec2823f"
+          "reference": "Claim/692d5551-0861-412d-e897-a1c09ec2823f"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -5506,7 +5243,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:a8881c93-6eb1-c053-8e5c-c365b4d08757"
+                "reference": "Encounter/a8881c93-6eb1-c053-8e5c-c365b4d08757"
               }
             ]
           },
@@ -5658,26 +5395,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/88718554-356c-6e64-4f69-6f27b44e5ddd"
       }
     },
     {
       "fullUrl": "urn:uuid:725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f",
       "resource": {
         "resourceType": "Encounter",
-        "id": "285a9c1523cbd9fe6dec38e73d407eeb4afa58bd258823433a7f93f6ffa22491",
+        "id": "725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5699,7 +5431,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -5720,7 +5452,7 @@
               "end": "2018-05-06T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -5730,29 +5462,20 @@
           "end": "2018-05-06T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
       }
     },
     {
       "fullUrl": "urn:uuid:30681cef-85ba-91b4-fb40-2d80ca26a711",
       "resource": {
         "resourceType": "Immunization",
-        "id": "64e3e1d6a68df3c902f6f19142e71ab29d2252022c496f459e8368b5a526600e",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "30681cef-85ba-91b4-fb40-2d80ca26a711",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -5765,35 +5488,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
+          "reference": "Encounter/725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
         },
         "occurrenceDateTime": "2018-05-05T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/30681cef-85ba-91b4-fb40-2d80ca26a711"
       }
     },
     {
       "fullUrl": "urn:uuid:2fed334e-dfe3-2d4b-8ea9-837a6cb5d9d9",
       "resource": {
         "resourceType": "Claim",
-        "id": "a4b3072e5e142114c6156520837b2cf99e2b56bfd33e0a4a70411f5e33ea0329",
+        "id": "2fed334e-dfe3-2d4b-8ea9-837a6cb5d9d9",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -5808,7 +5526,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2018-05-05T23:58:04-07:00",
@@ -5816,7 +5534,7 @@
         },
         "created": "2018-05-06T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -5864,7 +5582,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
+                "reference": "Encounter/725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
               }
             ]
           },
@@ -5895,56 +5613,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/2fed334e-dfe3-2d4b-8ea9-837a6cb5d9d9"
       }
     },
     {
       "fullUrl": "urn:uuid:5bb0f31d-4716-aa76-e9fc-2179ced96b83",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "c6fb510e67d6c49021c0bd51b32a8a6d66e739534678d57b285361231d58a9cf",
+        "id": "5bb0f31d-4716-aa76-e9fc-2179ced96b83",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -5972,7 +5685,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2018-05-06T00:13:04-07:00",
@@ -5983,20 +5696,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:2fed334e-dfe3-2d4b-8ea9-837a6cb5d9d9"
+          "reference": "Claim/2fed334e-dfe3-2d4b-8ea9-837a6cb5d9d9"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -6046,7 +5759,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
+                "reference": "Encounter/725cdac4-28e2-fcc7-8ea8-e0bdc3326f6f"
               }
             ]
           },
@@ -6198,26 +5911,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/5bb0f31d-4716-aa76-e9fc-2179ced96b83"
       }
     },
     {
       "fullUrl": "urn:uuid:12c3b229-5bd1-bb29-7d44-d80652736e50",
       "resource": {
         "resourceType": "Encounter",
-        "id": "9ce6bb0aba371d2208478a90341b6960bc78178de2e2e371602a4d29f0e2b5fb",
+        "id": "12c3b229-5bd1-bb29-7d44-d80652736e50",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6239,7 +5947,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -6260,7 +5968,7 @@
               "end": "2019-05-12T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -6270,29 +5978,20 @@
           "end": "2019-05-12T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/12c3b229-5bd1-bb29-7d44-d80652736e50"
       }
     },
     {
       "fullUrl": "urn:uuid:ac57b2ed-1129-e4ea-9231-258ef5705d2a",
       "resource": {
         "resourceType": "Immunization",
-        "id": "9e06b0414546b3c163307f6f0c618c57344776943fe3187b64e79ae7dc7e3fc8",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "ac57b2ed-1129-e4ea-9231-258ef5705d2a",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -6305,35 +6004,30 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:12c3b229-5bd1-bb29-7d44-d80652736e50"
+          "reference": "Encounter/12c3b229-5bd1-bb29-7d44-d80652736e50"
         },
         "occurrenceDateTime": "2019-05-11T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/ac57b2ed-1129-e4ea-9231-258ef5705d2a"
       }
     },
     {
       "fullUrl": "urn:uuid:aa89bddd-b768-4193-85d3-61e5d047d40c",
       "resource": {
         "resourceType": "Claim",
-        "id": "33b31ed87771f9ad5c9534e3592b783bb0ee9280e315aa563ae24988d48cdf4e",
+        "id": "aa89bddd-b768-4193-85d3-61e5d047d40c",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6348,7 +6042,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2019-05-11T23:58:04-07:00",
@@ -6356,7 +6050,7 @@
         },
         "created": "2019-05-12T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -6404,7 +6098,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:12c3b229-5bd1-bb29-7d44-d80652736e50"
+                "reference": "Encounter/12c3b229-5bd1-bb29-7d44-d80652736e50"
               }
             ]
           },
@@ -6435,56 +6129,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/aa89bddd-b768-4193-85d3-61e5d047d40c"
       }
     },
     {
       "fullUrl": "urn:uuid:f1097c05-5b89-0856-ceb9-acee6e25eaa0",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "dce647dad138af0a3ca353588b6ee494fd6c20531e0e87fb055dcd3d00f6b762",
+        "id": "f1097c05-5b89-0856-ceb9-acee6e25eaa0",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -6512,7 +6201,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2019-05-12T00:13:04-07:00",
@@ -6523,20 +6212,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:aa89bddd-b768-4193-85d3-61e5d047d40c"
+          "reference": "Claim/aa89bddd-b768-4193-85d3-61e5d047d40c"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -6586,7 +6275,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:12c3b229-5bd1-bb29-7d44-d80652736e50"
+                "reference": "Encounter/12c3b229-5bd1-bb29-7d44-d80652736e50"
               }
             ]
           },
@@ -6738,26 +6427,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/f1097c05-5b89-0856-ceb9-acee6e25eaa0"
       }
     },
     {
       "fullUrl": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58",
       "resource": {
         "resourceType": "Organization",
-        "id": "6984dd0812db02ca0324e12465e4cf4b58acb8d761a7c39d9b92943fdda55681",
+        "id": "5e765f2b-e908-3888-9fc7-df2cb87beb58",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6799,26 +6483,21 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Organization"
+        "method": "PUT",
+        "url": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58"
       }
     },
     {
       "fullUrl": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "62d3dbfe49e3633a9dabc99990ca58bf9fd683a0eb841edac9eda2cf265781ff",
+        "id": "a06c857a-9b04-3cae-8bcb-507014632202",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6860,26 +6539,21 @@
         "gender": "female"
       },
       "request": {
-        "method": "POST",
-        "url": "Practitioner"
+        "method": "PUT",
+        "url": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
       }
     },
     {
       "fullUrl": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529",
       "resource": {
         "resourceType": "Encounter",
-        "id": "ffc573f710c56a224ae528229827c4b3d30c2db661b7e5b663f600088b4821ff",
+        "id": "3d5466ce-db3c-2302-99f8-9491d07d1529",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -6901,7 +6575,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -6922,7 +6596,7 @@
               "end": "2020-03-02T00:18:04-08:00"
             },
             "individual": {
-              "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202",
+              "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202",
               "display": "Dr. Ludivina884 Steuber698"
             }
           }
@@ -6932,29 +6606,20 @@
           "end": "2020-03-02T00:18:04-08:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58",
+          "reference": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58",
           "display": "STURDY MEMORIAL HOSPITAL"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
       }
     },
     {
       "fullUrl": "urn:uuid:c60f611f-b403-5384-1e65-a5f9715aafa2",
       "resource": {
         "resourceType": "Condition",
-        "id": "628a2601bfe96c65e31814dd92e78168ae87abb9dcaf36531914fad62738d920",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "c60f611f-b403-5384-1e65-a5f9715aafa2",
         "clinicalStatus": {
           "coding": [
             {
@@ -6982,34 +6647,25 @@
           "text": "Fatigue (finding)"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "onsetDateTime": "2020-03-01T22:58:04-08:00",
         "abatementDateTime": "2020-03-17T01:18:04-07:00",
         "recordedDate": "2020-03-01T22:58:04-08:00"
       },
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/c60f611f-b403-5384-1e65-a5f9715aafa2"
       }
     },
     {
       "fullUrl": "urn:uuid:ab384dac-c2ce-adaf-004d-5df870d69727",
       "resource": {
         "resourceType": "Condition",
-        "id": "1f921986bd8ea2967c6abd1db7a567da56a22b36d305bb8799568c42736f4734",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "ab384dac-c2ce-adaf-004d-5df870d69727",
         "clinicalStatus": {
           "coding": [
             {
@@ -7037,34 +6693,25 @@
           "text": "Fever (finding)"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "onsetDateTime": "2020-03-01T22:58:04-08:00",
         "abatementDateTime": "2020-03-17T01:18:04-07:00",
         "recordedDate": "2020-03-01T22:58:04-08:00"
       },
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/ab384dac-c2ce-adaf-004d-5df870d69727"
       }
     },
     {
       "fullUrl": "urn:uuid:b2aa368a-1840-693f-b4b3-2cc7dc987594",
       "resource": {
         "resourceType": "Condition",
-        "id": "8f6dbdc0ecb52590319126506d3cca0548114644dbced2484a610f3c352e1ea0",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "b2aa368a-1840-693f-b4b3-2cc7dc987594",
         "clinicalStatus": {
           "coding": [
             {
@@ -7092,34 +6739,25 @@
           "text": "Loss of taste (finding)"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "onsetDateTime": "2020-03-01T22:58:04-08:00",
         "abatementDateTime": "2020-03-17T01:18:04-07:00",
         "recordedDate": "2020-03-01T22:58:04-08:00"
       },
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/b2aa368a-1840-693f-b4b3-2cc7dc987594"
       }
     },
     {
       "fullUrl": "urn:uuid:7103da02-30cd-501b-28e1-80f822f3a36b",
       "resource": {
         "resourceType": "Condition",
-        "id": "ddb1bb46842ee1a7baae93d65e73e2ccfcaf93571e5c0ad2ba47980c1f537cfa",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "7103da02-30cd-501b-28e1-80f822f3a36b",
         "clinicalStatus": {
           "coding": [
             {
@@ -7147,34 +6785,25 @@
           "text": "Suspected COVID-19"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "onsetDateTime": "2020-03-01T22:58:04-08:00",
         "abatementDateTime": "2020-03-02T00:18:04-08:00",
         "recordedDate": "2020-03-01T22:58:04-08:00"
       },
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/7103da02-30cd-501b-28e1-80f822f3a36b"
       }
     },
     {
       "fullUrl": "urn:uuid:4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb",
       "resource": {
         "resourceType": "Condition",
-        "id": "9b0f2b4a8b6e5f887cfcf2beb602439165a875eec370ab5227a1ffe30364326f",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb",
         "clinicalStatus": {
           "coding": [
             {
@@ -7202,34 +6831,25 @@
           "text": "COVID-19"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "onsetDateTime": "2020-03-02T00:18:04-08:00",
         "abatementDateTime": "2020-03-17T01:18:04-07:00",
         "recordedDate": "2020-03-02T00:18:04-08:00"
       },
       "request": {
-        "method": "POST",
-        "url": "Condition"
+        "method": "PUT",
+        "url": "Condition/4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
       }
     },
     {
       "fullUrl": "urn:uuid:0a99c0a7-e273-dd87-fd9d-bfe7464a7fbd",
       "resource": {
         "resourceType": "Observation",
-        "id": "e10f5d1392f4de4bbef9ede659b3a7e31db9e663e070b373141e120286e4844b",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "0a99c0a7-e273-dd87-fd9d-bfe7464a7fbd",
         "status": "final",
         "category": [
           {
@@ -7258,10 +6878,10 @@
           "text": "Body temperature"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T22:58:04-08:00",
         "issued": "2020-03-01T22:58:04.059-08:00",
@@ -7273,24 +6893,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/0a99c0a7-e273-dd87-fd9d-bfe7464a7fbd"
       }
     },
     {
       "fullUrl": "urn:uuid:0558d268-e988-6ea8-74bb-178d1ae50100",
       "resource": {
         "resourceType": "Observation",
-        "id": "7aa0098735c3c6c3765aa392d4fc717f5d0d16c23449e12b19152b45e3161a89",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "0558d268-e988-6ea8-74bb-178d1ae50100",
         "status": "final",
         "category": [
           {
@@ -7314,10 +6925,10 @@
           "text": "Respiratory rate"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T22:58:04-08:00",
         "issued": "2020-03-01T22:58:04.059-08:00",
@@ -7329,24 +6940,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/0558d268-e988-6ea8-74bb-178d1ae50100"
       }
     },
     {
       "fullUrl": "urn:uuid:caa5da4e-9e42-e27d-dbd0-d70d003e16c9",
       "resource": {
         "resourceType": "Observation",
-        "id": "1877d7ad7489c3e0dded2cf03a54c073821f93c3ad81b9f9e24e28688dcbe735",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "caa5da4e-9e42-e27d-dbd0-d70d003e16c9",
         "status": "final",
         "category": [
           {
@@ -7370,10 +6972,10 @@
           "text": "Heart rate"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T22:58:04-08:00",
         "issued": "2020-03-01T22:58:04.059-08:00",
@@ -7385,24 +6987,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/caa5da4e-9e42-e27d-dbd0-d70d003e16c9"
       }
     },
     {
       "fullUrl": "urn:uuid:d819abdc-3824-c885-8ce8-3eb5771621f4",
       "resource": {
         "resourceType": "Observation",
-        "id": "da5a7acc62c4cd8758cbef1239fe2091c71d84827e89ad28d34310a8510475a6",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "d819abdc-3824-c885-8ce8-3eb5771621f4",
         "status": "final",
         "category": [
           {
@@ -7431,10 +7024,10 @@
           "text": "Oxygen saturation in Arterial blood"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T22:58:04-08:00",
         "issued": "2020-03-01T22:58:04.059-08:00",
@@ -7446,24 +7039,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/d819abdc-3824-c885-8ce8-3eb5771621f4"
       }
     },
     {
       "fullUrl": "urn:uuid:7aa649fc-0e7c-0945-0371-47276510309e",
       "resource": {
         "resourceType": "Observation",
-        "id": "15a7ce21e7c81b215c1a8bb52e2724f49a56cd010b77b2e5115a12be640f71da",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "7aa649fc-0e7c-0945-0371-47276510309e",
         "status": "final",
         "category": [
           {
@@ -7487,10 +7071,10 @@
           "text": "Blood Pressure"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T22:58:04-08:00",
         "issued": "2020-03-01T22:58:04.059-08:00",
@@ -7534,24 +7118,15 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/7aa649fc-0e7c-0945-0371-47276510309e"
       }
     },
     {
       "fullUrl": "urn:uuid:8c4a689d-70ac-0a4b-5572-8f02f799ebc6",
       "resource": {
         "resourceType": "Observation",
-        "id": "9e2eb902e6e30d213d1eb87a22bbe57b2df4a8294ead1c572166a9e947c2fbef",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "8c4a689d-70ac-0a4b-5572-8f02f799ebc6",
         "status": "final",
         "category": [
           {
@@ -7575,10 +7150,10 @@
           "text": "Body Weight"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T22:58:04-08:00",
         "issued": "2020-03-01T22:58:04.059-08:00",
@@ -7590,24 +7165,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/8c4a689d-70ac-0a4b-5572-8f02f799ebc6"
       }
     },
     {
       "fullUrl": "urn:uuid:bb82f384-3416-8e70-8fdd-efe4dab23b31",
       "resource": {
         "resourceType": "Observation",
-        "id": "9afa101762b25b9d022c46e1232972971ce2f795c4ba4f0fd14734b36e2addbc",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "bb82f384-3416-8e70-8fdd-efe4dab23b31",
         "status": "final",
         "category": [
           {
@@ -7631,10 +7197,10 @@
           "text": "Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -7650,24 +7216,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/bb82f384-3416-8e70-8fdd-efe4dab23b31"
       }
     },
     {
       "fullUrl": "urn:uuid:234dae5d-b37b-d65e-4164-ee90ba1bc38f",
       "resource": {
         "resourceType": "Observation",
-        "id": "3c57fb295a0451eec167ee991ace2861e284279790730b860c04b62f4a65f697",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "234dae5d-b37b-d65e-4164-ee90ba1bc38f",
         "status": "final",
         "category": [
           {
@@ -7691,10 +7248,10 @@
           "text": "Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -7710,24 +7267,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/234dae5d-b37b-d65e-4164-ee90ba1bc38f"
       }
     },
     {
       "fullUrl": "urn:uuid:2c2d4215-631d-c552-fd27-7a6cfcb6a2db",
       "resource": {
         "resourceType": "Observation",
-        "id": "b6e4ac95dadc74abd37cb37bd8e777b342d8f62bd3b52818797d088ec62902c6",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "2c2d4215-631d-c552-fd27-7a6cfcb6a2db",
         "status": "final",
         "category": [
           {
@@ -7751,10 +7299,10 @@
           "text": "Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -7770,24 +7318,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/2c2d4215-631d-c552-fd27-7a6cfcb6a2db"
       }
     },
     {
       "fullUrl": "urn:uuid:54d04b65-1f6a-0e21-b54a-b02f5f8f0f07",
       "resource": {
         "resourceType": "Observation",
-        "id": "2614f2a8822c422efe33c33e5d4761c9c70af80211a85dc1b2208e5b9550387c",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "54d04b65-1f6a-0e21-b54a-b02f5f8f0f07",
         "status": "final",
         "category": [
           {
@@ -7811,10 +7350,10 @@
           "text": "Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -7830,24 +7369,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/54d04b65-1f6a-0e21-b54a-b02f5f8f0f07"
       }
     },
     {
       "fullUrl": "urn:uuid:d1023eae-25ab-ac7f-d42c-93d62ee4bad7",
       "resource": {
         "resourceType": "Observation",
-        "id": "1759b558be3eaefba1ee89e66bf92aa7599b134f5b3a7d2c15a21b50297b00a7",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "d1023eae-25ab-ac7f-d42c-93d62ee4bad7",
         "status": "final",
         "category": [
           {
@@ -7871,10 +7401,10 @@
           "text": "Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -7890,24 +7420,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/d1023eae-25ab-ac7f-d42c-93d62ee4bad7"
       }
     },
     {
       "fullUrl": "urn:uuid:30a6350a-e784-2e7f-7cc4-f5dd2149250c",
       "resource": {
         "resourceType": "Observation",
-        "id": "5cd07ef994181e8b41f281a22a7b661f96dc6fcac7c26e512c32ef10d9e25b97",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "30a6350a-e784-2e7f-7cc4-f5dd2149250c",
         "status": "final",
         "category": [
           {
@@ -7931,10 +7452,10 @@
           "text": "Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -7950,24 +7471,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/30a6350a-e784-2e7f-7cc4-f5dd2149250c"
       }
     },
     {
       "fullUrl": "urn:uuid:13e8f6a2-16f1-9255-5712-f7ae7a3135c5",
       "resource": {
         "resourceType": "Observation",
-        "id": "2420650d126a11c35e244e703adbc5bbea92789472fc000f1150c27daa225f4b",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "13e8f6a2-16f1-9255-5712-f7ae7a3135c5",
         "status": "final",
         "category": [
           {
@@ -7991,10 +7503,10 @@
           "text": "Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -8010,24 +7522,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/13e8f6a2-16f1-9255-5712-f7ae7a3135c5"
       }
     },
     {
       "fullUrl": "urn:uuid:86d8d63c-d9ad-bc63-7779-e354e838ce22",
       "resource": {
         "resourceType": "Observation",
-        "id": "033f58b3e9c1026b725b8832d731c7cda5c460bdc5051c61af224d0b5de4e10d",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "86d8d63c-d9ad-bc63-7779-e354e838ce22",
         "status": "final",
         "category": [
           {
@@ -8051,10 +7554,10 @@
           "text": "Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -8070,24 +7573,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/86d8d63c-d9ad-bc63-7779-e354e838ce22"
       }
     },
     {
       "fullUrl": "urn:uuid:fa673219-c400-c972-eee7-4a75461d2e2a",
       "resource": {
         "resourceType": "Observation",
-        "id": "4d92bded9b6f7198e005673d794e56cf03aa288ea572f26e2c2964190a9672f8",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "fa673219-c400-c972-eee7-4a75461d2e2a",
         "status": "final",
         "category": [
           {
@@ -8111,10 +7605,10 @@
           "text": "Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
@@ -8130,24 +7624,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/fa673219-c400-c972-eee7-4a75461d2e2a"
       }
     },
     {
       "fullUrl": "urn:uuid:0cc0adfe-4cef-c13f-40c7-a07dd65d54ee",
       "resource": {
         "resourceType": "Observation",
-        "id": "03524dff9d573f0dabf61401e2bd49c5462f814e20fa572dbbdd0bf02261413b",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "0cc0adfe-4cef-c13f-40c7-a07dd65d54ee",
         "status": "final",
         "category": [
           {
@@ -8171,10 +7656,10 @@
           "text": "SARS-CoV-2 RNA Pnl Resp NAA+probe"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-02T00:18:04-08:00",
         "issued": "2020-03-02T00:18:04.059-08:00",
@@ -8190,24 +7675,15 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Observation"
+        "method": "PUT",
+        "url": "Observation/0cc0adfe-4cef-c13f-40c7-a07dd65d54ee"
       }
     },
     {
       "fullUrl": "urn:uuid:dc267a8e-e445-6d3a-aa6d-c41ffebdbeee",
       "resource": {
         "resourceType": "Procedure",
-        "id": "2955063c0c0d4b1f7f96c34077939615d86f444830cdcf198349d55b94903822",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "dc267a8e-e445-6d3a-aa6d-c41ffebdbeee",
         "status": "completed",
         "code": {
           "coding": [
@@ -8220,10 +7696,10 @@
           "text": "Face mask (physical object)"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "performedPeriod": {
           "start": "2020-03-01T22:58:04-08:00",
@@ -8231,30 +7707,21 @@
         },
         "reasonReference": [
           {
-            "reference": "urn:uuid:7103da02-30cd-501b-28e1-80f822f3a36b",
+            "reference": "Condition/7103da02-30cd-501b-28e1-80f822f3a36b",
             "display": "Suspected COVID-19"
           }
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "Procedure"
+        "method": "PUT",
+        "url": "Procedure/dc267a8e-e445-6d3a-aa6d-c41ffebdbeee"
       }
     },
     {
       "fullUrl": "urn:uuid:77443de2-b68b-5789-d8e5-2bf9d4df26ba",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "9c0d8fc596f735228f545ed3f86e28ee12c9a9a72b825751741da4d5590725a3",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "77443de2-b68b-5789-d8e5-2bf9d4df26ba",
         "status": "final",
         "category": [
           {
@@ -8278,71 +7745,62 @@
           "text": "Respiratory pathogens DNA and RNA panel - Respiratory specimen by NAA with probe detection"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-01T23:11:04-08:00",
         "issued": "2020-03-01T23:11:04.059-08:00",
         "result": [
           {
-            "reference": "urn:uuid:bb82f384-3416-8e70-8fdd-efe4dab23b31",
+            "reference": "Observation/bb82f384-3416-8e70-8fdd-efe4dab23b31",
             "display": "Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:234dae5d-b37b-d65e-4164-ee90ba1bc38f",
+            "reference": "Observation/234dae5d-b37b-d65e-4164-ee90ba1bc38f",
             "display": "Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:2c2d4215-631d-c552-fd27-7a6cfcb6a2db",
+            "reference": "Observation/2c2d4215-631d-c552-fd27-7a6cfcb6a2db",
             "display": "Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:54d04b65-1f6a-0e21-b54a-b02f5f8f0f07",
+            "reference": "Observation/54d04b65-1f6a-0e21-b54a-b02f5f8f0f07",
             "display": "Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:d1023eae-25ab-ac7f-d42c-93d62ee4bad7",
+            "reference": "Observation/d1023eae-25ab-ac7f-d42c-93d62ee4bad7",
             "display": "Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:30a6350a-e784-2e7f-7cc4-f5dd2149250c",
+            "reference": "Observation/30a6350a-e784-2e7f-7cc4-f5dd2149250c",
             "display": "Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:13e8f6a2-16f1-9255-5712-f7ae7a3135c5",
+            "reference": "Observation/13e8f6a2-16f1-9255-5712-f7ae7a3135c5",
             "display": "Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:86d8d63c-d9ad-bc63-7779-e354e838ce22",
+            "reference": "Observation/86d8d63c-d9ad-bc63-7779-e354e838ce22",
             "display": "Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection"
           },
           {
-            "reference": "urn:uuid:fa673219-c400-c972-eee7-4a75461d2e2a",
+            "reference": "Observation/fa673219-c400-c972-eee7-4a75461d2e2a",
             "display": "Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection"
           }
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/77443de2-b68b-5789-d8e5-2bf9d4df26ba"
       }
     },
     {
       "fullUrl": "urn:uuid:f9a37153-c7e5-3652-556d-aa95bdee2bdc",
       "resource": {
         "resourceType": "DiagnosticReport",
-        "id": "ebb8cca0c24ce1d52734e5159466d62da7fe068609bff55fb3c5a2603a20b0d9",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "f9a37153-c7e5-3652-556d-aa95bdee2bdc",
         "status": "final",
         "category": [
           {
@@ -8366,50 +7824,45 @@
           "text": "SARS-CoV-2 RNA Pnl Resp NAA+probe"
         },
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "effectiveDateTime": "2020-03-02T00:18:04-08:00",
         "issued": "2020-03-02T00:18:04.059-08:00",
         "result": [
           {
-            "reference": "urn:uuid:0cc0adfe-4cef-c13f-40c7-a07dd65d54ee",
+            "reference": "Observation/0cc0adfe-4cef-c13f-40c7-a07dd65d54ee",
             "display": "SARS-CoV-2 RNA Pnl Resp NAA+probe"
           }
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "DiagnosticReport"
+        "method": "PUT",
+        "url": "DiagnosticReport/f9a37153-c7e5-3652-556d-aa95bdee2bdc"
       }
     },
     {
       "fullUrl": "urn:uuid:eb964895-3521-473a-c15a-fd98e36c03f5",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "89b70b2266fa8f0f0b4644a9206b60ec4353838462ed3ddf2ff716169f789018",
+        "id": "eb964895-3521-473a-c15a-fd98e36c03f5",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "status": "inactive",
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "period": {
           "start": "2020-03-01T23:11:04-08:00",
@@ -8430,7 +7883,7 @@
               }
             ],
             "member": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             }
           },
           {
@@ -8447,7 +7900,7 @@
               }
             ],
             "member": {
-              "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202"
+              "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
             }
           },
           {
@@ -8464,7 +7917,7 @@
               }
             ],
             "member": {
-              "reference": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58"
+              "reference": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58"
             }
           }
         ],
@@ -8482,30 +7935,21 @@
         ],
         "managingOrganization": [
           {
-            "reference": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58",
+            "reference": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58",
             "display": "STURDY MEMORIAL HOSPITAL"
           }
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "CareTeam"
+        "method": "PUT",
+        "url": "CareTeam/eb964895-3521-473a-c15a-fd98e36c03f5"
       }
     },
     {
       "fullUrl": "urn:uuid:d0017609-ae74-5f28-8f01-9c359c6e9a25",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "c9c5deaef77ba9a019c7517319a52eeea88dd3ded77a124f1d077daebe652186",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "d0017609-ae74-5f28-8f01-9c359c6e9a25",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Infectious disease care plan (record artifact).<br/>Activities: <ul><li>Infectious disease care plan (record artifact)</li><li>Infectious disease care plan (record artifact)</li></ul><br/>Care plan is meant to treat Suspected COVID-19.</div>"
@@ -8525,10 +7969,10 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "period": {
           "start": "2020-03-01T23:11:04-08:00",
@@ -8536,12 +7980,12 @@
         },
         "careTeam": [
           {
-            "reference": "urn:uuid:eb964895-3521-473a-c15a-fd98e36c03f5"
+            "reference": "CareTeam/eb964895-3521-473a-c15a-fd98e36c03f5"
           }
         ],
         "addresses": [
           {
-            "reference": "urn:uuid:7103da02-30cd-501b-28e1-80f822f3a36b"
+            "reference": "Condition/7103da02-30cd-501b-28e1-80f822f3a36b"
           }
         ],
         "activity": [
@@ -8584,35 +8028,30 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/d0017609-ae74-5f28-8f01-9c359c6e9a25"
       }
     },
     {
       "fullUrl": "urn:uuid:390d6053-3980-b24d-91fd-78e417b8c0b0",
       "resource": {
         "resourceType": "CareTeam",
-        "id": "c68e97874f9625833268abf5c6b7b816acd1613aa6a37bd489a3f1bbc74a17f9",
+        "id": "390d6053-3980-b24d-91fd-78e417b8c0b0",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "status": "inactive",
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "period": {
           "start": "2020-03-02T00:18:04-08:00",
@@ -8633,7 +8072,7 @@
               }
             ],
             "member": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             }
           },
           {
@@ -8650,7 +8089,7 @@
               }
             ],
             "member": {
-              "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202"
+              "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
             }
           },
           {
@@ -8667,7 +8106,7 @@
               }
             ],
             "member": {
-              "reference": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58"
+              "reference": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58"
             }
           }
         ],
@@ -8685,30 +8124,21 @@
         ],
         "managingOrganization": [
           {
-            "reference": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58",
+            "reference": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58",
             "display": "STURDY MEMORIAL HOSPITAL"
           }
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "CareTeam"
+        "method": "PUT",
+        "url": "CareTeam/390d6053-3980-b24d-91fd-78e417b8c0b0"
       }
     },
     {
       "fullUrl": "urn:uuid:ec3c9d28-d4b2-9868-ccb6-aa5065f158dd",
       "resource": {
         "resourceType": "CarePlan",
-        "id": "a35b3c86343aab7cc2f6ac78c24442678766c9ce33357cf22cfaa29f19555763",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "ec3c9d28-d4b2-9868-ccb6-aa5065f158dd",
         "text": {
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Care Plan for Infectious disease care plan (record artifact).<br/>Activities: <ul><li>Infectious disease care plan (record artifact)</li><li>Infectious disease care plan (record artifact)</li></ul><br/>Care plan is meant to treat COVID-19.</div>"
@@ -8728,10 +8158,10 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+          "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
         },
         "period": {
           "start": "2020-03-02T00:18:04-08:00",
@@ -8739,12 +8169,12 @@
         },
         "careTeam": [
           {
-            "reference": "urn:uuid:390d6053-3980-b24d-91fd-78e417b8c0b0"
+            "reference": "CareTeam/390d6053-3980-b24d-91fd-78e417b8c0b0"
           }
         ],
         "addresses": [
           {
-            "reference": "urn:uuid:4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
+            "reference": "Condition/4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
           }
         ],
         "activity": [
@@ -8787,26 +8217,21 @@
         ]
       },
       "request": {
-        "method": "POST",
-        "url": "CarePlan"
+        "method": "PUT",
+        "url": "CarePlan/ec3c9d28-d4b2-9868-ccb6-aa5065f158dd"
       }
     },
     {
       "fullUrl": "urn:uuid:47eec56d-14ee-d146-c6d3-2f93764a9521",
       "resource": {
         "resourceType": "Claim",
-        "id": "e176b83e7f8a1cafd4cef26f8d2909934a7ce9ab5327ebea0888fc66c77de718",
+        "id": "47eec56d-14ee-d146-c6d3-2f93764a9521",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -8821,7 +8246,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2020-03-01T22:58:04-08:00",
@@ -8829,7 +8254,7 @@
         },
         "created": "2020-03-02T00:18:04-08:00",
         "provider": {
-          "reference": "urn:uuid:5e765f2b-e908-3888-9fc7-df2cb87beb58",
+          "reference": "Organization/5e765f2b-e908-3888-9fc7-df2cb87beb58",
           "display": "STURDY MEMORIAL HOSPITAL"
         },
         "priority": {
@@ -8844,31 +8269,31 @@
           {
             "sequence": 1,
             "diagnosisReference": {
-              "reference": "urn:uuid:c60f611f-b403-5384-1e65-a5f9715aafa2"
+              "reference": "Condition/c60f611f-b403-5384-1e65-a5f9715aafa2"
             }
           },
           {
             "sequence": 2,
             "diagnosisReference": {
-              "reference": "urn:uuid:ab384dac-c2ce-adaf-004d-5df870d69727"
+              "reference": "Condition/ab384dac-c2ce-adaf-004d-5df870d69727"
             }
           },
           {
             "sequence": 3,
             "diagnosisReference": {
-              "reference": "urn:uuid:b2aa368a-1840-693f-b4b3-2cc7dc987594"
+              "reference": "Condition/b2aa368a-1840-693f-b4b3-2cc7dc987594"
             }
           },
           {
             "sequence": 4,
             "diagnosisReference": {
-              "reference": "urn:uuid:7103da02-30cd-501b-28e1-80f822f3a36b"
+              "reference": "Condition/7103da02-30cd-501b-28e1-80f822f3a36b"
             }
           },
           {
             "sequence": 5,
             "diagnosisReference": {
-              "reference": "urn:uuid:4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
+              "reference": "Condition/4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
             }
           }
         ],
@@ -8876,7 +8301,7 @@
           {
             "sequence": 1,
             "procedureReference": {
-              "reference": "urn:uuid:dc267a8e-e445-6d3a-aa6d-c41ffebdbeee"
+              "reference": "Procedure/dc267a8e-e445-6d3a-aa6d-c41ffebdbeee"
             }
           }
         ],
@@ -8904,7 +8329,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+                "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
               }
             ]
           },
@@ -9015,56 +8440,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/47eec56d-14ee-d146-c6d3-2f93764a9521"
       }
     },
     {
       "fullUrl": "urn:uuid:4d33f67e-6c42-0d88-6784-43a70958b97d",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "8f6ac6a3ec8c46e7ceefe3356439f4a3093a6fab32dca800d0795da8957778cc",
+        "id": "4d33f67e-6c42-0d88-6784-43a70958b97d",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202"
+              "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
             },
             "performer": [
               {
-                "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202"
+                "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -9092,7 +8512,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2020-03-02T00:18:04-08:00",
@@ -9103,20 +8523,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202"
+          "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:47eec56d-14ee-d146-c6d3-2f93764a9521"
+          "reference": "Claim/47eec56d-14ee-d146-c6d3-2f93764a9521"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:a06c857a-9b04-3cae-8bcb-507014632202"
+              "reference": "Practitioner/a06c857a-9b04-3cae-8bcb-507014632202"
             },
             "role": {
               "coding": [
@@ -9133,7 +8553,7 @@
           {
             "sequence": 1,
             "diagnosisReference": {
-              "reference": "urn:uuid:c60f611f-b403-5384-1e65-a5f9715aafa2"
+              "reference": "Condition/c60f611f-b403-5384-1e65-a5f9715aafa2"
             },
             "type": [
               {
@@ -9149,7 +8569,7 @@
           {
             "sequence": 2,
             "diagnosisReference": {
-              "reference": "urn:uuid:ab384dac-c2ce-adaf-004d-5df870d69727"
+              "reference": "Condition/ab384dac-c2ce-adaf-004d-5df870d69727"
             },
             "type": [
               {
@@ -9165,7 +8585,7 @@
           {
             "sequence": 3,
             "diagnosisReference": {
-              "reference": "urn:uuid:b2aa368a-1840-693f-b4b3-2cc7dc987594"
+              "reference": "Condition/b2aa368a-1840-693f-b4b3-2cc7dc987594"
             },
             "type": [
               {
@@ -9181,7 +8601,7 @@
           {
             "sequence": 4,
             "diagnosisReference": {
-              "reference": "urn:uuid:7103da02-30cd-501b-28e1-80f822f3a36b"
+              "reference": "Condition/7103da02-30cd-501b-28e1-80f822f3a36b"
             },
             "type": [
               {
@@ -9197,7 +8617,7 @@
           {
             "sequence": 5,
             "diagnosisReference": {
-              "reference": "urn:uuid:4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
+              "reference": "Condition/4fa9b0a6-477f-4cd9-a4fb-0da3dfc4c3fb"
             },
             "type": [
               {
@@ -9248,7 +8668,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:3d5466ce-db3c-2302-99f8-9491d07d1529"
+                "reference": "Encounter/3d5466ce-db3c-2302-99f8-9491d07d1529"
               }
             ]
           },
@@ -9542,26 +8962,21 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/4d33f67e-6c42-0d88-6784-43a70958b97d"
       }
     },
     {
       "fullUrl": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24",
       "resource": {
         "resourceType": "Encounter",
-        "id": "4c97eec5b7c418c161ddb928f37be1548c04fec95abc54302030adb1f8f2416b",
+        "id": "0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -9583,7 +8998,7 @@
           }
         ],
         "subject": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "participant": [
           {
@@ -9604,7 +9019,7 @@
               "end": "2020-05-17T00:13:04-07:00"
             },
             "individual": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7",
               "display": "Dr. Leida589 Batz141"
             }
           }
@@ -9614,29 +9029,20 @@
           "end": "2020-05-17T00:13:04-07:00"
         },
         "serviceProvider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Encounter"
+        "method": "PUT",
+        "url": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
       }
     },
     {
       "fullUrl": "urn:uuid:194623a7-5c8a-793d-a6e6-eef644a77860",
       "resource": {
         "resourceType": "Immunization",
-        "id": "99d7e04ba02304daf758a5fcdae69378ad9e26186fc4f3d784843acfcc7ed541",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "194623a7-5c8a-793d-a6e6-eef644a77860",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -9649,33 +9055,24 @@
           "text": "Tdap"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
+          "reference": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
         },
         "occurrenceDateTime": "2020-05-16T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/194623a7-5c8a-793d-a6e6-eef644a77860"
       }
     },
     {
       "fullUrl": "urn:uuid:05274663-4528-587e-4c95-bc1119612db5",
       "resource": {
         "resourceType": "Immunization",
-        "id": "105a70ddb55dbdd84ce8435ddcd4983a92606a13a25e5bf78bcafc4d392b8aa9",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "05274663-4528-587e-4c95-bc1119612db5",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -9688,33 +9085,24 @@
           "text": "Influenza, seasonal, injectable, preservative free"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
+          "reference": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
         },
         "occurrenceDateTime": "2020-05-16T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/05274663-4528-587e-4c95-bc1119612db5"
       }
     },
     {
       "fullUrl": "urn:uuid:897a3e98-a03a-4a04-3da7-d566ba65b546",
       "resource": {
         "resourceType": "Immunization",
-        "id": "250496f4e45fc160d9e728447fb44a524106f3788e013225321f5e52304cabfc",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "897a3e98-a03a-4a04-3da7-d566ba65b546",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -9727,33 +9115,24 @@
           "text": "HPV, quadrivalent"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
+          "reference": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
         },
         "occurrenceDateTime": "2020-05-16T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/897a3e98-a03a-4a04-3da7-d566ba65b546"
       }
     },
     {
       "fullUrl": "urn:uuid:39ea7bc6-0719-22d3-a490-52d905680b77",
       "resource": {
         "resourceType": "Immunization",
-        "id": "10d77c87a84774bdf16960bc45ff9b266704080ecc055aa653ac99d28fe05e7f",
-        "meta": {
-          "security": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
-            }
-          ]
-        },
+        "id": "39ea7bc6-0719-22d3-a490-52d905680b77",
         "status": "completed",
         "vaccineCode": {
           "coding": [
@@ -9766,35 +9145,30 @@
           "text": "meningococcal MCV4P"
         },
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "encounter": {
-          "reference": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
+          "reference": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
         },
         "occurrenceDateTime": "2020-05-16T23:58:04-07:00",
         "primarySource": true
       },
       "request": {
-        "method": "POST",
-        "url": "Immunization"
+        "method": "PUT",
+        "url": "Immunization/39ea7bc6-0719-22d3-a490-52d905680b77"
       }
     },
     {
       "fullUrl": "urn:uuid:716f101b-4f17-d69a-d31b-1d1cd47c7bd3",
       "resource": {
         "resourceType": "Claim",
-        "id": "e40e1b920ba0fc8466f256ceacd2b118e0de52a444b19f8c413783e8ff6e8adb",
+        "id": "716f101b-4f17-d69a-d31b-1d1cd47c7bd3",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
@@ -9809,7 +9183,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2020-05-16T23:58:04-07:00",
@@ -9817,7 +9191,7 @@
         },
         "created": "2020-05-17T00:13:04-07:00",
         "provider": {
-          "reference": "urn:uuid:d141d0e1-558a-317e-9bae-6c1f1122f9d5",
+          "reference": "Organization/d141d0e1-558a-317e-9bae-6c1f1122f9d5",
           "display": "PCP97080"
         },
         "priority": {
@@ -9898,7 +9272,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
+                "reference": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
               }
             ]
           },
@@ -9989,56 +9363,51 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "Claim"
+        "method": "PUT",
+        "url": "Claim/716f101b-4f17-d69a-d31b-1d1cd47c7bd3"
       }
     },
     {
       "fullUrl": "urn:uuid:d04d1e94-31e2-4e3a-6138-dbf802dfc530",
       "resource": {
         "resourceType": "ExplanationOfBenefit",
-        "id": "788dbe718970fc25e098db0873a8997aba4ea8f5387b4601c55df8e5a610f51d",
+        "id": "d04d1e94-31e2-4e3a-6138-dbf802dfc530",
         "meta": {
           "security": [
             {
               "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
               "code": "REDACTED",
               "display": "redacted"
-            },
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-              "code": "CRYTOHASH",
-              "display": "cryptographic hash function"
             }
           ]
         },
         "contained": [
           {
             "resourceType": "ServiceRequest",
-            "id": "80a763cfdeb04d2bc959e295cf905f15a21fbbb4c7289c74ac75727cfbb76884",
+            "id": "referral",
             "status": "completed",
             "intent": "order",
             "subject": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "requester": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "performer": [
               {
-                "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+                "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
               }
             ]
           },
           {
             "resourceType": "Coverage",
-            "id": "354bd8e4f7928c9f5d601f59c2159279187254a5bd8b20c30bf86f39b1fe8fd4",
+            "id": "coverage",
             "status": "active",
             "type": {
               "text": "Humana"
             },
             "beneficiary": {
-              "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+              "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
             },
             "payor": [
               {
@@ -10066,7 +9435,7 @@
         },
         "use": "claim",
         "patient": {
-          "reference": "urn:uuid:6b9c211c-2c38-3955-43a0-4d285c714fab"
+          "reference": "Patient/6b9c211c-2c38-3955-43a0-4d285c714fab"
         },
         "billablePeriod": {
           "start": "2020-05-17T00:13:04-07:00",
@@ -10077,20 +9446,20 @@
           "display": "Humana"
         },
         "provider": {
-          "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+          "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
         },
         "referral": {
           "reference": "#referral"
         },
         "claim": {
-          "reference": "urn:uuid:716f101b-4f17-d69a-d31b-1d1cd47c7bd3"
+          "reference": "Claim/716f101b-4f17-d69a-d31b-1d1cd47c7bd3"
         },
         "outcome": "complete",
         "careTeam": [
           {
             "sequence": 1,
             "provider": {
-              "reference": "urn:uuid:942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
+              "reference": "Practitioner/942dcf70-43ab-3e47-84b8-0bc2e007b4d7"
             },
             "role": {
               "coding": [
@@ -10140,7 +9509,7 @@
             },
             "encounter": [
               {
-                "reference": "urn:uuid:0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
+                "reference": "Encounter/0a4694c9-9cf9-bfa8-6a90-f4170fe9fe24"
               }
             ]
           },
@@ -10655,8 +10024,8 @@
         }
       },
       "request": {
-        "method": "POST",
-        "url": "ExplanationOfBenefit"
+        "method": "PUT",
+        "url": "ExplanationOfBenefit/d04d1e94-31e2-4e3a-6138-dbf802dfc530"
       }
     }
   ]
