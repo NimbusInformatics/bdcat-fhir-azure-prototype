@@ -11,11 +11,15 @@ Please see the following Google Docs for more detailed information:
 ## Helper Scripts
 * [fhir_list_all_resources.py](fhir_list_all_resources.py): Lists the resources in a FHIR Server
 * [fhir_post_bundle.py](fhir_post_bundle.py): Posts a bundle JSON file to a FHIR Server 
+* [fhir_post_from_directory.py](fhir_post_from_directory.py): Posts JSON files to a FHIR Server that are located in the specified directory
+* [fhir_transform_bundle.py](fhir_transform_bundle.py): Given a JSON FHIR bundle file with POST requests, this script transforms the POST requests into PUT requests, and handles setting the references. This was written to be used the the output of synthea-generated FHIR files, so that the ids could be retained.
 
 ## Helper Configuration Files
 *   [anonymizer-configuration.json](anonymizer-configuration.json): a configuration file used by [FHIR Tools for Anonymization](https://github.com/microsoft/FHIR-Tools-for-Anonymization) to redact or alter fields in FHIR JSON files
 
 ## Sample Content
+
+*   [bam_document_reference.json](bam_document_reference.json): an example of a DocumentReference to a BAM file, taken from https://github.com/ncpi-fhir/ncpi-model-forge/issues/23
 
 ### Synthea FHIR patients
 *   [sample_covid_fhir_juvenile_patients](sample_covid_fhir_juvenile_patients/): synthetic juvenile (age 0-18) COVID patients created using [synthea](https://github.com/synthetichealth/synthea), in FHIR JSON format. The files were transformed before intake using the script [fhir_transform_bundle.py](fhir_transform_bundle.py).
