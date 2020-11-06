@@ -6,7 +6,7 @@ This repository contains helper scripts, configuration files, and sample content
 ## Documentation
 Please see the following Google Docs for more detailed information:  
 *   [Azure API for FHIR Report](https://docs.google.com/document/d/1NXHNEx8wLVJHJWPWmVXmZYhvADreVQp9yb4jGK4droM/edit?usp=sharing)
-*   [FHIR on Azure - Developer Notes](https://docs.google.com/document/d/1cw-BMdDtnzsMylZvANx5aXqlVDX1MV4lIfqeXmy-DIs/edit?usp=sharing)
+*   [FHIR on Azure - Cookbook](https://docs.google.com/document/d/1cw-BMdDtnzsMylZvANx5aXqlVDX1MV4lIfqeXmy-DIs/edit?usp=sharing)
 
 ## Helper Scripts
 * [fhir_list_all_resources.py](fhir_list_all_resources.py): Lists the resources in a FHIR Server
@@ -34,4 +34,14 @@ Please see the following Google Docs for more detailed information:
 * [sample_hl7v2/original_hl7v2](sample_hl7v2/original_hl7v2): synthetic patients generated using [simhospital](https://github.com/google/simhospital/), in HL7 V2 format
 * [sample_hl7v2/converted_fhir_json/](sample_hl7v2/converted_fhir_json/): FHIR JSON files, created using [FHIR Converter](https://github.com/microsoft/FHIR-Converter) on the original_ccda files. The files were modified after conversion to turn the Bundle "transaction" to a "batch" and changing the "POST" requests to "PUT".
 * [sample_hl7v2/anonymized_fhir_json/](sample_hl7v2/anonymized_fhir_json/): the same patients as above, but run through the [FHIR Tools for Anonymization](https://github.com/microsoft/FHIR-Tools-for-Anonymization) using the configuration file [anonymizer-configuration.json](anonymizer-configuration.json)
+
+### PFB Proof of Concept
+The following files were used to show a proof of concept of a script interacting with a FHIR Server and outputting patients in PFB format. The .avro files were created using the [pypfb](https://github.com/uc-cdis/pypfb) following the [instructions](https://github.com/uc-cdis/pypfb#example-of-minimal-pfb).
+* [fhir_pfb_export.py](pfb/fhir_pfb_export.py): Sends a query to a FHIR Server and returns a PFB file of the matching patients
+* [minimal_file.json](pfb/minimal_file.json): The Schema in JSON format
+* [minimal_schema.avro](pfb/minimal_schema.avro): The minimal PFB with Schema
+* [minimal_data.avro](pfb/minimal_data.avro): The minimal PFB with Schema and Data
+
+
+
 
