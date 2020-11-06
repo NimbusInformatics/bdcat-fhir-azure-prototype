@@ -37,11 +37,11 @@ Please see the following Google Docs for more detailed information:
 
 ### PFB Proof of Concept
 The following files were used to show a proof of concept of a script interacting with a FHIR Server and outputting patients in PFB format. The .avro files were created using the [pypfb](https://github.com/uc-cdis/pypfb) following the [instructions](https://github.com/uc-cdis/pypfb#example-of-minimal-pfb).
-* [fhir_pfb_export.py](pfb/fhir_pfb_export.py): Sends a query to a FHIR Server and returns a PFB file of the matching patients
-* [minimal_file.json](pfb/minimal_file.json): The Schema in JSON format
+* [fhir_pfb_export.py](pfb/fhir_pfb_export.py): Script that sends a query to a FHIR Server and returns a PFB file of the matching patients
+* [minimal_file.json](pfb/minimal_file.json): The Schema in JSON format, with some patient fields added.
 * [minimal_schema.avro](pfb/minimal_schema.avro): The minimal PFB with Schema
 * [minimal_data.avro](pfb/minimal_data.avro): The minimal PFB with Schema and Data
-
+* [submitted_aligned_reads.json](pfb/input_json/submitted_aligned_reads.json): The file that was created from the python script
 
 
 
