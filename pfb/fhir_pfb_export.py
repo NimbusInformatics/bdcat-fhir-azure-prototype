@@ -27,7 +27,7 @@ if ('entry' in json_obj):
 		print('Found matching patient:', patient_uri)
 		patient_uris.append(patient_uri)
 
-f = open("pfb/input_json/submitted_aligned_reads.json", "w")
+f = open("input_json/submitted_aligned_reads.json", "w")
 f.write('[\n')
 count=0		
 for patient_uri in patient_uris:
